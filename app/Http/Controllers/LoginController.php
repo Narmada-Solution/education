@@ -64,6 +64,15 @@ class LoginController extends BaseController
 		return view('register');
 	}
 	
+	function registerresult(){
+		extract($_POST);
+		$examdata = substr($examdata,0,-1);
+		$password = Hash::make($password);
+		$data=array('name'=>$name,'password'=>$password,"email"=>$email,"phone"=>$phone,"exam"=>$examdata,"photo"=>"","token"=>$_token);
+		DB::table('users')->insert($data);
+		return redirect('register');		
+	}
+	
 	function home(){
 		return view('home');
 	}

@@ -65,21 +65,10 @@
 </style>
 </head>
 <body>
-<?php
-$client_id = '907492391618-sisr29fpepr75outbfu24run4hb74evr.apps.googleusercontent.com';
-define('CLIENT_SECRET', 'BenQi81CeG3OTcKus2sKL6SM');
-$url = 'http://easydatasearch.com/easydata2/education/public/home';
-$login_url = 'https://accounts.google.com/o/oauth2/v2/auth?scope=' . urlencode('https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email') . '&redirect_uri=' . urlencode($url) . '&response_type=code&client_id=' . $client_id . '&access_type=online'; 
-?>
 <div class="login-form">
-    <form action="<?php echo url('/'). '/loginresult'; ?>" method="post">
+    <form action="<?php echo url('/'). '/admin/loginresult'; ?>" method="post">
     @csrf
-        <h2 class="text-center">Sign in</h2>        
-        <div class="text-center social-btn">
-            <a href="facebook/fbconfig.php" class="btn btn-primary btn-block"><i class="fa fa-facebook"></i> Sign in with <b>Facebook</b></a>
-            <a href="<?php echo $login_url ?>" class="btn btn-danger btn-block"><i class="fa fa-google"></i> Sign in with <b>Google</b></a>
-        </div>
-        <div class="or-seperator"><i>or</i></div>
+        <h2 class="text-center">Sign in - Admin</h2>        
         <div class="form-group">
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-user"></i></span>
@@ -98,7 +87,6 @@ $login_url = 'https://accounts.google.com/o/oauth2/v2/auth?scope=' . urlencode('
         <div class="clearfix">
         </div>  
     </form>
-    <div class="hint-text small">Don't have an account? <a href="<?php echo url('/'). '/register'; ?>" class="text-success">Register Now!</a></div>
 </div>
 </body>
-</html>         
+</html>

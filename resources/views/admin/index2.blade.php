@@ -15,7 +15,7 @@ The above copyright notice and this permission notice shall be included in all c
 <!DOCTYPE html>
 <html lang="en">
 <?php
-$myPublicFolder = public_path();
+$id = Auth::user()->id;
 ?>
 <head>
   <meta charset="utf-8" />
@@ -170,9 +170,9 @@ $myPublicFolder = public_path();
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="./logout">Logout</a>
+                <!--  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a> -->
                 </div>
               </li>
               <li class="nav-item">

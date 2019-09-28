@@ -76,7 +76,7 @@ src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
 </head>
 <body>
 <div class="login-form">
-    <form action="<?php // echo url('/'). '/registerresult'; ?>" method="post">
+    <form action="<?php echo url('/'). '/registerresult'; ?>" method="post">
     @csrf
         <h2 class="text-center">Sign up</h2>        
         <div class="text-center social-btn">
@@ -84,90 +84,90 @@ src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
         <div class="form-group">
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                <input type="text" class="form-control" name="name" placeholder="Name" required="required">
+                <input type="text" class="form-control fname" name="name" placeholder="Name" required="required">
             </div>
         </div>
         <div class="form-group">
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                <input type="email" class="form-control femail" name="email" placeholder="Email" required="required">
             </div>
         </div>
         <div class="form-group">
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                <input type="number" class="form-control" name="phone" placeholder="Phone" required="required">
+                <input type="number" class="form-control fphone" name="phone" placeholder="Phone" required="required">
             </div>
         </div>
         <div class="form-group">
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+                <input type="password" class="form-control fpassword" name="password" placeholder="Password" required="required">
             </div>
         </div>        
         <p>Which exam you are prepair for: Ask for the interest, give options to choose form </p>
         <ul id="easySelectable">
-				<li>
+				<li class="exams_prepair" data-item="Bank & Insurance">
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/apple-icon.png')?>"></div>
-				<input type="hidden" class="bank_insurance" name="exams_prepair[]" value="Bank & Insurance"> 	
-				<div class="col-md-9"><span>Bank & Insurance</span><br><small>IBPS,PO,RBI Assistant,SBI SO,NABARD</small></div></li>
+				<div class="col-md-9"><span>Bank & Insurance</span><br><small>IBPS,PO,RBI Assistant,SBI SO,NABARD</small></div>
+				</li>
 				
-				<li>
+				<li class="exams_prepair" data-item="SSC & Govt Job Exams">
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/apple-icon.png')?>"></div>	
-				<input type="hidden" class="ssc_govt" name="exams_prepair[]" value="SSC & Govt Job Exams" > 	
+				
 				<div class="col-md-9"><span>SSC & Govt Job Exams</span><br><small>SSC, CGL 2018,SSC,CHSL,SSC Steno,Railways Recuirment </small></div>
 				
 				
-				<li>
-				<input type="hidden" class="gate_psu" name="exams_prepair[]" value="GATE and PSU Jobs"> 	
+				<li class="exams_prepair" data-item="GATE and PSU Jobs">
+				
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/apple-icon.png')?>"></div>	
 				<div class="col-md-9"><span>GATE and PSU Jobs</span><br><small>GATE,BARC,SSC,IE,ISRO</small></div>
 				</li>
 				
-				<li>
-				<input type="hidden" class="JEE_BITSAT" name="exams_prepair[]" value="JEE & BITSAT"> 	
+				<li class="exams_prepair" data-item="JEE Main">
+				
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/apple-icon.png')?>"></div>	
 				<div class="col-md-9"><span></span><br><small>JEE Main,JEE Advanced,BITSAT,UPSEE,SRMEEE</small></div>
 				</li>
 				
 				
-				<li>
-				<input type="hidden" class="medical" name="exams_prepair[]" value="Medical Entrance"> 	
+				<li class="exams_prepair" data-item="Medical Entrance">
+				
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/apple-icon.png')?>"></div>	
 				<div class="col-md-9"><span>Medical Entrance</span><br><small>NEET,LIG,AIMMS,JIPMER</small></div>
 				</li>
 				
 				
-				<li>
-				<input type="hidden" class="upsc" name="exams_prepair[]" value="UPSE & State Services"> 	
+				<li class="exams_prepair" data-item="UPSE">
+				
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/apple-icon.png')?>"></div>	
 				<div class="col-md-9"><span>UPSE & State Servuies</span><br><small>UPSC Pre,State PSE</small></div>
 				</li>
 				
 				
-				<li>
-				<input type="hidden" class="upsc_pre" name="exams_prepair[]" value="UPSC Pre,State PSE">
+				<li class="exams_prepair" data-item="UPSC Pre">
+				
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/jan-sendereks.jpg')?>"></div>	
 				<div class="col-md-9"><span>UPSC Pre,State PSE</span><br><small>CAT, IIFT, XAT, NMAT, MAT, CMAT, General</small></div>
 				</li>
 				
 				
-				<li>
-				<input type="hidden" class="teaching" name="exams_prepair[]" value="Teaching Exams">
+				<li class="exams_prepair" data-item="Teaching Exams">
+				
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/damir-bosnjak.jpg')?>"></div>	
 				<div class="col-md-9"><span>Teaching Exams</span><br><small>KVS,CTET,NVS,UPTET,Army teacher recruitment</small></div>
 				</li>
 				
 				
-				<li>
-				<input type="hidden" class="NET" name="exams_prepair[]" value="NET">
+				<li class="exams_prepair" data-item="NET">
+				
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/default-avatar.png')?>"></div>	
 				<div class="col-md-9"><span>NET</span><br><small>UGC,NET,CSIR,NET,MP,SET</small></div>
 				</li>
 				
 				
-				<li>
-				<input type="hidden" class="defence" name="exams_prepair[]" value="Defence Exams">
+				<li class="exams_prepair" data-item="Defence Exams">
+				
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/apple-icon.png')?>"></div>	
 				<div class="col-md-9"><span>Defence Exams</span><br><small>Combined Civil Services(CDS),AFCAT</small></div>
 				</li>
@@ -180,66 +180,66 @@ src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
         
         
         <ul id="easySelectable22">
-				<li>
+				<li class="exam" data-item="Bank & Insurance">
 				<input type="hidden" class="exams_prefer1" name="exams_prefer[]" value="Bank & Insurance">
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/apple-icon.png')?>"></div>	
 				<div class="col-md-9"><span>Bank & Insurance</span><br><small>IBPS,PO,RBI Assistant,SBI SO,NABARD</small></div></li>
 				
-				<li>
+				<li class="exam" data-item="SSC & Govt Job Exams">
 				<input type="hidden" class="exams_prefer2" name="exams_prefer[]" value="SSC & Govt Job Exams">
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/apple-icon.png')?>"></div>	
 				<div class="col-md-9"><span>SSC & Govt Job Exams</span><br><small>SSC, CGL 2018,SSC,CHSL,SSC Steno,Railways Recuirment </small></div>
 				
 				
-				<li>
+				<li class="exam" data-item="GATE and PSU Jobs">
 				<input type="hidden" class="exams_prefer" name="exams_prefer[]" value="GATE and PSU Jobs">
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/apple-icon.png')?>"></div>	
 				<div class="col-md-9"><span>GATE and PSU Jobs</span><br><small>GATE,BARC,SSC,IE,ISRO</small></div>
 				</li>
 				
-				<li>
+				<li class="exam" data-item="JEE & BITSAT">
 				<input type="hidden" class="exams_prefer" name="exams_prefer[]" value="JEE & BITSAT">
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/apple-icon.png')?>"></div>	
 				<div class="col-md-9"><span>JEE & BITSAT</span><br><small>JEE Main,JEE Advanced,BITSAT,UPSEE,SRMEEE</small></div>
 				</li>
 				
 				
-				<li>
+				<li class="exam" data-item="Medical Entrance">
 				<input type="hidden" class="exams_prefer" name="exams_prefer[]" value="Medical Entrance">
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/apple-icon.png')?>"></div>	
 				<div class="col-md-9"><span>Medical Entrance</span><br><small>NEET,LIG,AIMMS,JIPMER</small></div>
 				</li>
 				
 				
-				<li>
+				<li class="exam" data-item="UPSE & State Services">
 				<input type="hidden" class="exams_prefer" name="exams_prefer[]" value="UPSE & State Services">
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/apple-icon.png')?>"></div>	
 				<div class="col-md-9"><span>UPSE & State Services</span><br><small>UPSC Pre,State PSE</small></div>
 				</li>
 				
 				
-				<li>
+				<li class="exam" data-item="UPSC Pre,State PSE">
 				<input type="hidden" class="exams_prefer" name="exams_prefer[]" value="UPSC Pre,State PSE">
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/jan-sendereks.jpg')?>"></div>	
 				<div class="col-md-9"><span>UPSC Pre,State PSE</span><br><small>CAT, IIFT, XAT, NMAT, MAT, CMAT, General</small></div>
 				</li>
 				
 				
-				<li>
+				<li class="exam" data-item="Teaching Exams">
 				<input type="hidden" class="exams_prefer" name="exams_prefer[]" value="Teaching Exams">
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/damir-bosnjak.jpg')?>"></div>	
 				<div class="col-md-9"><span>Teaching Exams</span><br><small>KVS,CTET,NVS,UPTET,Army teacher recruitment</small></div>
 				</li>
 				
 				
-				<li>
+				<li class="exam" data-item="NET">
 				<input type="hidden" class="exams_prefer" name="exams_prefer[]" value="NET">
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/default-avatar.png')?>"></div>	
 				<div class="col-md-9"><span>NET</span><br><small>UGC,NET,CSIR,NET,MP,SET</small></div>
 				</li>
 				
 				
-				<li>
+				<li class="exam" data-item="Defence Exams">
 				<input type="hidden" class="exams_prefer" name="exams_prefer[]" value="Defence Exams">
 				<div class="col-md-3"><img src="<?php echo asset('assets/img/apple-icon.png')?>"></div>	
 				<div class="col-md-9"><span>Defence Exams</span><br><small>Combined Civil Services(CDS),AFCAT</small></div>
@@ -251,6 +251,7 @@ src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
         
        	 
         <div class="form-group">
+        	<input type="hidden" name="examdata" class="examdata">
             <button type="submit" name="submit" class="btn btn-success btn-block login-btn">Sign in</button>
         </div>
         <div class="clearfix">
@@ -260,17 +261,30 @@ src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
 </body>
 </html> 
 <script>
+
 $(document).ready(function(){
+	var exam_prefer = '';
+	$(".exam").click(function(){
+		exam_prefer += $(this).attr('data-item');
+		exam_prefer = exam_prefer + ",";
+	});	
+	
+	var exams_prepair = '';
+	$(".exams_prepair").click(function(){
+		exams_prepair += $(this).attr('data-item');
+		exams_prepair = exams_prepair + ",";
+	});
+	
+		
 	$(".btn-success").click(function(){
-					var item = [];
-					$( ".es-selected" ).(function() {
-						var hhhh = $( "li.es-selected").val();
-    					var selimg = $('li.es-selected .exams_prepair').val();
-    					item.push(selimg);
-						alert(hhhh);						
-  					});
-					
-					
-					}); 	
-					}); 	
+		var exam = '';
+		if(exam_prefer != ''){
+			exam = exam_prefer;
+		}else{
+			exam = exams_prepair;
+		}
+		$(".examdata").val(exam);
+	}); 	
+}); 		
 </script>      
+

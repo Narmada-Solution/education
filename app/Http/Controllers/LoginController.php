@@ -31,9 +31,6 @@ class LoginController extends BaseController
 	}
 	
 	function loginresult(){
-		if(Auth::check()){
-		    return redirect('/login');
-		}
 		$email =  $_POST['email'];
 		$password = $_POST['password'];
 		$userdata = array(
@@ -42,21 +39,9 @@ class LoginController extends BaseController
 		);
 		// attempt to do the login
 		if (Auth::attempt($userdata)) {
-			return view('home');
+			return redirect('home');		
 		} else {        
-			//Session::flash('message', "Invalid Username/Password");
-			//Session::flash('alert-class', 'alert-danger'); 
-			//return redirect('login');
-			return Redirect::back()
-            ->withInput()
-            ->withErrors(
-                [
-                    'password' => 'Wrong Password',
-                ],
-                [
-                    'approve' => 'Account not approved',
-                ],
-            );
+			echo "Error";
 		}
 	}
 	
@@ -66,11 +51,20 @@ class LoginController extends BaseController
 	
 	function registerresult(){
 		extract($_POST);
-		$examdata = substr($examdata,0,-1);
-		$password = Hash::make($password);
-		$data=array('name'=>$name,'password'=>$password,"email"=>$email,"phone"=>$phone,"exam"=>$examdata,"photo"=>"","token"=>$_token);
-		DB::table('users')->insert($data);
-		return redirect('register');		
+		if(isset($_POST['status']) && $_POST['status'] == 'exam'){
+			$status = DB::select('SELECT * FROM `users` order by id DESC LIMIT 1');
+			$id = $status[0]->id;
+			$data=array('exam'=>$exam);
+			$password = $_POST['new_password'];
+			DB::update('update users set exam = ? where id = ?',[$exam,$id]);
+			echo "You are Register Successfully. Please login now";
+		}
+		else{
+			$password = Hash::make($password);
+			$data=array('name'=>$name,'password'=>$password,"email"=>$email,"phone"=>0,"exam"=>0,"photo"=>0,"token"=>$_token);
+			DB::table('users')->insert($data);	
+		}
+		
 	}
 	
 	function home(){

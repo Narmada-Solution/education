@@ -1,11 +1,8 @@
-<?php 
-$id = Auth::user()->id;
-if($id != ''){
-	$client_id = '907492391618-sisr29fpepr75outbfu24run4hb74evr.apps.googleusercontent.com';
+<?php
+$client_id = '907492391618-sisr29fpepr75outbfu24run4hb74evr.apps.googleusercontent.com';
 define('CLIENT_SECRET', 'BenQi81CeG3OTcKus2sKL6SM');
 $url = 'http://easydatasearch.com/easydata2/education/public/home';
 $login_url = 'https://accounts.google.com/o/oauth2/v2/auth?scope=' . urlencode('https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email') . '&redirect_uri=' . urlencode($url) . '&response_type=code&client_id=' . $client_id . '&access_type=online'; 
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +14,7 @@ $login_url = 'https://accounts.google.com/o/oauth2/v2/auth?scope=' . urlencode('
       <meta name="apple-mobile-web-app-title" content="Education" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="#45b97c" />
+      <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -646,9 +644,9 @@ $login_url = 'https://accounts.google.com/o/oauth2/v2/auth?scope=' . urlencode('
                      </div>
                   </div>
                   <p class="bg-green br2 white tc bn ma0 pointer tracked-sm outline-0 b--solid flex items-center auth-btn">
-                  	<a rel="noopener noreferrer" data-toggle="modal" data-target="#myModal" class="auth__login js-show-login link white no-hover-color f5">Login</a>
-                  	<span class="mr1 ml1 white">/</span>
-                  	<a rel="noopener noreferrer" class="auth__register js-show-register link white no-hover-color f5">Register</a>
+                  	<a rel="noopener noreferrer" data-toggle="modal" data-target="#myModal" class="auth__login js-show-login link white no-hover-color f5">Login / Register</a>
+                  	<!-- <span class="mr1 ml1 white">/</span>
+                  	<a rel="noopener noreferrer" class="auth__register js-show-register link white no-hover-color f5">Register</a> -->
                   </p>
                </div>
             </div>
@@ -656,14 +654,18 @@ $login_url = 'https://accounts.google.com/o/oauth2/v2/auth?scope=' . urlencode('
          <div class="header-spacer header-spacer--no-alert" style="height:63px"></div>
          <div class="flex flex-column">
             <section class="flex flex-grow-1 justify-around ehlr ph3 pv3 flex-column flex-row-l relative">
-               <img class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover overflow-hidden" src="https://gs-post-images.grdp.co/2018/10/newbanner-img1540633596867-70.png-rs-high-webp.png" data-src="" alt="bg-banner-top-image" />
                <div class="fixed-width-container flex flex-row-l flex-column z-1">
-                  <div class="flex flex-column w-60-l w-100">
-                     <h1 class="white mb0 mt0">Prep Smart. Score Better.</h1>
-                     <h2 class="white mt0">Welcome to India&#x27;s largest exam preparation destination.</h2>
+                  <div class="flex flex-column w-60-l w-100" style="padding-top:90px">
+                     <h1 class="white mb0 mt0">Why Exams21 ?</h1>
+                     <br>
+                     <h3 class="white mt0"><li>Latest and most relevant study material</li></h3>
+                     <h3 class="white mt0"><li>Test series based on latest exam pattern</li></h3>
+                     <h3 class="white mt0"><li>Personalized training for students of all levels</li></h3>
+                     <h3 class="white mt0"><li>Timely notification of exams, admit cards & results etc.</li></h3>
+                     <h3 class="white mt0"><li>Detailed analysis of Test results to find key focus areas</li></h3>
                   </div>
                   <div class="flex w-40-l w-100">
-                     <div class="auth__body flex-column auth__body--login br2 bg-white w-100 dn">
+                     <div class="auth__body loginform flex-column auth__body--login br2 bg-white w-100 dn">
                         <section class="flex flex-shrink-0">
                            <header class="auth__header js-auth-login flex-grow-1 flex items-center justify-between">
                               <div class="flex flex-column">
@@ -683,7 +685,8 @@ $login_url = 'https://accounts.google.com/o/oauth2/v2/auth?scope=' . urlencode('
                         </section>
                         <p class="tc mt1 mb3">OR</p>
                         <section class="flex flex-column">
-                           <form id="loginForm">
+                           <form id="loginForm" method="post" action="{{ url('/') . '/loginresult' }}">
+                           @csrf
                               <div class="auth__form-group mb4 relative"><input type="email" required="" autoComplete="email" class="auth__field outline-0 f6 db w-100 pa2 ba b--black-10" name="email" value="" /><label class="green f5 b ph1 ph0-l">Email</label></div>
                               <div class="auth__form-group mb2 relative"><input type="password" required="" autoComplete="current-password" class="auth__field outline-0 f6 db w-100 pa2 ba b--black-10" name="password" value="" /><label class="green f5 b ph1 ph0-l">Password</label></div>
                               <input type="hidden" name="deviceType" value="web" />
@@ -693,7 +696,7 @@ $login_url = 'https://accounts.google.com/o/oauth2/v2/auth?scope=' . urlencode('
                            </form>
                         </section>
                      </div>
-                     <div class="auth__body flex-column auth__body--login br2 bg-white w-100 flex">
+                     <div class="auth__body registerform flex-column auth__body--login br2 bg-white w-100 flex">
                         <section class="flex flex-shrink-0">
                            <header class="auth__header js-auth-register flex-grow-1 flex items-center justify-between">
                               <div class="flex flex-column">
@@ -948,7 +951,7 @@ $login_url = 'https://accounts.google.com/o/oauth2/v2/auth?scope=' . urlencode('
             <nav class="flex mh4-l mh0 justify-between flex-wrap">
                <section class="flex items-center flex-wrap justify-center justify-start-l mv1 self-center"><a target="_blank" class="no-underline white f6 mh3 no-hover-color fw4" rel="nofollow" href="/about-us">About Us</a><a target="_blank" class="no-underline white f6 mh3 no-hover-color fw4" rel="nofollow" href="/contact-us">Contact Us</a><a target="_blank" class="no-underline white f6 mh3 no-hover-color fw4" rel="nofollow" href="/faqs">FAQs</a><a class="no-underline white f6 mh3 no-hover-color fw4" rel="nofollow" href="/terms-and-condition">Terms and Conditions</a><a target="_blank" class="no-underline white f6 mh3 no-hover-color fw4" rel="nofollow" href="/privacy-policy">Privacy Policy</a><a target="_blank" rel="noopener noreferrer" class="no-underline white f6 mh3 no-hover-color fw4" href="https://gradeup.co/sitemap_index.xml">Sitemap</a></section>
                <section class="flex flex-row items-center w-100 w-auto-l flex-grow-1 justify-center justify-end-l self-center mv1 ml3-l ml0">
-                  <p class="ma0 white f5">gradeup © 2019</p>
+                  <p class="ma0 white f5">Education © 2019</p>
                </section>
             </nav>
          </footer>
@@ -1344,16 +1347,18 @@ $(document).ready(function(){
     $(".test-series").mouseenter(function(){
     	$('.ts-ul').show();
     	$('.ts-ul li').show();
-		$('.ts-ul li').css('background-color','white');
+		$(".ts-ul li").css({"background-color": "white", "cursor": "pointer"});
     });
     $(".test-series").mouseleave(function(){
    		$('.ts-ul').hide();
    		$('.ts-ul li').hide();
+   		
    	});	
     $(".classroom").mouseenter(function(){
     	$('.cr-ul').show();
     	$('.cr-ul li').show();
     	$('.cr-ul li').css('background-color','white');
+    	$(".cr-ul li").css({"background-color": "white", "cursor": "pointer"});
     });	
     $(".classroom").mouseleave(function(){
    		$('.cr-ul').hide();
@@ -1362,7 +1367,10 @@ $(document).ready(function(){
    $(".free-videos").mouseenter(function(){
     	$('.fv-ul').show();
     	$('.fv-ul li').show();
-    	$('.fv-ul li').css('background-color','white');
+    	
+    	$(".fv-ul li").css({"background-color": "white", "cursor": "pointer"});
+    	
+    	
     });
     
     $(".free-videos").mouseleave(function(){
@@ -1373,7 +1381,8 @@ $(document).ready(function(){
     $(".quizzes").mouseenter(function(){
     	$('.qz-ul').show();
     	$('.qz-ul li').show();
-    	$('.qz-ul li').css('background-color','white');
+
+    	$(".qz-ul li").css({"background-color": "white", "cursor": "pointer"});
     });	
     
     $(".quizzes").mouseleave(function(){
@@ -1384,7 +1393,8 @@ $(document).ready(function(){
     $(".prev-papers").mouseenter(function(){
     	$('.pp-ul').show();
     	$('.pp-ul li').show();
-    	$('.pp-ul li').css('background-color','white');
+    	
+    	$(".pp-ul li").css({"background-color": "white", "cursor": "pointer"});
     });	
     $(".prev-papers").mouseleave(function(){
    		$('.pp-ul').hide();
@@ -1392,338 +1402,84 @@ $(document).ready(function(){
    	});
 });
 </script>
-<?php }else{ ?>
-	
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=yes" />
-<meta property="fb:pages" content="658783224252671,1499553353670220" />
-<meta name="theme-color" content="#45b97c" />
-<meta name="apple-mobile-web-app-title" content="Gradeup" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="#45b97c" />
-<link rel="preconnect" href="https://gradeup-assets.grdp.co/website/" /><link rel="preconnect" href="https://gs-users-images.grdp.co" />
-<link rel="preconnect" href="https://gs-post-images.grdp.co" /><link rel="preconnect" href="https://mule.gradeup.co" />
-<link rel="preconnect" href="https://cdnjs.cloudflare.com" /><link rel="preconnect" href="https://fonts.gstatic.com" />
-<style>article,aside,footer,header,main,nav,section{display:block}input{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0;overflow:visible}.border-box,a,article,aside,body,div,footer,form,header,html,li,main,nav,p,section,ul{box-sizing:border-box}.bt{border-top-style:solid;border-top-width:1px}.b--very-light-gray{border-color:#d8d8d8}.flex-row{flex-direction:row}.fw2{font-weight:200}.fw4{font-weight:400}.fw5{font-weight:500}.fw6{font-weight:600}.h1{height:1rem}.h2{height:2rem}.h-25{height:25%}.h-50{height:50%}.w2{width:2rem}.w3{width:4rem}.w4{width:8rem}.w5{width:16rem}.w-40{width:40%}.w-50{width:50%}.dark-gray{color:#333}.bg-themed-blue-light{background-color:#101f38}.pv2{padding-top:.5rem;padding-bottom:.5rem}.ml0{margin-left:0}.mr3{margin-right:1rem}.mv1{margin-top:.25rem;margin-bottom:.25rem}.mh0{margin-left:0;margin-right:0}.ma-auto{margin:auto}.z-3{z-index:3}.white-space-pre-wrap{white-space:pre-wrap}.svg-f-silver{fill:#999}.fwc-2{width:100%;max-width:980px;margin-left:auto;margin-right:auto}.header-menu-item .dd-menu .dd-menu-items ul.dd-items-center li>*,.home-post-types .dd-menu .dd-menu-items ul.dd-items-center li>*{text-align:left;font-family:Nunito Sans;font-weight:400}.home-post-types .dd-menu-items .dd-items-center{background-color:#fff;box-shadow:none;border:1px solid rgba(0,0,0,.05)}.home-post-types .dd-menu-items .dd-items-center li a{color:#666!important}.home-post-types .dd-menu-items .dd-items-center li{margin-bottom:0!important}.home-post-types .dd-menu-items .dd-items-center li>*{display:flex!important;margin:0!important}.main-header__user{display:none}.shimmer{background:#eee;-webkit-filter:blur(2px);filter:blur(2px)}main{flex-basis:100%;max-width:100%;margin:0}aside{display:none}@media screen and (min-width:60em){.dn-l{display:none}.db-l{display:block}.flex-l{display:flex}.flex-auto-l{flex:1 1 auto;min-width:0;min-height:0}.justify-start-l{justify-content:flex-start}.justify-end-l{justify-content:flex-end}.w-auto-l{width:auto}.ph0-l{padding-left:0;padding-right:0}.ml3-l{margin-left:1rem}.mh4-l{margin-left:2rem;margin-right:2rem}main{flex-basis:67.62%;max-width:760px;margin:0}.fwc-2 main{max-width:660px}aside{display:flex;flex-direction:column;flex-basis:31%;max-width:350px}.main-header{padding:0;max-height:64px}.main-header__user-pic{width:22px;height:22px;margin-bottom:2px}.main-header>.main-header-item{height:64px}.main-header__all-exam-link,.main-header__user{display:block}.header-menu-item{margin-right:10px}.header-menu-item:last-child{margin-right:0}.header-menu-item.main-header__store{display:block}.header-menu-item .dd-menu-items{max-height:620px}.header-menu-item .dd-menu-items li{margin:0}.header-menu-item .dd-menu-items .dd-items-center{border:1px solid rgba(0,0,0,.05);background-color:#fff}.header-menu-item .dd-menu .dd-menu-items ul.dd-items-center li>*{text-align:left}.header-menu-item .dd-menu .dd-menu-items{margin-top:0}.header-menu-item .dd-menu .dd-menu-items ul li>:not(.dd-item-ignore){padding:.75em 1em}.main-header__search-box{order:0;max-width:300px;flex-grow:1;position:relative}.main-header__search-box svg.search-icon{width:20px;height:20px;left:20px;position:absolute;top:5px;stroke:#999}.main-header__search-box input[type=search]{position:static;-webkit-transform:translateY(0);transform:translateY(0);width:100%;border-radius:20px;border:1px solid #ccc;color:#999;padding:6px 36px 6px 60px}.search-overlay{display:none}.header-spacer.header-spacer--no-alert{max-height:none}#searchBoxForm{width:250px}.header-menu-item .dd-menu.dd-menu-center .dd-menu-items{left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}:root{font-size:16px}}.dd-menu .dd-menu-items.mt0{margin-top:0}.dd-menu.dd-menu-center .dd-menu-items.dd-sub-menu-items{top:0;left:100%;-webkit-transform:translateX(0);transform:translateX(0);margin-top:0}html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent;-webkit-text-decoration-skip:objects}img{border-style:none}svg:not(:root){overflow:hidden}button,input{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0;overflow:visible}button{text-transform:none}[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}a,body,div,form,h1,h2,h3,header,html,input[type=email],input[type=password],input[type=text],li,nav,p,section,ul{box-sizing:border-box}img{max-width:100%}.cover{background-size:cover!important}.outline-0{outline:0}.ba{border-style:solid;border-width:1px}.bb{border-bottom-style:solid;border-bottom-width:1px}.bn{border-style:none;border-width:0}.b--near-white{border-color:#f4f4f4}.b--black-10{border-color:rgba(0,0,0,.1)}.b--green{border-color:#50b167}.br2{border-radius:.25rem}.br-100{border-radius:100%}.b--solid{border-style:solid}.bw2{border-width:.25rem}.top-0{top:0}.right-0{right:0}.left-0{left:0}.dn{display:none}.db{display:block}.flex{display:flex}.flex-column{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.self-center{align-self:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-around{justify-content:space-around}.flex-grow-0{flex-grow:0}.flex-grow-1{flex-grow:1}.flex-shrink-0{flex-shrink:0}.nunito{font-family:nunito sans}.b{font-weight:700}.fw1{font-weight:100}.fw3{font-weight:300}.h2-5{height:3rem}.h3{height:4rem}.h3-5{height:6rem}.h5{height:16rem}.h6{height:27rem}.h-100{height:100%}.lh-solid{line-height:1}.link{text-decoration:none}.list{list-style-type:none}.w2-5{width:3rem}.w6{width:24rem}.w-25{width:25%}.w-31{width:31%}.w-75{width:75%}.w-80{width:80%}.w-100{width:100%}.w-third{width:33.33333%}.overflow-hidden{overflow:hidden}.overflow-auto{overflow:auto}.relative{position:relative}.absolute{position:absolute}.fixed{position:fixed}.o-0{opacity:0}.black{color:#000}.gray{color:#666}.silver{color:#999}.white{color:#fff}.red{color:#ed5b6c}.green{color:#50b167}.bg-white{background-color:#fff}.bg-green{background-color:#50b167}.bg-blue{background-color:#3c5a99}.pa0{padding:0}.pa2{padding:.5rem}.pa3{padding:1rem}.pa4{padding:2rem}.pb1{padding-bottom:.25rem}.pb2{padding-bottom:.5rem}.pb3{padding-bottom:1rem}.pt4{padding-top:2rem}.pv3{padding-top:1rem;padding-bottom:1rem}.ph1{padding-left:.25rem;padding-right:.25rem}.ph2{padding-left:.5rem;padding-right:.5rem}.ph3{padding-left:1rem;padding-right:1rem}.ph5{padding-left:4rem;padding-right:4rem}.ma0{margin:0}.ml1{margin-left:.25rem}.ml2{margin-left:.5rem}.ml4-5{margin-left:3.5rem}.mr1{margin-right:.25rem}.mr2{margin-right:.5rem}.mb0{margin-bottom:0}.mb2{margin-bottom:.5rem}.mb3{margin-bottom:1rem}.mb4{margin-bottom:2rem}.mt0{margin-top:0}.mt1{margin-top:.25rem}.mt3{margin-top:1rem}.mv0{margin-top:0;margin-bottom:0}.mv3{margin-top:1rem;margin-bottom:1rem}.mv4{margin-top:2rem;margin-bottom:2rem}.mh1{margin-left:.25rem;margin-right:.25rem}.mh3{margin-left:1rem;margin-right:1rem}.no-underline{text-decoration:none}.tc{text-align:center}.f3{font-size:1.5rem}.f4{font-size:1.25rem}.f5{font-size:1rem}.f6{font-size:.875rem}.f7{font-size:.75rem}.center{margin-right:auto}.center,.ml-auto{margin-left:auto}.z-0{z-index:0}.z-1{z-index:1}.z-7{z-index:7}.z-10{z-index:10}body{overflow-x:hidden}button{font-family:nunito sans,sans-serif}img{position:relative;overflow:hidden}#searchBoxForm{width:auto}input:-webkit-autofill{-webkit-box-shadow:0 0 0 30px #fff inset}input:disabled,input[disabled]{opacity:.6}.header-menu-item .dd-menu .dd-menu-items ul{min-width:170px}.svg-fn{fill:none}.svg-s-silver{stroke:#999}.tracked-sm{letter-spacing:.05rem}.bg-dlg-gradient{background:linear-gradient(90deg,#1a806c,#50b167)}.fixed-width-container{width:100%;max-width:1130px;margin-left:auto;margin-right:auto}.box-shadow{border:2px solid rgba(0,0,0,.05)}.header-menu-item .dd-menu.dd-menu-center .dd-menu-items{left:0;-webkit-transform:translateX(-60%);transform:translateX(-60%)}.header-menu-item .dd-menu .dd-menu-items ul.dd-items-center li>*{text-align:left;font-family:Nunito Sans;font-weight:400}.header-menu-item .dd-menu .dd-menu-items ul li>:not(.dd-item-ignore){padding:.75em 1.25em}.header-menu-item.main-header__store{display:none}.main-header{border-bottom:1px solid #f4f4f4;background:#fff;padding:0 14px}.header-spacer.header-spacer--no-alert{max-height:49px;min-height:49px}.main-header>.main-header-item{height:48px}.main-header__logo{margin-right:30px}.main-header__all-exam-link{margin:0 30px 0 0;display:none}.main-header__search-box{font-size:.833rem;order:2}.main-header__search-box.searchInputClosed input{position:fixed;border-radius:0;color:#999}.search-overlay{position:fixed;background:rgba(0,0,0,.4);height:100%;z-index:7}.main-header__search-box.searchInputClosed input,.search-overlay{-webkit-transform:translateY(-200%);transform:translateY(-200%);top:0;left:0;width:100%}.header-menu-item{margin-right:20px}.header-menu-item:last-child{margin-right:0}.main-header .auth-btn{display:none}#__next{display:flex;flex-direction:column;min-height:100vh}img:after{content:"";font-size:16px;font-family:FontAwesome;display:block;position:absolute;z-index:2;top:0;left:0;width:100%;height:100%;background-color:#c2c2c2}@font-face{font-family:Poppins;font-style:normal;font-weight:700;font-display:swap;src:local("Poppins Bold"),local("Poppins-Bold"),url(https://fonts.gstatic.com/s/poppins/v5/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2) format("woff2");unicode-range:U+0900-097f,U+1cd0-1cf6,U+1cf8-1cf9,U+200c-200d,U+20a8,U+20b9,U+25cc,U+a830-a839,U+a8e0-a8fb}@font-face{font-family:Poppins;font-style:normal;font-weight:700;font-display:swap;src:local("Poppins Bold"),local("Poppins-Bold"),url(https://fonts.gstatic.com/s/poppins/v5/pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2) format("woff2");unicode-range:U+0100-024f,U+0259,U+1e??,U+2020,U+20a0-20ab,U+20ad-20cf,U+2113,U+2c60-2c7f,U+a720-a7ff}@font-face{font-family:Poppins;font-style:normal;font-weight:700;font-display:swap;src:local("Poppins Bold"),local("Poppins-Bold"),url(https://fonts.gstatic.com/s/poppins/v5/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2) format("woff2");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}@font-face{font-family:Nunito Sans;font-style:italic;font-weight:300;font-display:swap;src:local("Nunito Sans Light Italic"),local("NunitoSans-LightItalic"),url(https://fonts.gstatic.com/s/nunitosans/v3/pe01MImSLYBIv1o4X1M8cce4G3JoY1wIUrt9w6fk2A.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+1ea0-1ef9,U+20ab}@font-face{font-family:Nunito Sans;font-style:italic;font-weight:300;font-display:swap;src:local("Nunito Sans Light Italic"),local("NunitoSans-LightItalic"),url(https://fonts.gstatic.com/s/nunitosans/v3/pe01MImSLYBIv1o4X1M8cce4G3JoY10IUrt9w6fk2A.woff2) format("woff2");unicode-range:U+0100-024f,U+0259,U+1e??,U+2020,U+20a0-20ab,U+20ad-20cf,U+2113,U+2c60-2c7f,U+a720-a7ff}@font-face{font-family:Nunito Sans;font-style:italic;font-weight:300;font-display:swap;src:local("Nunito Sans Light Italic"),local("NunitoSans-LightItalic"),url(https://fonts.gstatic.com/s/nunitosans/v3/pe01MImSLYBIv1o4X1M8cce4G3JoY1MIUrt9w6c.woff2) format("woff2");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}@font-face{font-family:Nunito Sans;font-style:normal;font-weight:400;font-display:swap;src:local("Nunito Sans Regular"),local("NunitoSans-Regular"),url(https://fonts.gstatic.com/s/nunitosans/v3/pe0qMImSLYBIv1o4X1M8cceyI9tAcVwob5A.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+1ea0-1ef9,U+20ab}@font-face{font-family:Nunito Sans;font-style:normal;font-weight:400;font-display:swap;src:local("Nunito Sans Regular"),local("NunitoSans-Regular"),url(https://fonts.gstatic.com/s/nunitosans/v3/pe0qMImSLYBIv1o4X1M8ccezI9tAcVwob5A.woff2) format("woff2");unicode-range:U+0100-024f,U+0259,U+1e??,U+2020,U+20a0-20ab,U+20ad-20cf,U+2113,U+2c60-2c7f,U+a720-a7ff}@font-face{font-family:Nunito Sans;font-style:normal;font-weight:400;font-display:swap;src:local("Nunito Sans Regular"),local("NunitoSans-Regular"),url(https://fonts.gstatic.com/s/nunitosans/v3/pe0qMImSLYBIv1o4X1M8cce9I9tAcVwo.woff2) format("woff2");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}@font-face{font-family:Nunito Sans;font-style:normal;font-weight:600;font-display:swap;src:local("Nunito Sans SemiBold"),local("NunitoSans-SemiBold"),url(https://fonts.gstatic.com/s/nunitosans/v3/pe03MImSLYBIv1o4X1M8cc9iB85iU1ECVZl_86Y.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+1ea0-1ef9,U+20ab}@font-face{font-family:Nunito Sans;font-style:normal;font-weight:600;font-display:swap;src:local("Nunito Sans SemiBold"),local("NunitoSans-SemiBold"),url(https://fonts.gstatic.com/s/nunitosans/v3/pe03MImSLYBIv1o4X1M8cc9iB85jU1ECVZl_86Y.woff2) format("woff2");unicode-range:U+0100-024f,U+0259,U+1e??,U+2020,U+20a0-20ab,U+20ad-20cf,U+2113,U+2c60-2c7f,U+a720-a7ff}@font-face{font-family:Nunito Sans;font-style:normal;font-weight:600;font-display:swap;src:local("Nunito Sans SemiBold"),local("NunitoSans-SemiBold"),url(https://fonts.gstatic.com/s/nunitosans/v3/pe03MImSLYBIv1o4X1M8cc9iB85tU1ECVZl_.woff2) format("woff2");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}@font-face{font-family:Nunito Sans;font-style:normal;font-weight:700;font-display:swap;src:local("Nunito Sans Bold"),local("NunitoSans-Bold"),url(https://fonts.gstatic.com/s/nunitosans/v3/pe03MImSLYBIv1o4X1M8cc8GBs5iU1ECVZl_86Y.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+1ea0-1ef9,U+20ab}@font-face{font-family:Nunito Sans;font-style:normal;font-weight:700;font-display:swap;src:local("Nunito Sans Bold"),local("NunitoSans-Bold"),url(https://fonts.gstatic.com/s/nunitosans/v3/pe03MImSLYBIv1o4X1M8cc8GBs5jU1ECVZl_86Y.woff2) format("woff2");unicode-range:U+0100-024f,U+0259,U+1e??,U+2020,U+20a0-20ab,U+20ad-20cf,U+2113,U+2c60-2c7f,U+a720-a7ff}@font-face{font-family:Nunito Sans;font-style:normal;font-weight:700;font-display:swap;src:local("Nunito Sans Bold"),local("NunitoSans-Bold"),url(https://fonts.gstatic.com/s/nunitosans/v3/pe03MImSLYBIv1o4X1M8cc8GBs5tU1ECVZl_.woff2) format("woff2");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}:root{font-size:14px}*,body,html{line-height:1.4}body{font-family:Nunito Sans,Poppins,sans-serif;font-size:1rem;color:#0b182f}h1{font-family:Poppins;font-size:1.8rem}h1,h2{font-weight:700;color:#0b182f}h2{font-size:1.5rem;margin-top:1.667em}h3{font-size:1.333rem;color:#0b182f;margin-bottom:.5em}.head,h3{font-weight:700}.head{font-family:Poppins;font-size:1.5rem}::-webkit-input-placeholder{font-size:.833rem;color:#999}::-moz-placeholder{font-size:.833rem;color:#999}:-ms-input-placeholder{font-size:.833rem;color:#999}:-moz-placeholder{font-size:.833rem;color:#999}a{color:#0072d6;font-weight:600}p{font-size:1.2rem;line-height:1.6;margin:1rem 0}li{margin-bottom:.5rem}@media screen and (min-width:60em){.du-l{display:unset}.dn-l{display:none}.db-l{display:block}.flex-l{display:flex}.flex-auto-l{flex:1 1 auto;min-width:0;min-height:0}.flex-row-l{flex-direction:row}.w-10-l{width:10%}.w-24-l{width:24%}.w-40-l{width:40%}.w-60-l{width:60%}.w-93-l{width:93%}.pa5-l{padding:4rem}.ph0-l{padding-left:0;padding-right:0}.ph5-l{padding-left:4rem;padding-right:4rem}.ml5-l{margin-left:4rem}.mv4-l{margin-top:2rem;margin-bottom:2rem}.main-header{padding:0;max-height:64px}.main-header .auth-btn{display:flex;padding:7.5px 10px}.main-header>.main-header-item{height:64px}.main-header__all-exam-link{display:block}.main-header__all-exams__menu{z-index:8;padding-top:20px;top:43px}.header-menu-item{margin-right:10px}.header-menu-item:last-child{margin-right:0}.header-menu-item.main-header__store{display:block}.header-menu-item .dd-menu-items{max-height:620px}.header-menu-item .dd-menu-items li{margin:0}.header-menu-item .dd-menu-items .dd-items-center{border:1px solid rgba(0,0,0,.05);background-color:#fff}.header-menu-item .dd-menu .dd-menu-items ul.dd-items-center li>*{text-align:left}.header-menu-item .dd-menu .dd-menu-items{margin-top:0}.header-menu-item .dd-menu .dd-menu-items ul li>:not(.dd-item-ignore){padding:.75em 1em}.all-exams-options .all-exams-option a.link{padding:13px 30px}.all-exam-sections .section a.list-anchor,.all-exam-sections .section p.section-p{padding:5px 30px}.all-exam-sections .section{background:#f4f4f4}.all-exam-sections .section:nth-child(2n),.all-exams-options .all-exams-option.active{background:#ededed}.main-header__search-box{order:0;max-width:300px;flex-grow:1;position:relative}.main-header__search-box svg.search-icon{width:20px;height:20px;left:20px;position:absolute;top:5px;stroke:#999}.main-header__search-box input[type=search]{position:static;-webkit-transform:translateY(0);transform:translateY(0);width:100%;border-radius:20px;border:1px solid #ccc;color:#999;padding:6px 36px 6px 60px}.search-overlay{display:none}.header-spacer.header-spacer--no-alert{max-height:none}#searchBoxForm{width:250px}.header-menu-item .dd-menu.dd-menu-center .dd-menu-items{left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}:root{font-size:16px}}.auth__body{padding:20px 14px}.auth__social>*{flex-basis:49%;display:flex;justify-content:center}.auth__field{border:none;border-bottom:1px solid #d8d8d8;padding:5px 2.5px}.auth__form-group label{position:absolute;left:0;top:8px;line-height:1}input.auth__field~label{-webkit-transform:translateY(-25px) scale3d(.9,.9,1);transform:translateY(-25px) scale3d(.9,.9,1)}input.auth__field[value=""]:not(:focus)~label{-webkit-transform:translate(0) scaleX(1);transform:translate(0) scaleX(1);color:rgba(0,0,0,.7);font-weight:400}.auth__button{padding:10px 5px}.auth__facebook:before{content:"";background:url(https://gs-post-images.grdp.co/2018/9/facebook_64px-img1536216724256-51.png-rs-high-webp.png) no-repeat;position:absolute;left:5%;height:40px;width:30px;background-size:30px 30px;bottom:0}.auth__google:before{content:"";background:url(https://gs-post-images.grdp.co/2018/9/google_64px-img1536216689631-26.png-rs-high-webp.png) no-repeat;position:absolute;left:10%;height:35px;width:35px;background-size:35px 35px}@media screen and (min-width:60em){.auth__body{padding:20px 35px}}.dd-menu{display:inline-block;position:relative}.dd-menu.dd-menu-center .dd-menu-items{left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.dd-menu .dd-menu-items{position:absolute;z-index:7;margin:.5em 0 0}.dd-menu .dd-menu-items ul{list-style:none;padding:0;margin:0;color:#000;background-color:#fefefe;box-shadow:0 0 4px rgba(0,0,0,.15),0 2px 4px rgba(0,0,0,.29)}.dd-menu .dd-menu-items ul.dd-items-center li>*{text-align:center}.dd-menu .dd-menu-items ul li>:not(.dd-item-ignore){display:flex;width:auto;min-width:100%;padding:1em 1.5em;font-family:Roboto,sans-serif;white-space:pre;color:inherit;text-decoration:none;font-size:inherit}.dd-menu-items ul.dd-items--inactive{opacity:0;visibility:hidden}
-</style>
-<link rel="shortcut icon" href="https://gs-post-images.grdp.co/2018/11/rocketfavicon-img1542202190449-91.png-rs-high-webp.png" type="image/x-icon" />
-<link rel="manifest" href="/manifest.web.json" />
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","name":"Gradeup","url":"https://gradeup.co/"}</script>
-<script>
-window.addEventListener('beforeinstallprompt', function(e){
-// Prevent Chrome 67 and earlier from automatically showing the prompt
-e.preventDefault();
-});
-</script>
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" class="next-head" />
-<meta charSet="utf-8" class="next-head" />
-<link rel="preload" as="style" href="https://gradeup-assets.grdp.co/website/_next/static/chunks/styles.9ac674eb.chunk.css?id=aMc2Im49SDQykw-c8Hipy" class="next-head" />
-<meta name="description" content="Gradeup (Gradestack) - Exam preparation for GATE, JEE, NEET, BANK, SSC/Govt jobs, CTET. Get daily GK updates, notifications, previous years&#x27; papers &amp; free mock tests." class="next-head" />
-<meta property="og:title" content="Gradeup: India&#x27;s Largest Exam Prep Site for BANK, SSC, GATE, JEE, NEET" class="next-head" />
-<meta property="og:description" content="Gradeup (Gradestack) - Exam preparation for GATE, JEE, NEET, BANK, SSC/Govt jobs, CTET. Get daily GK updates, notifications, previous years&#x27; papers &amp; free mock tests." class="next-head" />
-<meta property="og:image" content="" class="next-head" />
-<meta property="twitter:card" content="summary_large_image" class="next-head" />
-<meta property="twitter:site" content="@gradeupapp" class="next-head" />
-<meta property="twitter:title" content="Gradeup: India&#x27;s Largest Exam Prep Site for BANK, SSC, GATE, JEE, NEET" class="next-head" />
-<meta property="twitter:description" content="Gradeup (Gradestack) - Exam preparation for GATE, JEE, NEET, BANK, SSC/Govt jobs, CTET. Get daily GK updates, notifications, previous years&#x27; papers &amp; free mock tests." class="next-head" />
-<meta property="twitter:image:src" content="" class="next-head" />
-<meta name="ROBOTS" content="INDEX, FOLLOW" class="next-head" />
-<title class="next-head">Gradeup: India&#x27;s Largest Exam Prep Site for BANK, SSC, GATE, JEE, NEET</title><link rel="canonical" href="https://gradeup.co" class="next-head" />
-<script type="application/ld+json" class="next-head">{"@graph":[{"@context":"http://schema.org","@type":"WebSite","url":"https://gradeup.co/","potentialAction":{"@type":"SearchAction","target":"https://gradeup.co/search?search={search_term}","query-input":"required name=search_term"}}]}</script><script type="application/ld+json" class="next-head">{"@context":"http://schema.org","@type":"Corporation","name":"Gradeup ","url":"https://gradeup.co","logo":"https://gs-post-images.grdp.co/2017/8/gradeup-logo-img1503378653366-55-rs-low-webp.jpg","description":"Study Smart, Score Better! Join India's largest online learning community","telephone":"+919650053463","address":{"@type":"PostalAddress","addressCountry":"IN","addressLocality":"Sector 125,\tNoida","addressRegion":"Uttar Pradesh","postalCode":"201313","streetAddress":"Windsor IT Park, Tower - A, 2nd Floor, Sector 125"}}</script>
-<script type="application/ld+json" class="next-head">{"@context":"http://schema.org","@type":"Organization","location":{"@type":"Place","address":"Windsor IT Park, Tower - A, 2nd Floor, Sector 125, Noida, Uttar Pradesh 201303"},"description":"Gradeup (Gradestack) - For IBPS, SSC/Gov jobs, CAT, Engineering, GATE exam preparation! Get daily dose of GK updates, current affairs & free mock test.","name":"Gradeup","email":"contact@gradeup.co","logo":{"@type":"ImageObject","url":"https://gs-post-images.grdp.co/2017/8/gradeup-logo-img1503378653366-55-rs-low-webp.jpg","width":"320","height":"181"},"url":"https://gradeup.co/","sameAs":["https://www.facebook.com/gradeup.learn/","https://twitter.com/gradeupapp","https://www.linkedin.com/company/gradeup-gradestack-learning-pvt-ltd-","https://plus.google.com/b/108065238358839044098/108065238358839044098","https://www.youtube.com/channel/UClyn4xufkVCSryKLc7-6c5Q","https://play.google.com/store/apps/developer?id=gradeup"],"founder":["Vibhu Bhushan","Sanjeev Kumar","Shobhit Bhatnagar"]}</script>
-<link rel="preload" href="https://gradeup-assets.grdp.co/website/_next/static/aMc2Im49SDQykw-c8Hipy/pages/home.js" as="script" crossorigin="anonymous" />
-<link rel="preload" href="https://gradeup-assets.grdp.co/website/_next/static/aMc2Im49SDQykw-c8Hipy/pages/_app.js" as="script" crossorigin="anonymous" />
-<link rel="preload" href="https://gradeup-assets.grdp.co/website/_next/static/chunks/commons.b7bb537347ffa3efa2ca.js" as="script" crossorigin="anonymous" />
-<link rel="preload" href="https://gradeup-assets.grdp.co/website/_next/static/chunks/chunk-auth.cbe2701cb0c192a24933.js" as="script" crossorigin="anonymous" />
-<link rel="preload" href="https://gradeup-assets.grdp.co/website/_next/static/chunks/commons.b7bb537347ffa3efa2ca.js" as="script" crossorigin="anonymous" />
-<link rel="preload" href="https://gradeup-assets.grdp.co/website/_next/static/chunks/chunk-mobile-bottom-drawer.6143cbf30560cebebfac.js" as="script" crossorigin="anonymous" />
-<link rel="preload" href="https://gradeup-assets.grdp.co/website/_next/static/chunks/commons.b7bb537347ffa3efa2ca.js" as="script" crossorigin="anonymous" />
-<link rel="preload" href="https://gradeup-assets.grdp.co/website/_next/static/chunks/chunk-header-entity.aba64a87af351f53236a.js" as="script" crossorigin="anonymous" />
-<link rel="preload" href="https://gradeup-assets.grdp.co/website/_next/static/runtime/webpack-1b592059327519b38dda.js" as="script" crossorigin="anonymous" />
-<link rel="preload" href="https://gradeup-assets.grdp.co/website/_next/static/chunks/commons.b7bb537347ffa3efa2ca.js" as="script" crossorigin="anonymous" />
-<link rel="preload" href="https://gradeup-assets.grdp.co/website/_next/static/chunks/styles.543be2f0b9841652d67e.js" as="script" crossorigin="anonymous" />
-<link rel="preload" href="https://gradeup-assets.grdp.co/website/_next/static/runtime/main-82fc5e36d5ad3edb86b0.js" as="script" crossorigin="anonymous" />
-</head>
-<body>
-<div id="__next">
-<header class="flex flex-column main-nav fixed top-0 left-0 w-100 z-10 transition-all">
-<div class="main-header">
-<div class="flex fixed-width-container items-center main-header-item">
-<div class="main-header__logo flex">
-<a class="main-header__logo-link flex" href="/">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="31px" class="db" viewBox="0 0 383 105">
-<path d="M47.7 35L47.7 29.4 61 29.4 61 75.9C61 92.1 50.5 102 33.9 102 25.9 102 17.5 99.9 11.9 95.9L16.8 84.8C21.8 88.1 27.4 90 33.4 90 41.8 90 47.7 85.3 47.7 76.6L47.7 73C44.3 77.2 39.1 79.8 32.2 79.8 19.9 79.8 9 69.5 9 53.9 9 38.3 19.9 28 32.2 28 39 28 44.2 30.7 47.7 35ZM22.8 53.9C22.8 61.2 27.8 67.3 35.4 67.3 43 67.3 48.1 61.5 48.1 53.9 48.1 46.3 43 40.6 35.4 40.6 27.7 40.6 22.8 46.5 22.8 53.9Z" style="fill:#0C192F"></path>
-<path d="M103 29.1L101 42.6C98.8 41.6 95.4 41 92.6 41 86.2 41 81.8 44.9 81.8 52.4L81.8 80 68 80 68 29.4 81.4 29.4 81.4 34.9C84.6 30.1 89.4 28 95.8 28 98.8 28 101.1 28.5 103 29.1Z" style="fill:#0C192F"></path>
-<path d="M154 79.7L140.7 79.7 140.7 74.1C137.4 78.2 132.5 81 125.5 81 111.6 81 101 69.6 101 54.5 101 39.4 111.6 28 125.5 28 132.5 28 137.4 30.8 140.7 34.9L140.7 29.3 154 29.3 154 79.7ZM114.9 54.5C114.9 62.2 120 68.3 128.1 68.3 135.9 68.3 141.2 62.4 141.2 54.5 141.2 46.5 135.9 40.7 128.1 40.7 120 40.6 114.9 46.7 114.9 54.5Z" style="fill:#0C192F"></path>
-<path d="M198.4 35.1L198.4 5 212 5 212 80.7 198.7 80.7 198.7 75.1C195.4 79.2 190.5 82 183.5 82 169.6 82 159 70.5 159 55.2 159 39.9 169.6 28.5 183.5 28.5 190.3 28.4 195.1 31.1 198.4 35.1ZM172.9 55.2C172.9 63 178 69.2 186.1 69.2 193.9 69.2 199.2 63.2 199.2 55.2 199.2 47.2 193.9 41.2 186.1 41.2 177.9 41.1 172.9 47.4 172.9 55.2Z" style="fill:#0C192F"></path>
-<path d="M268 54.5C268 56 267.9 57.8 267.7 59L232 59C233.5 66.3 238.6 69.5 244.9 69.5 249.3 69.5 254 67.7 257.7 64.6L265.6 73.3C259.9 78.6 252.6 81 244.1 81 228.7 81 218 70.5 218 54.6 218 38.8 228.3 28 243.4 28 258.1 28 267.9 38.7 268 54.5ZM232.1 49.8L254.4 49.8C253.1 43.3 249.2 39.7 243.4 39.7 237.1 39.7 233.3 43.6 232.1 49.8Z" style="fill:#0C192F">
-</path>
-<path d="M322 59.1C322 75.1 310.7 82 298.1 82 285.3 82 274 75.1 274 59.1L274 30 287.6 30 287.6 57.9C287.6 66 292 69.3 297.9 69.3 303.9 69.3 308.3 66 308.3 57.9L308.3 30 321.9 30 321.9 59.1 322 59.1Z" style="fill:#0C192F"></path><path d="M381 54.7C381 69.9 370.4 81.3 356.5 81.3 349.7 81.3 344.9 78.6 341.6 74.7L341.6 101 328 101 328 29.3 341.3 29.3 341.3 34.9C344.6 30.8 349.4 28 356.4 28 370.5 27.9 381 39.4 381 54.7ZM340.9 54.7C340.9 62.7 346.2 68.6 353.9 68.6 361.9 68.6 367 62.4 367 54.7 367 47 362 40.7 353.9 40.7 346.2 40.6 340.9 46.7 340.9 54.7Z" style="fill:#0C192F">
-</path>
-</svg>
-</a>
-</div>
-<div class="main-header__all-exam-link"></div>
-<div class="db dn-l ml-auto mr1 menu-click-cont">
-<svg class="db svg-fn svg-s-silver" viewBox="0 0 30 30" style="width:32;height:32"></svg>
-</div>
-<div class="mr2 db dn-l menu-click-cont">
-<svg class="db svg-fn svg-s-silver" viewBox="0 0 30 30" style="width:32;height:32"></svg>
-</div>
-<div class="main-header__search-box searchInputClosed">
-<form id="searchBoxForm" action="/search" method="GET">
-<input type="search" required="" id="search" name="search" placeholder="Search here..." class="outline-0 nunito" value="" />
-</form>
-<div class="search-overlay"></div>
-<label for="search" class="flex flex-column items-center align-icon mt1">
-<svg class="db svg-s-silver search-icon" viewBox="0 0 48 48" style="width:22;height:22"></svg>
-</label>
-</div>
-<div class="dn flex-l flex-auto-l"></div>
-<div class="db-l dn header-menu-item main-header__store relative h-100 ml2">
-<div class="header-menu-item main-header__store relative h-100">
-<div class="dd-menu self-center relative dd-menu-center  ">
-<a class="header-menu-item__link h-100 flex flex-column items-center pointer no-underline ph2 ">
-<svg class="db svg-fn svg-s-silver" viewBox="0 0 32 32" style="width:32;height:32"></svg>
-<div class="flex header_item_label">
-<span class="anchor-label gray f7 lh-solid mt1 db-l fw3">Test Series</span>
-<div class="relative">
-<span class="db ml1 gray">▾</span>
-</div>
-</div></a>
-<div class="dd-menu-items z-7">
-<ul class="dd-items-center  dd-items--inactive" style="max-height:0px;border-width:0px"><li>
-<div class="dd-menu self-center relative dd-menu-center w-100 dd-sub-menu-cont bt b--very-light-gray ">
-<a class="flex items-center w-100"><span class="f5 fw4 silver">My Test Series</span>
-<svg class="db svg-f-silver svg-s-silver ml-auto" viewBox="0 0 30 48" style="width:6;height:10"></svg></a>
-<div class="dd-menu-items dd-sub-menu-items "><ul class="dd-items-center  dd-items--inactive" style="max-height:0px;border-width:0px">
-<li class="flex dd-menu-no-hover"><span class="flex pa2 items-center justify-around border-box" style="width:300px">
-<span class="f6 silver w-40 flex-wrap flex ma0 white-space-pre-wrap">Looks like you haven’t purchased any test series</span><img class="flex-shrink-0 w-50" src="https://gs-post-images.grdp.co/2019/8/course-2x-img1565776124498-17.png-rs-high-webp.png" style="height:105px" /></span></li>
-<li class="bt b--very-light-gray"><a class="link relative flex items-center justify-center w-100" style="padding:.75em 1.25em" href="/online-test-series">
-<span class="silver f5 fw2 mr2">View All</span>
-<svg class="db svg-f-silver svg-s-silver" viewBox="0 0 30 48" style="width:6;height:10"></svg>
-</a>
-</li>
-</ul>
-</div>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="db-l dn header-menu-item main-header__practice relative h-100 ">
-<div class="header-menu-item main-header__store relative h-100">
-<div class="dd-menu self-center relative dd-menu-center  ">
-<a class="header-menu-item__link h-100 flex flex-column items-center pointer no-underline ph2 ">
-<svg class="db svg-fn svg-s-silver" viewBox="0 0 45 30" style="width:32;height:32"></svg>
-<div class="flex header_item_label">
-<span class="anchor-label gray f7 lh-solid mt1 db-l fw3">Classroom</span>
-<div class="relative">
-<span class="db ml1 gray">▾</span>
-</div>
-</div>
-</a>
-<div class="dd-menu-items z-7">
-<ul class="dd-items-center  dd-items--inactive" style="max-height:0px;border-width:0px">
-<li>
-<div class="dd-menu self-center relative dd-menu-center w-100 dd-sub-menu-cont bt b--very-light-gray ">
-<a class="flex items-center w-100"><span class="f5 fw4 silver">My Courses</span> 
-<svg class="db svg-f-silver svg-s-silver ml-auto" viewBox="0 0 30 48" style="width:6;height:10"></svg>
-</a>
-<div class="dd-menu-items dd-sub-menu-items ">
-<ul class="dd-items-center  dd-items--inactive" style="max-height:0px;border-width:0px">
-<li class="flex dd-menu-no-hover">
-<span class="flex items-center pa2 justify-around border-box" style="width:300px">
-<span class="f6 silver w-40 flex-wrap flex ma0 white-space-pre-wrap">Looks like you haven’t purchased any course</span>
-<img class="flex-shrink-0 w-50" src="https://gs-post-images.grdp.co/2019/8/course-2x-img1565776124498-17.png-rs-high-webp.png" style="height:105px" />
-</span>
-</li>
-<li class="bt b--very-light-gray">
-<a class="link relative flex items-center w-100 justify-center" style="padding:.75em 1.25em" href="/online-coaching">
-<span class="silver f5 fw2 mr2">View All</span>
-<svg class="db svg-f-silver svg-s-silver" viewBox="0 0 30 48" style="width:6;height:10">
-</svg>
-</a>
-</li>
-</ul>
-</div>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="db-l dn header-menu-item main-header__practice relative h-100 ">
-<div class="header-menu-item main-header__store relative h-100">
-<div class="dd-menu self-center relative dd-menu-center  ">
-<a class="header-menu-item__link h-100 flex flex-column items-center pointer no-underline ph2 ">
-<svg class="db svg-fn svg-s-silver" viewBox="0 0 32 32" style="width:32;height:32"></svg>
-<div class="flex header_item_label">
-<span class="anchor-label gray f7 lh-solid mt1 db-l fw3">Free Videos</span>
-<div class="relative">
-<span class="db ml1 gray">▾</span>
-</div>
-</div>
-</a>
-<div class="dd-menu-items z-7">
-<ul class="dd-items-center  dd-items--inactive" style="max-height:0px;border-width:0px">
-<li><a class="flex items-center w-100" href="/free-video-lectures">
-<span class="f5 fw6 dark-gray">All Exams</span>
-</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="db-l dn header-menu-item main-header__practice relative h-100 ">
-<div class="header-menu-item main-header__store relative h-100">
-<div class="dd-menu self-center relative dd-menu-center  ">
-<a class="header-menu-item__link h-100 flex flex-column items-center pointer no-underline ph2 ">
-<svg class="db svg-fn svg-s-silver" viewBox="0 0 30 30" style="width:32;height:32"></svg>
-<div class="flex header_item_label"><span class="anchor-label gray f7 lh-solid mt1 db-l fw3">Quizzes</span>
-<div class="relative">
-<span class="db ml1 gray">▾</span>
-</div>
-</div>
-</a>
-<div class="dd-menu-items z-7">
-<ul class="dd-items-center  dd-items--inactive" style="max-height:0px;border-width:0px">
-<li></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="db-l dn header-menu-item main-header__practice relative h-100 ">
-<div class="header-menu-item main-header__store relative h-100">
-<div class="dd-menu self-center relative dd-menu-center  ">
-<a class="header-menu-item__link h-100 flex flex-column items-center pointer no-underline ph2 ">
-<svg class="db svg-fn svg-s-silver" viewBox="0 0 30 30" style="width:32;height:32"></svg>
-<div class="flex header_item_label">
-<span class="anchor-label gray f7 lh-solid mt1 db-l fw3">Prev. Papers</span>
-<div class="relative"><span class="db ml1 gray">▾</span>
-</div>
-</div>
-</a>
-<div class="dd-menu-items z-7">
-<ul class="dd-items-center  dd-items--inactive" style="max-height:0px;border-width:0px">
-<li></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="header-menu-item main-header__user relative h-100">
-<div class="dd-menu self-center relative dd-menu-center  ">
-<a rel="noopener noreferrer" class="header-menu-item__link main-header__user__link js-sub-menu-link flex h-100 flex-column items-center pointer no-underline ph2 ">
-<div class="main-header__user-pic ma-auto br-100 overflow-hidden" style="background-image:url(https://lh3.googleusercontent.com/-AEYLoBKHPHY/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcsBUz2vCUGg-i3ZxUXNrLN4eA5NQ/s96-c/photo.jpg);background-repeat:no-repeat;background-position:center center;background-size:cover;background-color:#ededed;height:30px;width:30px;margin-top:5px">
-</div>
-<div class="anchor-label flex header_item_label">
-<span class="gray f7 lh-solid mt1 fw3">Hi, Jignesh</span>
-<div class="relative">
-<span class="db ml1 gray">▾</span>
-</div>
-</div>
-</a>
-<div class="dd-menu-items ">
-<ul class="dd-items-center  dd-items--inactive" style="max-height:0px;border-width:0px">
-<li><a href="/me">My profile</a></li>
-<li><a href="/settings">My Exams</a></li>
-<li><a href="/my-purchases">My Purchases</a></li>
-<li><a href="/payment-history">Payment History</a></li>
-<li><a href="https://gradeup.co/faqs">Help &amp; Feedback</a></li>
-<li><a rel="noopener noreferrer" class="pointer">Logout</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</header>
-<div class="header-spacer header-spacer--no-alert" style="height:63px"></div>
-<div class="fwc-2 flex flex-grow-1 justify-between mt3">
-<main>
-<span class="flex items-center mb3 ba b--black-10 pa3 flex-grow-1">
-<a class="mr3 items-center justify-between" href="/me">
-<img src="https://lh3.googleusercontent.com/-AEYLoBKHPHY/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcsBUz2vCUGg-i3ZxUXNrLN4eA5NQ/s96-c/photo.jpg" alt="Jignesh Desai" class="flex br-100 w3 h3 flex-shrink-0 overflow-hidden relative" /></a>
-<a class="ba b--black-10 pa2 flex-grow-1 silver text pointer">Create a post...</a>
-</span>
-<div class="flex mb3 home-post-types">
-<span class="fw5 gray mr2 ph2 ph0-l">Filter : </span>
-<div class="dd-menu self-center relative dd-menu-center  ">
-<a class="header-menu-item__link flex flex-column items-center pointer  no-underline">
-<span class="lh-solid db-l silver">All Posts ▾</span></a>
-<div class="dd-menu-items mt0">
-<ul class="dd-items-center  dd-items--inactive" style="max-height:0px;border-width:0px">
-<li><a class="lh-solid tc pv2 bw2 pointer link gray" data-feed-tab="all">All Posts</a></li>
-<li><a class="lh-solid tc pv2 bw2 pointer link gray" data-feed-tab="mentor">Mentor Posts</a></li>
-</ul>
-</div>
-</div>
-</div>
-<article class="flex flex-column mb3 ba b--black-10 pa3">
-<div class="flex mb3">
-<div class="w2 h2 br-100 mr2 shimmer"></div>
-<div class="flex flex-column flex-grow-1 justify-center">
-<div class="shimmer w5 h-25"></div>
-<div class="flex h-50 items-center">
-<div class="shimmer w4 h-50 mr3"></div>
-</div>
-</div>
-</div>
-<div class="flex flex-column h5">
-<div class="shimmer w-100 h1 mb2"></div>
-<div class="shimmer w-75 h1 mb3"></div>
-<div class="shimmer w-100 h5 mb3"></div>
-<div class="shimmer w-75 h1 mb2"></div></div>
-</article>
-</main>
-<aside></aside>
-</div>
-<footer class="ph1 pv2 relative z-3 bg-themed-blue-light">
-<nav class="flex mh4-l mh0 justify-between flex-wrap">
-<section class="flex items-center flex-wrap justify-center justify-start-l mv1 self-center">
-<a target="_blank" class="no-underline white f6 mh3 no-hover-color fw4" rel="nofollow" href="/about-us">About Us</a>
-<a target="_blank" class="no-underline white f6 mh3 no-hover-color fw4" rel="nofollow" href="/contact-us">Contact Us</a>
-<a target="_blank" class="no-underline white f6 mh3 no-hover-color fw4" rel="nofollow" href="/faqs">FAQs</a>
-<a class="no-underline white f6 mh3 no-hover-color fw4" rel="nofollow" href="/terms-and-condition">Terms and Conditions</a>
-<a target="_blank" class="no-underline white f6 mh3 no-hover-color fw4" rel="nofollow" href="/privacy-policy">Privacy Policy</a>
-<a target="_blank" rel="noopener noreferrer" class="no-underline white f6 mh3 no-hover-color fw4" href="https://gradeup.co/sitemap_index.xml">Sitemap</a></section><section class="flex flex-row items-center w-100 w-auto-l flex-grow-1 justify-center justify-end-l self-center mv1 ml3-l ml0">
-<p class="ma0 white f5">gradeup © 2019</p>
-</section>
-</nav>
-</footer>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.5/lazysizes.min.js"></script><script id="__NEXT_DATA__" type="application/json" crossorigin="anonymous">{"dataManager":"[]","props":{"pageProps":{"query":{}},"isGradeupDomain":true,"apolloState":{"User:351b7ef0-e33f-11e9-a5c3-ca01bd5ad223":{"id":"351b7ef0-e33f-11e9-a5c3-ca01bd5ad223","name":"Jignesh Desai","phone":"","emails":{"type":"json","json":["archirayan46@gmail.com"]},"exams":[{"type":"id","generated":false,"id":"Exam:72975611-4a5e-11e5-a83f-8b51c790d8b8","typename":"Exam"}],"groups":[{"type":"id","generated":false,"id":"Group:72975611-4a5e-11e5-a83f-8b51c790d8b8","typename":"Group"}],"isActive":true,"isMentor":false,"picture":"https://lh3.googleusercontent.com/-AEYLoBKHPHY/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcsBUz2vCUGg-i3ZxUXNrLN4eA5NQ/s96-c/photo.jpg","loginType":"login","needsVerification":false,"verificationInfo":{"type":"id","generated":true,"id":"$User:351b7ef0-e33f-11e9-a5c3-ca01bd5ad223.verificationInfo","typename":"UserVerificationInfo"},"__typename":"User"},"Exam:72975611-4a5e-11e5-a83f-8b51c790d8b8":{"id":"72975611-4a5e-11e5-a83f-8b51c790d8b8","__typename":"Exam"},"Group:72975611-4a5e-11e5-a83f-8b51c790d8b8":{"id":"72975611-4a5e-11e5-a83f-8b51c790d8b8","__typename":"Group"},"$User:351b7ef0-e33f-11e9-a5c3-ca01bd5ad223.verificationInfo":{"isVerified":false,"__typename":"UserVerificationInfo"},"ROOT_QUERY":{"me":{"type":"id","generated":false,"id":"User:351b7ef0-e33f-11e9-a5c3-ca01bd5ad223","typename":"User"},"css":{"type":"json","json":["https://gradeup-assets.grdp.co/website/_next/static/chunks/styles.9ac674eb.chunk.css"]}}}},"page":"/home","query":{},"buildId":"aMc2Im49SDQykw-c8Hipy","dynamicBuildId":false,"assetPrefix":"https://gradeup-assets.grdp.co/website","dynamicIds":["+SFK","/W8u","+SFK","LJkV","+SFK","+07V"]}</script>
-<script async="" id="__NEXT_PAGE__/home" src="https://gradeup-assets.grdp.co/website/_next/static/aMc2Im49SDQykw-c8Hipy/pages/home.js" crossorigin="anonymous"></script><script async="" id="__NEXT_PAGE__/_app" src="https://gradeup-assets.grdp.co/website/_next/static/aMc2Im49SDQykw-c8Hipy/pages/_app.js" crossorigin="anonymous"></script>
-<script async="" src="https://gradeup-assets.grdp.co/website/_next/static/chunks/commons.b7bb537347ffa3efa2ca.js" crossorigin="anonymous"></script>
-<script async="" src="https://gradeup-assets.grdp.co/website/_next/static/chunks/chunk-auth.cbe2701cb0c192a24933.js" crossorigin="anonymous"></script><script async="" src="https://gradeup-assets.grdp.co/website/_next/static/chunks/commons.b7bb537347ffa3efa2ca.js" crossorigin="anonymous"></script>
-<script async="" src="https://gradeup-assets.grdp.co/website/_next/static/chunks/chunk-mobile-bottom-drawer.6143cbf30560cebebfac.js" crossorigin="anonymous"></script>
-<script async="" src="https://gradeup-assets.grdp.co/website/_next/static/chunks/commons.b7bb537347ffa3efa2ca.js" crossorigin="anonymous"></script>
-<script async="" src="https://gradeup-assets.grdp.co/website/_next/static/chunks/chunk-header-entity.aba64a87af351f53236a.js" crossorigin="anonymous"></script>
-<script src="https://gradeup-assets.grdp.co/website/_next/static/runtime/webpack-1b592059327519b38dda.js" async="" crossorigin="anonymous"></script>
-<script src="https://gradeup-assets.grdp.co/website/_next/static/chunks/commons.b7bb537347ffa3efa2ca.js" async="" crossorigin="anonymous"></script>
-<script src="https://gradeup-assets.grdp.co/website/_next/static/chunks/styles.543be2f0b9841652d67e.js" async="" crossorigin="anonymous"></script>
-<script src="https://gradeup-assets.grdp.co/website/_next/static/runtime/main-82fc5e36d5ad3edb86b0.js" async="" crossorigin="anonymous">
-</script>
-</body>
-</html>	
-	
-<?php } ?>
 <div id="myModal" class="modal fade elf" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-body">
+      
+      				<div class="auth__body popuploginform flex-column auth__body--login br2 bg-white w-100 dn">
                         <section class="flex flex-shrink-0">
+                           <header class="auth__header js-auth-login flex-grow-1 flex items-center justify-between">
+                              <div class="flex flex-column">
+                                 <p class="auth__header__heading b green mv0 f3">Login to Register</p>
+                                 <p class="mv0 f6">To Score Better in your exam </p>
+                              </div>
+                           </header>
+                        </section>
+                       <span class="auth__close-button">
+                             	<button type="button" class="close" data-dismiss="modal">&times;</button>
+                              </span>
+                        <section class="flex flex-shrink-0 auth__social justify-between mv3">
+                        <span style="transition:opacity 0.5s;opacity:0.6">
+                        <!-- <button type="button" class="">Facebook</button> -->
+                        <a href="facebook/fbconfig.php" class="auth__facebook relative auth__social__btn disabled ma0 tc pointer tracked-sm outline-0 b bg-blue white pa3 w-100 bn medium" >Facebook</a>
+                        </span>
+                        
+                        <!-- <button type="button" class="">Google</button> -->
+                        <a href="<?php echo $login_url ?>" class="auth__google flex items-center relative auth__social__btn disabled ma0 b tc pointer tracked-sm bg-white black ba b--near-white pa3" >Google</a>
+                        </section>
+                        <p class="tc mt1 mb3">OR</p>
+                        <section class="flex flex-column">
+                           <form id="loginForm" method="post" action="{{ url('/') . '/loginresult' }}">
+                           @csrf
+                              <div class="auth__form-group mb4 relative"><input type="email" required="" autoComplete="email" class="auth__field outline-0 f6 db w-100 pa2 ba b--black-10" name="email" value="" /><label class="green f5 b ph1 ph0-l">Email</label></div>
+                              <div class="auth__form-group mb2 relative"><input type="password" required="" autoComplete="current-password" class="auth__field outline-0 f6 db w-100 pa2 ba b--black-10" name="password" value="" /><label class="green f5 b ph1 ph0-l">Password</label></div>
+                              <input type="hidden" name="deviceType" value="web" />
+                              <p class="auth__forgot-password flex justify-end mv3 silver fw1 f6"><a class="js-auth-forgot-psswd pointer red">Forgot Password?</a></p>
+                              <input type="submit" value="LOGIN" class="btn auth__button js-auth-login bg-dlg-gradient white bn db f4 fw1 outline-0 w-100 tc"  />
+                              <a class="auth__body__register-text js-auth-toggle popuphomeregister pointer link green tc db mt3">Not a User? REGISTER using Email</a>
+                           </form>
+                        </section>
+                     </div>
+                     
+                     
+                     
+                     <div class="auth__body popupregisterform flex-column auth__body--login br2 bg-white w-100 flex">
+                        <section class="flex flex-shrink-0">
+                           <header class="auth__header js-auth-register flex-grow-1 flex items-center justify-between">
+                              <div class="flex flex-column">
+                                 <p class="auth__header__heading green b mv0 f3">Create an Account</p>
+                                 <p class="mv0 f6">To Score Better in your exam </p>
+                              </div>
+                           </header>
+                        </section>
+                        <span class="auth__close-button">
+                             	<button type="button" class="close" data-dismiss="modal">&times;</button>
+                              </span>
+                        <section class="flex flex-shrink-0 auth__social justify-between mv3">
+                        <span style="transition:opacity 0.5s;opacity:0.6">
+                       <!-- <button type="button" class="auth__facebook relative auth__social__btn disabled ma0 tc pointer tracked-sm outline-0 b bg-blue white pa3 w-100 bn medium">Facebook</button> -->
+                       <a href="facebook/fbconfig.php" class="auth__facebook relative auth__social__btn disabled ma0 tc pointer tracked-sm outline-0 b bg-blue white pa3 w-100 bn medium" >Facebook</a>
+                        </span>
+                       <!-- <button type="button" class="auth__google flex items-center relative auth__social__btn disabled ma0 b tc pointer tracked-sm bg-white black ba b--near-white pa3">Google</button> -->
+                       <a href="<?php echo $login_url ?>" class="auth__google flex items-center relative auth__social__btn disabled ma0 b tc pointer tracked-sm bg-white black ba b--near-white pa3" >Google</a>
+                        </section>
+                        <p class="tc mt1 mb3">OR</p>
+                        <section class="flex flex-column">
+                           <form id="signupForm">
+                           @csrf
+                              <div class="auth__form-group mb4 relative homeloginemail"><input type="text" required="" name="name"  id="uname" autoComplete="name" class="auth__field outline-0  f6 db w-100 pa2 b--black-10 ba" value="" /><label class="green f5 ph1 ph0-l">Name</label></div>
+                              <div class="auth__form-group mb4 relative"><input type="email" required="" name="email" id="uemail" autoComplete="email" class="auth__field outline-0 f6 db w-100 pa2 b--black-10 ba" value="" /><label class="green f5 ph1 ph0-l">Email</label></div>
+                              <div class="auth__form-group mb4 relative"><input type="password" required="" autoComplete="new-password" id="upwd" name="password" class="auth__field outline-0 f6 pb1 db w-100 pa2 ba b--black-10" value="" /><label class="green f5 ph1 ph0-l">Password</label></div>
+                              <input type="hidden" name="deviceType" value="web" /><input type="submit" value="REGISTER" class="btn auth__button js-auth-register bg-dlg-gradient white bn db f4 fw1 outline-0 w-100 tc" />
+                              <a class="auth__body__login-text popuphomelogin js-auth-toggle pointer link green tc db mt3">Already Registered? LOGIN</a>
+                           </form>
+                        </section>
+                     </div>
+      
+                      <!--  <section class="flex flex-shrink-0">
                            <header class="auth__header js-auth-login flex-grow-1 flex items-center justify-between">
                               <div class="flex flex-column">
                                  <p class="auth__header__heading b green mv0 le f3" style="display:none">Login to Education</p>
@@ -1750,13 +1506,13 @@ e.preventDefault();
                               <input type="hidden" name="deviceType" value="web"  />
                               <p class="auth__forgot-password flex justify-end mv3 silver fw1 f6"><a class="js-auth-forgot-psswd pointer red">Forgot Password?</a></p>
                               <input type="submit" value="LOGIN" class="btn auth__button js-auth-login bg-dlg-gradient white bn db f4 fw1 outline-0 w-100 tc"  />
-                              <a class="auth__body__register-text js-auth-toggle pointer link green tc db mt3">Not a User? REGISTER using Email</a>
+                              <a class="auth__body__register-text popupregisterlink js-auth-toggle pointer link green tc db mt3">Not a User? REGISTER using Email</a>
                               
                               <input type="hidden" name="deviceType" value="web" />
-                              <input type="submit" value="REGISTER" class="btn auth__button js-auth-register bg-dlg-gradient white bn db f4 fw1 outline-0 w-100 tc"  />
-                              <a class="auth__body__login-text js-auth-toggle pointer link green tc db mt3">Already Registered? LOGIN</a>
+                              <input type="submit" value="REGISTER" class="btn auth__button popuploginbutton js-auth-register bg-dlg-gradient white bn db f4 fw1 outline-0 w-100 tc"  />
+                              <a class="auth__body__login-text popuploginlink js-auth-toggle pointer link green tc db mt3">Already Registered? LOGIN</a>
                            </form>
-                        </section>
+                        </section> -->
       </div>
     </div>
   </div>
@@ -1862,8 +1618,10 @@ e.preventDefault();
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script>
 	$(document).ready(function(){
-		$(".elf .auth__body__login-text").hide();
-		$(".elf .js-auth-register").hide();
+	//	$(".elf .auth__body__login-text").hide();
+		$(".popuploginlink").hide();
+		$(".popuploginbutton").hide();
+		
 		$(".elf .loginemail").hide();
 		
 		var loginpath = "<?php echo url('/'). '/loginresult'; ?>";
@@ -1871,7 +1629,8 @@ e.preventDefault();
 		$(".elf .auth__body__register-text").click(function(){
 			
 			$(this).hide();
-   			$(".elf .auth__body__login-text").show();
+   			$(".popuploginlink").show();
+   			$(".popuploginbutton").show();
 			$(".elf .js-auth-register").show();
 			$(".elf .loginemail").show();
 			$(".elf .js-auth-login").hide();
@@ -1893,30 +1652,25 @@ e.preventDefault();
 	   	});		
 	   	
 	   	
-	   	$(".homeregister").click(function(){
-			alert('register');
-			$(this).hide();
-   			$(".ehlr .auth__body__login-text").show();
-			$(".ehlr .js-auth-register").show();
-			$(".ehlr .homeloginemail").show();
-			$(".ehlr .js-auth-login").hide();
-			$(".ehlr .re").show();
-			$(".ehlr .le").show();
-			$(".js-auth-forgot-psswd").hide();
-			
-			//$("#loginForm").attr('action',loginpath);
-	   	});
 	   	$(".homelogin").click(function(){
-	   		alert('login');
-			$(this).hide();
-   			$(".ehlr .auth__body__register-text").show();
-			$(".ehlr .js-auth-register").show();
-			$(".ehlr .homeloginemail").hide();
-			$(".ehlr .js-auth-login").show();
-			$(".ehlr p.le").show();
-			$(".ehlr p.re").hide();
-			//$("#loginForm").attr('action',loginpath);
+			$(".loginform").show();
+			$(".registerform").hide();
+	   	});
+	   	$(".homeregister").click(function(){
+	   		$(".loginform").hide();
+			$(".registerform").show();
 	   	});	
+	   	
+	   	$(".popuphomelogin").click(function(){
+			$(".popuploginform").show();
+			$(".popupregisterform").hide();
+	   	});
+	   	$(".popuphomeregister").click(function(){
+	   		$(".popuploginform").hide();
+			$(".popupregisterform").show();
+	   	});	
+	   	
+	   	
    	});	
    	
    	$(".exams_prepair").click(function(){

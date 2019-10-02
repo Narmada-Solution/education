@@ -30,6 +30,10 @@ class LoginController extends BaseController
 		return view('login');
 	}
 	
+	function user(){
+		return view('user');
+	}
+	
 	function loginresult(){
 		$email =  $_POST['email'];
 		$password = $_POST['password'];
@@ -39,7 +43,7 @@ class LoginController extends BaseController
 		);
 		// attempt to do the login
 		if (Auth::attempt($userdata)) {
-			return redirect('home');		
+			return redirect('user');		
 		} else {        
 			echo "Error";
 		}

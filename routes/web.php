@@ -35,8 +35,12 @@ Route::get('admin/blog', 'AdminController@blog');
 Route::get('/login', 'LoginController@login');
 Route::post('/loginresult', 'LoginController@loginresult');
 
+Route::get('/user', 'LoginController@user');
+
 Route::get('/register', 'LoginController@register');
 Route::post('/registerresult', 'LoginController@registerresult');
+
+
 
 Route::get('/home', 'LoginController@home');
 	

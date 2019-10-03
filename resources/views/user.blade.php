@@ -1,3 +1,8 @@
+<?php
+if(isset(Auth::user()->id) && Auth::user()->id != ''){
+	$id = Auth::user()->id;
+	$name = Auth::user()->name;
+?>
 <!DOCTYPE html>
 <html class="" lang="en">
    <head>
@@ -25,7 +30,7 @@
       </script><script type="text/javascript" async="" src="<?php echo asset('assets/user/js/js_002')?>"></script>
       <script type="text/javascript" async="" src="<?php echo asset('assets/user/js/js')?>"></script>
       <script type="text/javascript" async="" src="<?php echo asset('assets/user/js/ec.js')?>"></script>
-      <script src="<?php echo asset('assets/user/js/inferredEvents.js')?>" async=""></script>
+      
       <script src="<?php echo asset('assets/user/js/990336904319800.js')?>" async=""></script>
       <script async="" src="<?php echo asset('assets/user/js/fbevents.js')?>"></script>
       <script type="text/javascript" async="" src="<?php echo asset('assets/user/js/conversion_async.js')?>"></script>
@@ -41,7 +46,7 @@
       <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" class="next-head">
       <meta charset="utf-8" class="next-head">
       <link rel="preload" as="style" href="<?php echo asset('assets/user/css/styles_002.css')?>" class="next-head">
-      <title class="next-head">Register: India's Largest Exam Prep Site for BANK, SSC, GATE, JEE, NEET</title>
+      <title class="next-head">User: India's Largest Exam Prep Site for BANK, SSC, GATE, JEE, NEET</title>
       <link rel="preload" href="<?php echo asset('assets/user/js/home.js')?>" as="script" crossorigin="anonymous">
       <link rel="preload" href="<?php echo asset('assets/user/js/_app.js')?>" as="script" crossorigin="anonymous">
       <link rel="preload" href="<?php echo asset('assets/user/js/commons.js')?>" as="script" crossorigin="anonymous">
@@ -55,14 +60,14 @@
       <link rel="preload" href="<?php echo asset('assets/user/js/styles.js')?>" as="script" crossorigin="anonymous">
       <link rel="preload" href="<?php echo asset('assets/user/js/main-82fc5e36d5ad3edb86b0.js')?>" as="script" crossorigin="anonymous">
       <script charset="utf-8" src="<?php echo asset('assets/user/css/chunk-createpost-modal.js')?>" crossorigin="anonymous"></script>
-      <meta name="description" content="Gradeup (Gradestack) - Exam preparation for GATE, JEE, NEET, BANK, SSC/Govt jobs, CTET. Get daily GK updates, notifications, previous years' papers &amp; free mock tests." class="next-head">
-      <meta property="og:title" content="Gradeup: India's Largest Exam Prep Site for BANK, SSC, GATE, JEE, NEET" class="next-head">
-      <meta property="og:description" content="Gradeup (Gradestack) - Exam preparation for GATE, JEE, NEET, BANK, SSC/Govt jobs, CTET. Get daily GK updates, notifications, previous years' papers &amp; free mock tests." class="next-head">
+      <meta name="description" content="User - Exam preparation for GATE, JEE, NEET, BANK, SSC/Govt jobs, CTET. Get daily GK updates, notifications, previous years' papers &amp; free mock tests." class="next-head">
+      <meta property="og:title" content="User: India's Largest Exam Prep Site for BANK, SSC, GATE, JEE, NEET" class="next-head">
+      <meta property="og:description" content="User - Exam preparation for GATE, JEE, NEET, BANK, SSC/Govt jobs, CTET. Get daily GK updates, notifications, previous years' papers &amp; free mock tests." class="next-head">
       <meta property="og:image" content="" class="next-head">
       <meta property="twitter:card" content="summary_large_image" class="next-head">
       <meta property="twitter:site" content="@gradeupapp" class="next-head">
-      <meta property="twitter:title" content="Gradeup: India's Largest Exam Prep Site for BANK, SSC, GATE, JEE, NEET" class="next-head">
-      <meta property="twitter:description" content="Gradeup (Gradestack) - Exam preparation for GATE, JEE, NEET, BANK, SSC/Govt jobs, CTET. Get daily GK updates, notifications, previous years' papers &amp; free mock tests." class="next-head">
+      <meta property="twitter:title" content="User: India's Largest Exam Prep Site for BANK, SSC, GATE, JEE, NEET" class="next-head">
+      <meta property="twitter:description" content="User - Exam preparation for GATE, JEE, NEET, BANK, SSC/Govt jobs, CTET. Get daily GK updates, notifications, previous years' papers &amp; free mock tests." class="next-head">
       <meta property="twitter:image:src" content="" class="next-head">
       <meta name="ROBOTS" content="INDEX, FOLLOW" class="next-head">
       <link rel="canonical" href="https://gradeup.co/" class="next-head">
@@ -73,7 +78,10 @@
       </script><script src="<?php echo asset('assets/user/js/a_004.js')?>"></script>
       <script type="text/javascript" src="<?php echo asset('assets/user/js/a_005.js')?>" rel="nofollow" async=""></script>
       <script type="text/javascript" src="<?php echo asset('assets/user/js/a_002.js')?>" rel="nofollow" async=""></script>
-      <script type="text/javascript" src="/a_006.js" rel="nofollow" async=""></script><script type="text/javascript" src="<?php echo asset('assets/user/js/a_007.js')?>" rel="nofollow" async=""></script><script type="text/javascript" src="<?php echo asset('assets/user/js/a.js')?>" rel="nofollow" async=""></script><script type="text/javascript" src="Gradeup%20%20India's%20Largest%20Exam%20Prep%20Site%20for%20BANK,%20SSC,%20GATE,%20JEE,%20NEET_files/a_003.js" rel="nofollow" async=""></script>
+      <script type="text/javascript" src="<?php echo asset('assets/user/js/a_006.js')?>" rel="nofollow" async=""></script>
+      <script type="text/javascript" src="<?php echo asset('assets/user/js/a_007.js')?>" rel="nofollow" async=""></script>
+      <script type="text/javascript" src="<?php echo asset('assets/user/js/a.js')?>" rel="nofollow" async=""></script>
+      <script type="text/javascript" src="<?php echo asset('assets/user/js/a_003.js')?>" rel="nofollow" async=""></script>
    </head>
    <body class="">
       <div id="__next"> 
@@ -620,10 +628,10 @@
                      </label>
                   </div>
                   <div class="dn flex-l flex-auto-l"></div>
-                  <div class="db-l dn header-menu-item main-header__store relative h-100 ml2">
+                  <div class="db-l dn header-menu-item main-header__store relative h-100 test-series ml2">
                      <div class="header-menu-item main-header__store relative h-100">
                         <div class="dd-menu self-center relative dd-menu-center  ">
-                           <a class="header-menu-item__link h-100 flex flex-column items-center pointer no-underline ph2 ">
+                           <a class="header-menu-item__link h-100 flex flex-column items-center pointer no-underline ph2 ts">
                               <svg class="db svg-fn svg-s-silver" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" style="margin-top: 5px;">
                                  <path d="M21.246 6.347H7V27h16.947C25.316 26.71 26 25.814 26 24.312V6.347l-.013-1.316A2.05 2.05 0 0 0 23.94 3c-1.121 0-2.03.91-2.033 2.032l-.004 1.315h-.657z"></path>
                                  <path d="M21.947 6.2v18.4m0-.767c.497-.832 1.203-1.248 2.117-1.248.914 0 1.558.48 1.936 1.439M10.167 10.816h8.643m-8.643 2.608h8.643m-8.643 2.609h8.643"></path>
@@ -634,7 +642,7 @@
                               </div>
                            </a>
                            <div class="dd-menu-items z-7">
-                              <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
+                              <ul class="dd-items-center ts-ul" style="max-height: 0px; border-width: 0px;">
                                  <li class="dd-menu-no-hover">
                                     <span class="flex relative border-box">
                                        <span class="mr-auto f5 silver">My Exams</span>
@@ -678,10 +686,10 @@
                         </div>
                      </div>
                   </div>
-                  <div class="db-l dn header-menu-item main-header__practice relative h-100 ">
+                  <div class="db-l dn header-menu-item main-header__practice relative h-100 classroom">
                      <div class="header-menu-item main-header__store relative h-100">
                         <div class="dd-menu self-center relative dd-menu-center  ">
-                           <a class="header-menu-item__link h-100 flex flex-column items-center pointer no-underline ph2 ">
+                           <a class="header-menu-item__link h-100 flex flex-column items-center pointer no-underline ph2 cr">
                               <svg class="db svg-fn svg-s-silver" viewBox="0 0 45 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" style="margin-top: 5px;">
                                  <path d="M29.342 24H7.675C6.199 23.997 5.002 23.07 5 21.926V8.072C5 6.929 6.2 6 7.675 6h21.667c1.475 0 2.674.93 2.674 2.072v13.857c0 1.142-1.2 2.071-2.674 2.071zm11.3-1.953a.363.363 0 0 1-.216-.072l-8.359-3.837c0-1.346-.09-5.14 0-5.207l8.357-4.908a.361.361 0 0 1 .574.287L41 21.689a.355.355 0 0 1-.36.358h.002z"></path>
                               </svg>
@@ -691,7 +699,7 @@
                               </div>
                            </a>
                            <div class="dd-menu-items z-7">
-                              <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
+                              <ul class="dd-items-center  cr-ul" style="max-height: 0px; border-width: 0px;">
                                  <li class="dd-menu-no-hover">
                                     <span class="flex relative border-box">
                                        <span class="mr-auto f5 silver">My Exams</span>
@@ -735,10 +743,10 @@
                         </div>
                      </div>
                   </div>
-                  <div class="db-l dn header-menu-item main-header__practice relative h-100 ">
+                  <div class="db-l dn header-menu-item main-header__practice relative h-100 free-videos">
                      <div class="header-menu-item main-header__store relative h-100">
                         <div class="dd-menu self-center relative dd-menu-center  ">
-                           <a class="header-menu-item__link h-100 flex flex-column items-center pointer no-underline ph2 ">
+                           <a class="header-menu-item__link h-100 flex flex-column items-center pointer no-underline ph2 fv">
                               <svg class="db svg-fn svg-s-silver" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" style="margin-top: 5px;">
                                  <g fill="none" fill-rule="evenodd" transform="translate(4.4 4)">
                                     <rect width="22.12" height="15.888" x=".625" y="7.002" stroke="" rx="1.5"></rect>
@@ -752,7 +760,7 @@
                               </div>
                            </a>
                            <div class="dd-menu-items z-7">
-                              <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
+                              <ul class="dd-items-center  fv-ul" style="max-height: 0px; border-width: 0px;">
                                  <li class="dd-menu-no-hover">
                                     <span class="flex relative border-box">
                                        <span class="mr-auto f5 silver">My Exams</span>
@@ -772,10 +780,10 @@
                         </div>
                      </div>
                   </div>
-                  <div class="db-l dn header-menu-item main-header__practice relative h-100 ">
+                  <div class="db-l dn header-menu-item main-header__practice relative h-100 prev-papers">
                      <div class="header-menu-item main-header__store relative h-100">
                         <div class="dd-menu self-center relative dd-menu-center  ">
-                           <a class="header-menu-item__link h-100 flex flex-column items-center pointer no-underline ph2 ">
+                           <a class="header-menu-item__link h-100 flex flex-column items-center pointer no-underline ph2 pp">
                               <svg class="db svg-fn svg-s-silver" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" style="margin-top: 5px;">
                                  <g transform="translate(5 4)">
                                     <ellipse cx="10.769" cy="11.031" opacity=".99" rx="8.615" ry="8.624"></ellipse>
@@ -789,7 +797,7 @@
                               </div>
                            </a>
                            <div class="dd-menu-items z-7">
-                              <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
+                              <ul class="dd-items-center  pp-ul" style="max-height: 0px; border-width: 0px;">
                                  <li class="dd-menu-no-hover">
                                     <span class="flex relative border-box">
                                        <span class="mr-auto f5 silver">My Exams</span>
@@ -850,9 +858,9 @@
                   <div class="header-menu-item main-header__user relative h-100">
                      <div class="dd-menu self-center relative dd-menu-center  ">
                         <a rel="noopener noreferrer" class="header-menu-item__link main-header__user__link js-sub-menu-link flex h-100 flex-column items-center pointer no-underline ph2 ">
-                           <div class="main-header__user-pic ma-auto br-100 overflow-hidden" style="background-image: url(&quot;https://lh3.googleusercontent.com/-AEYLoBKHPHY/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcsBUz2vCUGg-i3ZxUXNrLN4eA5NQ/s96-c/photo.jpg&quot;); background-repeat: no-repeat; background-position: center center; background-size: cover; background-color: rgb(237, 237, 237); height: 30px; width: 30px; margin-top: 5px;"></div>
+                           <div class="main-header__user-pic ma-auto br-100 overflow-hidden" style="background:indigo ; background-repeat: no-repeat; background-position: center center; background-size: cover;height: 30px; width: 30px; margin-top: 5px;padding-left: 10px;padding-top: 5px;color: white;">{{ substr($name,0,1) }}</div>
                            <div class="anchor-label flex header_item_label">
-                              <span class="gray f7 lh-solid mt1 fw3">Hi, Jignesh</span>
+                              <span class="gray f7 lh-solid mt1 fw3">Hi, {{ $name }}</span>
                               <div class="relative"><span class="db ml1 gray">▾</span></div>
                            </div>
                         </a>
@@ -873,12 +881,24 @@
          </header>
          <div class="header-spacer header-spacer--no-alert" style="height: 63px;"></div>
          <div class="fwc-2 flex flex-grow-1 justify-between mt3">
-            <main>
-               <span class="flex items-center mb3 ba b--black-10 pa3 flex-grow-1"><a class="mr3 items-center justify-between" href="https://gradeup.co/me"><img src="https://lh3.googleusercontent.com/-AEYLoBKHPHY/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcsBUz2vCUGg-i3ZxUXNrLN4eA5NQ/s96-c/photo.jpg" alt="Jignesh Desai" class="flex br-100 w3 h3 flex-shrink-0 overflow-hidden relative"></a><a class="ba b--black-10 pa2 flex-grow-1 silver text pointer">Create a post...</a></span>
+         	<main>
+            	<span class="flex items-center mb3 ba b--black-10 pa3 flex-grow-1">
+              		<span alt="Jignesh Desai" class="flex br-100 w3 h3 flex-shrink-0 overflow-hidden relative" style="background-color: indigo;
+    color: white !important;
+    padding-left: 13px;
+    font-size: 34px;
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    padding-top: 5px;">{{ substr($name,0,1) }}</span>
+               		<a class="ba b--black-10 pa2 flex-grow-1 silver text pointer" data-toggle="modal" data-target="#myModal" >Create a post...</a>
+               	</span>
                <div class="flex mb3 home-post-types">
                   <span class="fw5 gray mr2 ph2 ph0-l">Filter : </span>
                   <div class="dd-menu self-center relative dd-menu-center  ">
-                     <a class="header-menu-item__link flex flex-column items-center pointer  no-underline"><span class="lh-solid db-l silver">All Posts ▾</span></a>
+                     <a class="header-menu-item__link flex flex-column items-center pointer  no-underline">
+                     <span class="lh-solid db-l silver">All Posts ▾</span></a>
                      <div class="dd-menu-items mt0">
                         <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
                            <li><a class="lh-solid tc pv2 bw2 pointer link gray" data-feed-tab="all">All Posts</a></li>
@@ -991,2251 +1011,7 @@
                      </div>
                   </div>
                </div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--user-quiz">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/rathinavel-kiruba-i-f549d530-040e-11e8-935a-1f8ad1abf750"><img id="53233fa0-e4c5-11e9-aaa3-661a9cae394c-author-f549d530-040e-11e8-935a-1f8ad1abf750" class="absolute z-0 top-0 left-0 w-100 h-100 cover lazyloaded" src="https://gs-post-images.grdp.co/2019/9/f8434713c0df0ed32960d0299dc079d1fc2b5d67a62376b2a48031ade34aa220-high-s.jpg" data-src="https://gs-post-images.grdp.co/2019/9/f8434713c0df0ed32960d0299dc079d1fc2b5d67a62376b2a48031ade34aa220-high-s.jpg" alt="rathinavel kiruba"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1"><a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/rathinavel-kiruba-i-f549d530-040e-11e8-935a-1f8ad1abf750">rathinavel kiruba</a></p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Quiz</span><span class="ml3 dotted-point relative nowrap">2 hours ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/post-i-53233fa0-e4c5-11e9-aaa3-661a9cae394c">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/post-i-53233fa0-e4c5-11e9-aaa3-661a9cae394c">Physics Quiz 91</a></h4>
-                     <a class="no-underline silver mt2" href="https://gradeup.co/post-i-53233fa0-e4c5-11e9-aaa3-661a9cae394c"></a><a class="center db" href="https://gradeup.co/post-i-53233fa0-e4c5-11e9-aaa3-661a9cae394c"><img id="53233fa0-e4c5-11e9-aaa3-661a9cae394c-image" style="width: 620px; height: 350px;" class="maint-media-ratio db cover max-h-40 lazyloaded" src="https://gs-post-images.grdp.co/2019/6/default_2-img1560493065243-77-rs.png" data-src="https://gs-post-images.grdp.co/2019/6/default_2-img1560493065243-77-rs.png" alt="Physics Quiz 91" width="620" height="350"></a>
-                     <div class="flex bg-near-white mt3">
-                        <a class="no-underline dark-gray db ml3 flex items-center pv3 flex-grow-1" href="https://gradeup.co/post-i-53233fa0-e4c5-11e9-aaa3-661a9cae394c">
-                           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px" class="mr3" viewBox="0 0 35 40">
-                              <path d="M19.2 7.4L19.2 4.1 14 4.1 14 7.4C14.8 7.3 15.7 7.2 16.6 7.2 17.5 7.2 18.3 7.3 19.2 7.4" fill="#00A69D"></path>
-                              <path d="M28.5 13.6L30.8 11.3 28.6 9.2 26.3 11.4C27.1 12 27.8 12.8 28.5 13.6" fill="#00A69D"></path>
-                              <path d="M34.4 10.6L29.3 5.5C29.1 5.3 28.8 5.3 28.5 5.5L27.1 7C26.9 7.2 26.9 7.5 27.1 7.7L28.6 9.2 32.2 12.8C32.4 13 32.8 13 33 12.8L34.4 11.3C34.6 11.1 34.6 10.8 34.4 10.6" fill="#00746E"></path>
-                              <path d="M4.1 16.7C4.1 9.9 9.7 4.4 16.6 4.4L16.6 0.3C15.7 0.3 14.8 0.4 14 0.5 6.1 1.7 0 8.5 0 16.7 0 25.8 7.4 33.2 16.6 33.2L16.6 29C9.7 29 4.1 23.5 4.1 16.7" fill="#00746E" transform="translate(0.000000, 6.432990)"></path>
-                              <path d="M27.2 10.5C24.9 8.7 22.2 7.4 19.2 6.9 18.3 6.8 17.5 6.7 16.6 6.7L16.6 10.8C23.5 10.8 29 16.4 29 23.2 29 30 23.5 35.5 16.6 35.5L16.6 39.6C25.8 39.6 33.2 32.2 33.2 23.2 33.2 19.2 31.8 15.5 29.4 12.7 28.7 11.9 28 11.2 27.2 10.5" fill="#00746E"></path>
-                              <path d="M17.4 14.4L17.4 16.3C18.2 16.4 19 16.6 19.7 16.9 20.4 17.1 21 17.4 21.5 17.7L20.2 20.3C20.2 20.2 20 20.1 19.9 20 19.7 19.9 19.4 19.8 19.2 19.7 18.9 19.5 18.6 19.4 18.2 19.3 17.9 19.2 17.5 19.1 17.2 19L17.2 21.6 17.8 21.7C18.4 21.9 19 22.1 19.5 22.3 20 22.5 20.5 22.7 20.8 23 20.9 23.1 20.9 23.1 21 23.2L30.6 23.2C30.6 15.5 24.3 9.3 16.6 9.3L16.6 14.4 17.4 14.4 17.4 14.4Z" fill="#FFFFFF"></path>
-                              <polygon fill="#FFFFFF" points="20.1 13.4 12.7 13.8 13.4 22 13.7 26.4 25.1 25.5 24.3 18.8 22.2 13.8"></polygon>
-                              <path d="M16.6 23.2L16.6 14.4 16.6 9.3C8.9 9.3 2.6 15.5 2.6 23.2 2.6 30.8 8.9 37 16.6 37 24.3 37 30.6 30.8 30.6 23.2L21 23.2 16.6 23.2Z" fill="#FFFFFF"></path>
-                              <path d="M14 28.2L21.3 23.4C21.5 23.3 21.5 23.1 21.3 23L14 18.2C13.8 18 13.6 18.2 13.6 18.4L13.6 28C13.6 28.2 13.8 28.3 14 28.2" fill="#00746E"></path>
-                              <polygon fill="#00746E" points="11.4 4.1 21.8 4.1 21.8 0 11.4 0"></polygon>
-                           </svg>
-                           <ul class="list flex mid-gray f6 ma0 pa0">
-                              <li class="mb0">11 Ques</li>
-                              <li class="ml3 divider-line relative mb0">3 Mins</li>
-                           </ul>
-                        </a>
-                        <a class="ph4 no-hover-color flex items-center no-underline white fw5 bg-green" href="https://gradeup.co/post-i-53233fa0-e4c5-11e9-aaa3-661a9cae394c">START QUIZ</a>
-                     </div>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li>163 attempts</li>
-                     <li class="relative divider-line ml3">6 upvotes</li>
-                     <li class="relative divider-line ml3">6 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-2"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--post">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/manpreet-kaur-i-5a35fca0-f13f-11e6-b874-bef4f4ae682f"><img id="3839d2c0-e33b-11e9-9838-ab80a589e48a-author-5a35fca0-f13f-11e6-b874-bef4f4ae682f" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="https://gs-post-images.grdp.co/2019/10/11d4fd34ed6f9a6b7940a9f18375e2caf461860fb9717eb5c58ea78c85fe04b0-high-s.jpg" data-src="https://gs-post-images.grdp.co/2019/10/11d4fd34ed6f9a6b7940a9f18375e2caf461860fb9717eb5c58ea78c85fe04b0-high-s.jpg" alt="Manpreet Kaur"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1"><a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/manpreet-kaur-i-5a35fca0-f13f-11e6-b874-bef4f4ae682f">Manpreet Kaur</a></p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Post</span><span class="ml3 dotted-point relative nowrap">3 hours ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/editorial-from-the-hindu-30th-sept-i-3839d2c0-e33b-11e9-9838-ab80a589e48a">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <div class="mw-100 bg-near-white mb2 maint-media-ratio" style="width: 620px; height: 325px;"><a class="db"><img id="3839d2c0-e33b-11e9-9838-ab80a589e48a-image" style="width: 620px; height: 325px;" src="<?php echo asset('assets/user/image/default_placeholder-img1544611349445-67.png')?>" class="lazyload maint-media-ratio db cover relative overflow-hidden" data-src="https://gs-post-images.grdp.co/2019/10/contributor_article_1569988776076-img1569988776132-33.jpg-rs-high-webp.jpg" alt="Editorial from THE HINDU(30th Sept.)" width="620" height="325"></a></div>
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/editorial-from-the-hindu-30th-sept-i-3839d2c0-e33b-11e9-9838-ab80a589e48a">Editorial from THE HINDU(30th Sept.)</a></h4>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li class="">28 upvotes</li>
-                     <li class="relative divider-line ml3">8 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-3"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--shared-info">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/gudan-singh-i-a4905cb0-4862-11e9-b5b8-51aa1ce2d84b"><img id="6f4c8830-e4de-11e9-9cfc-cc1d084054e9-author-a4905cb0-4862-11e9-b5b8-51aa1ce2d84b" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/10/26dbf0e9c552399cf984530a3fb226414e49834d7f429eb4d10b2721807b313c-high-s.jpg" alt="Gudan Singh"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1"><a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/gudan-singh-i-a4905cb0-4862-11e9-b5b8-51aa1ce2d84b">Gudan Singh</a></p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Shared Info</span><span class="ml3 dotted-point relative nowrap">1 hour ago</span><span class="ml3 dotted-point relative nowrap">Gurgaon</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/shared-info-i-6f4c8830-e4de-11e9-9cfc-cc1d084054e9">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <div class="relative ">
-                        <div class="overflow-hidden" style="line-height: 1.6rem;">🙏🙏🙏Current
-                           Affairs 🙏🙏🙏🙏 🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁 ☆National Nutrition 
-                           Survey☆ 💟• The Ministry of Health and Family Welfare organized first 
-                           National Nutrition Survey. The ministry took help from UNICEF to 
-                           complete the survey. The survey was conducted between 2016 and 2018 
-                           🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲 ☆DRDO successfully test fires land- 
-                           attack version of BrahMos missile☆ 💟BRAHMOS Supersonic Cruise Missile, 
-                           with major indigenous systems, was successfully test fired from 
-                           Integrated Test Range (ITR), Chandipur in Odisha. 
-                           🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱 The missile was test-fired for its full 
-                           strike range of 290- km during the launch jointly conducted by Defence 
-                           Research and Development Organization (DRDO) and BrahMos Aerospace 
-                           🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲 ‘☆Mahatma Lives’: UNESCO and DD to 
-                           telecast TV Show on Gandhi’s 150th Anniversary☆ 
-                           🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱 💟 UNESCO (United Nations Educational, 
-                           Scientific and Cultural Organization) and Doordarshan, country’s public 
-                           service broadcaster has join hands to telecast TV bilingual programme 
-                           ‘Mahatma Lives‘ or ‘Bapu Zinda Hain’ on 1-2 October 2019, to commemorate
-                           the 150th birth anniversary of the Father of the Nation, Mahatma Gandhi
-                           🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲 ☆ Typhoon ‘Mitag’ approaches Northern 
-                           Taiwan☆ 🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱 💟 Rapidly-moving Typhoon ‘Mitag’
-                           is bearing down on northern Taiwan, where it is expected to bring high 
-                           winds and heavy rain. 🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱 • The Taiwan’s 
-                           weather bureau has categorized Typhoon Mitag been as at the 
-                           second-strongest typhoon level. 🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲 ☆Trade 
-                           apprentices to get minimum monthly stipend☆ 
-                           🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱💟 Union Ministry for Skill Development 
-                           and Entrepreneurship (MSDE) has notified changes in Apprenticeship Rules
-                           (1992) as Apprenticeship (Amendment) Rules, 2019 with an aim to 
-                           increase skilled manpower in the country, and raise minimum stipend 
-                           payable to trade apprentices. 🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲☆ Arogya 
-                           Manthan event being organised in New Delhi☆ 
-                           🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱💟 • Prime Minister Narendra Modi will 
-                           preside over the valedictory function of Arogya Manthan in New Delhi on 1
-                           October 2019. At the event PM Modi will launch a new mobile application
-                           of Ayushman Bharat and ‘Ayushman Bharat Start- Up Grand Challenge’ 
-                           🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲☆ MNRE to organise Global Student Solar 
-                           Assembly☆ 🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱💟 • The Union Ministry of New 
-                           and Renewable Energy (MNRE) in association with IIT Bombay, is 
-                           organizing the Global Student Solar Assembly on 2 October 2019, to 
-                           commemorate 150th Birth Anniversary of Mahatma Gandhi as well as to 
-                           promote the Gandhian idea of sustainable living. 
-                           🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲☆ 1 October: 94th Raising Day of MNS 
-                           celebrated☆ 🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱💟 • The 94th Raising Day of 
-                           the Military Nursing Service (MNS) is being celebrated on 1 October 
-                           2019.
-                        </div>
-                        <strong class="absolute bottom-0 right-0 pl2 pointer no-user-select bg-white" style="line-height: 1.6rem;">...Read More</strong>
-                     </div>
-                     <div class="mw-100 bg-near-white center maint-media-ratio" style="width: 620px; height: 466px;"><img id="6f4c8830-e4de-11e9-9cfc-cc1d084054e9-image" style="width: 620px; height: 466px;" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" class="lazyload maint-media-ratio db cover max-h-40 relative overflow-hidden" data-src="https://gs-post-images.grdp.co/2019/10/0b17a562470cc37326f3df799d8a9dee3288dffec0f262f5dc9de8784f7caf9c-high-webp.jpg" alt="🙏🙏🙏Current Affairs 🙏🙏🙏🙏..." width="620" height="466"></div>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li class="">16 upvotes</li>
-                     <li class="relative divider-line ml3">3 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-4"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--test">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/sneha-shanti-i-849d2530-206f-11e8-b529-753bc70df9c0"><img id="0faf2bb0-e422-11e9-9079-988ea2f3a2e3-author-849d2530-206f-11e8-b529-753bc70df9c0" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-users-images.grdp.co/userImages/usrimg1524496197911-78-s.jpeg" alt="Sneha Shanti"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1">
-                           <a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/sneha-shanti-i-849d2530-206f-11e8-b529-753bc70df9c0">Sneha Shanti</a>
-                           <span class="bg-green br-100 pa1 db">
-                              <svg class="db svg-fn svg-s-white" viewBox="0 0 32 24" style="stroke-width: 5px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="8px">
-                                 <polyline points="2.6 13.4 11.3 21.4 29.7 2.9"></polyline>
-                              </svg>
-                           </span>
-                        </p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Quiz</span><span class="ml3 dotted-point relative nowrap">1 hour ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/cloze-test-ibps-po-pre-02-10-2019-i-0faf2bb0-e422-11e9-9079-988ea2f3a2e3">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <div class="bg-near-white pa3 flex flex-column items-center">
-                        <p class="mb0">
-                           <svg class="dib svg-f-dg clock-icon" viewBox="0 0 47 46" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="60px">
-                              <g fill="none" transform="translate(4.95 3.585)">
-                                 <path stroke="#0A6F6A" stroke-width="1.89" d="M5.978 30.431l1.735 1.564 1.897 1.651-4.879 4.847a1.83 1.83 0 0 1-2.49.083l-.73-.635a1.83 1.83 0 0 1-.13-2.637l4.597-4.873zM31.12 30.335l-1.452 1.66-1.897 1.651 4.879 4.847a1.83 1.83 0 0 0 2.49.083l.707-.616a1.83 1.83 0 0 0 .11-2.657l-4.837-4.968zM23.48 5.083c1.641-3.37 4.037-4.868 7.188-4.496.037.111 6.56.36 6.56 7.527.005.009-.04 3.45-3.891 6.005M13.878 5.083C12.238 1.713 9.841.215 6.69.587 6.653.698.13.947.13 8.114c-.005.009.04 3.45 3.891 6.005"></path>
-                                 <path fill="#50B167" d="M17.374 23.881l5.464-3.536a.457.457 0 0 0 .013-.76l-5.464-3.806a.457.457 0 0 0-.72.375v7.343a.457.457 0 0 0 .707.384z"></path>
-                                 <circle cx="18.639" cy="19.808" r="16.136" stroke="#0A6F6A" stroke-width="1.89"></circle>
-                              </g>
-                           </svg>
-                        </p>
-                        <p class="ma0">English</p>
-                        <ul class="list flex mid-gray f6 ma0 pa0 mt1">
-                           <li>5 Questions</li>
-                           <li class="ml3 divider-line relative">3 Minutes</li>
-                        </ul>
-                        <a class="no-underline bg-green white pv2 ph4 no-hover-color br2 mt2" href="https://gradeup.co/cloze-test-ibps-po-pre-02-10-2019-i-0faf2bb0-e422-11e9-9079-988ea2f3a2e3">START QUIZ</a>
-                     </div>
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/cloze-test-ibps-po-pre-02-10-2019-i-0faf2bb0-e422-11e9-9079-988ea2f3a2e3">Cloze test: IBPS PO Pre: 02.10.2019</a></h4>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li>409 attempts</li>
-                     <li class="relative divider-line ml3">14 upvotes</li>
-                     <li class="relative divider-line ml3">20 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-5"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--user-quiz">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/ishan-tewari-i-ad4f3430-740f-11e7-a07e-f546f832d381"><img id="1a015eb0-e4e2-11e9-a81b-55d6323e8489-author-ad4f3430-740f-11e7-a07e-f546f832d381" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/9/7d51ceeed979617f1e14fa5e1ad9b89ab834469cfdb861e50132cbade65662eb-high-s.jpg" alt="Ishan Tewari"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1"><a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/ishan-tewari-i-ad4f3430-740f-11e7-a07e-f546f832d381">Ishan Tewari</a></p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Quiz</span><span class="ml3 dotted-point relative nowrap">1 min ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/post-i-1a015eb0-e4e2-11e9-a81b-55d6323e8489">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/post-i-1a015eb0-e4e2-11e9-a81b-55d6323e8489">✨🎊 RRB PO MAINS REASONING QUIZ-17 ✨🎊</a></h4>
-                     <a class="no-underline silver mt2" href="https://gradeup.co/post-i-1a015eb0-e4e2-11e9-a81b-55d6323e8489"></a><a class="center db" href="https://gradeup.co/post-i-1a015eb0-e4e2-11e9-a81b-55d6323e8489"><img id="1a015eb0-e4e2-11e9-a81b-55d6323e8489-image" style="width: 620px; height: 350px;" class="lazyload maint-media-ratio db cover max-h-40" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/6/default_2-img1560493065243-77-rs.png" alt="✨🎊 RRB PO MAINS REASONING QUIZ-17 ✨🎊" width="620" height="350"></a>
-                     <div class="flex bg-near-white mt3">
-                        <a class="no-underline dark-gray db ml3 flex items-center pv3 flex-grow-1" href="https://gradeup.co/post-i-1a015eb0-e4e2-11e9-a81b-55d6323e8489">
-                           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px" class="mr3" viewBox="0 0 35 40">
-                              <path d="M19.2 7.4L19.2 4.1 14 4.1 14 7.4C14.8 7.3 15.7 7.2 16.6 7.2 17.5 7.2 18.3 7.3 19.2 7.4" fill="#00A69D"></path>
-                              <path d="M28.5 13.6L30.8 11.3 28.6 9.2 26.3 11.4C27.1 12 27.8 12.8 28.5 13.6" fill="#00A69D"></path>
-                              <path d="M34.4 10.6L29.3 5.5C29.1 5.3 28.8 5.3 28.5 5.5L27.1 7C26.9 7.2 26.9 7.5 27.1 7.7L28.6 9.2 32.2 12.8C32.4 13 32.8 13 33 12.8L34.4 11.3C34.6 11.1 34.6 10.8 34.4 10.6" fill="#00746E"></path>
-                              <path d="M4.1 16.7C4.1 9.9 9.7 4.4 16.6 4.4L16.6 0.3C15.7 0.3 14.8 0.4 14 0.5 6.1 1.7 0 8.5 0 16.7 0 25.8 7.4 33.2 16.6 33.2L16.6 29C9.7 29 4.1 23.5 4.1 16.7" fill="#00746E" transform="translate(0.000000, 6.432990)"></path>
-                              <path d="M27.2 10.5C24.9 8.7 22.2 7.4 19.2 6.9 18.3 6.8 17.5 6.7 16.6 6.7L16.6 10.8C23.5 10.8 29 16.4 29 23.2 29 30 23.5 35.5 16.6 35.5L16.6 39.6C25.8 39.6 33.2 32.2 33.2 23.2 33.2 19.2 31.8 15.5 29.4 12.7 28.7 11.9 28 11.2 27.2 10.5" fill="#00746E"></path>
-                              <path d="M17.4 14.4L17.4 16.3C18.2 16.4 19 16.6 19.7 16.9 20.4 17.1 21 17.4 21.5 17.7L20.2 20.3C20.2 20.2 20 20.1 19.9 20 19.7 19.9 19.4 19.8 19.2 19.7 18.9 19.5 18.6 19.4 18.2 19.3 17.9 19.2 17.5 19.1 17.2 19L17.2 21.6 17.8 21.7C18.4 21.9 19 22.1 19.5 22.3 20 22.5 20.5 22.7 20.8 23 20.9 23.1 20.9 23.1 21 23.2L30.6 23.2C30.6 15.5 24.3 9.3 16.6 9.3L16.6 14.4 17.4 14.4 17.4 14.4Z" fill="#FFFFFF"></path>
-                              <polygon fill="#FFFFFF" points="20.1 13.4 12.7 13.8 13.4 22 13.7 26.4 25.1 25.5 24.3 18.8 22.2 13.8"></polygon>
-                              <path d="M16.6 23.2L16.6 14.4 16.6 9.3C8.9 9.3 2.6 15.5 2.6 23.2 2.6 30.8 8.9 37 16.6 37 24.3 37 30.6 30.8 30.6 23.2L21 23.2 16.6 23.2Z" fill="#FFFFFF"></path>
-                              <path d="M14 28.2L21.3 23.4C21.5 23.3 21.5 23.1 21.3 23L14 18.2C13.8 18 13.6 18.2 13.6 18.4L13.6 28C13.6 28.2 13.8 28.3 14 28.2" fill="#00746E"></path>
-                              <polygon fill="#00746E" points="11.4 4.1 21.8 4.1 21.8 0 11.4 0"></polygon>
-                           </svg>
-                           <ul class="list flex mid-gray f6 ma0 pa0">
-                              <li class="mb0">5 Ques</li>
-                              <li class="ml3 divider-line relative mb0">9 Mins</li>
-                           </ul>
-                        </a>
-                        <a class="ph4 no-hover-color flex items-center no-underline white fw5 bg-green" href="https://gradeup.co/post-i-1a015eb0-e4e2-11e9-a81b-55d6323e8489">START QUIZ</a>
-                     </div>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li>2 attempts</li>
-                     <li class="relative divider-line ml3">0 upvotes</li>
-                     <li class="relative divider-line ml3">1 comment</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-6"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--shared-info">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/akash-mishra-i-0950b310-9bcf-11e9-8200-80710a926e8d"><img id="f6e49a80-e434-11e9-9b2c-fe6064298705-author-0950b310-9bcf-11e9-8200-80710a926e8d" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="https://gs-post-images.grdp.co/2019/7/4218ebefcd101f10e8afae3822870ade26009d84edb490db3a52347f8e531f80-high-s.jpg" data-src="https://gs-post-images.grdp.co/2019/7/4218ebefcd101f10e8afae3822870ade26009d84edb490db3a52347f8e531f80-high-s.jpg" alt="Akash Mishra"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1">
-                           <a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/akash-mishra-i-0950b310-9bcf-11e9-8200-80710a926e8d">Akash Mishra</a>
-                           <span class="bg-green br-100 pa1 db">
-                              <svg class="db svg-fn svg-s-white" viewBox="0 0 32 24" style="stroke-width: 5px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="8px">
-                                 <polyline points="2.6 13.4 11.3 21.4 29.7 2.9"></polyline>
-                              </svg>
-                           </span>
-                        </p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Shared Info</span><span class="ml3 dotted-point relative nowrap">3 hours ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/gk-tornado-session-for-rrb-main-exams-2019-i">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <div class="mw-100 bg-near-white mb2 maint-media-ratio" style="width: 620px; height: 325px;"><a class="db"><img id="f6e49a80-e434-11e9-9b2c-fe6064298705-image" style="width: 620px; height: 325px;" src="<?php echo asset('assets/user/image/default_placeholder-img1544611349445-67.png')?>" class="lazyload maint-media-ratio db cover relative overflow-hidden" data-src="https://gs-post-images.grdp.co/2019/10/blog-2-img1569925170829-82.png-rs-high-webp.jpg" alt="GK Tornado Session for RRB Main Exams 2019" width="620" height="325"></a></div>
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/gk-tornado-session-for-rrb-main-exams-2019-i">GK Tornado Session for RRB Main Exams 2019</a></h4>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li class="">69 upvotes</li>
-                     <li class="relative divider-line ml3">13 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-7"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--test">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/kanika-ralhan-i-5e08f570-f6ad-11e7-8dcf-0b1a3f00d3c4"><img id="cb028f50-e450-11e9-8f5f-95247c3e9049-author-5e08f570-f6ad-11e7-8dcf-0b1a3f00d3c4" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/8/2a831bbc9dfdf235ce9a5874afd477e5434308e138a9fa3fb178bf1a2a3cde73-high-s.jpg" alt="Kanika Ralhan"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1">
-                           <a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/kanika-ralhan-i-5e08f570-f6ad-11e7-8dcf-0b1a3f00d3c4">Kanika Ralhan</a>
-                           <span class="bg-green br-100 pa1 db">
-                              <svg class="db svg-fn svg-s-white" viewBox="0 0 32 24" style="stroke-width: 5px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="8px">
-                                 <polyline points="2.6 13.4 11.3 21.4 29.7 2.9"></polyline>
-                              </svg>
-                           </span>
-                        </p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Quiz</span><span class="ml3 dotted-point relative nowrap">1 hour ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/superb-30-quizzes-day-19-spelling-correction-vocab-i-cb028f50-e450-11e9-8f5f-95247c3e9049">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <div class="bg-near-white pa3 flex flex-column items-center">
-                        <p class="mb0">
-                           <svg class="dib svg-f-dg clock-icon" viewBox="0 0 47 46" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="60px">
-                              <g fill="none" transform="translate(4.95 3.585)">
-                                 <path stroke="#0A6F6A" stroke-width="1.89" d="M5.978 30.431l1.735 1.564 1.897 1.651-4.879 4.847a1.83 1.83 0 0 1-2.49.083l-.73-.635a1.83 1.83 0 0 1-.13-2.637l4.597-4.873zM31.12 30.335l-1.452 1.66-1.897 1.651 4.879 4.847a1.83 1.83 0 0 0 2.49.083l.707-.616a1.83 1.83 0 0 0 .11-2.657l-4.837-4.968zM23.48 5.083c1.641-3.37 4.037-4.868 7.188-4.496.037.111 6.56.36 6.56 7.527.005.009-.04 3.45-3.891 6.005M13.878 5.083C12.238 1.713 9.841.215 6.69.587 6.653.698.13.947.13 8.114c-.005.009.04 3.45 3.891 6.005"></path>
-                                 <path fill="#50B167" d="M17.374 23.881l5.464-3.536a.457.457 0 0 0 .013-.76l-5.464-3.806a.457.457 0 0 0-.72.375v7.343a.457.457 0 0 0 .707.384z"></path>
-                                 <circle cx="18.639" cy="19.808" r="16.136" stroke="#0A6F6A" stroke-width="1.89"></circle>
-                              </g>
-                           </svg>
-                        </p>
-                        <p class="ma0">English</p>
-                        <ul class="list flex mid-gray f6 ma0 pa0 mt1">
-                           <li>22 Questions</li>
-                           <li class="ml3 divider-line relative">20 Minutes</li>
-                        </ul>
-                        <a class="no-underline bg-green white pv2 ph4 no-hover-color br2 mt2" href="https://gradeup.co/superb-30-quizzes-day-19-spelling-correction-vocab-i-cb028f50-e450-11e9-8f5f-95247c3e9049">START QUIZ</a>
-                     </div>
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/superb-30-quizzes-day-19-spelling-correction-vocab-i-cb028f50-e450-11e9-8f5f-95247c3e9049">SUPERB 30 Quizzes: Day 19: Spelling Correction &amp; Vocab</a></h4>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li>1234 attempts</li>
-                     <li class="relative divider-line ml3">16 upvotes</li>
-                     <li class="relative divider-line ml3">15 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-8"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--user-quiz">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/rajan-jha-i-18675260-f2ac-11e6-afb4-29bf3fee6d21"><img id="a9b64f70-e4e2-11e9-ade9-541f1f92509d-author-18675260-f2ac-11e6-afb4-29bf3fee6d21" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/6/feb1e180df5490da75499ad18d86cc33a98b2e01c4ccdd1539e53c2f6def6760-high-s.jpg" alt="Rajan Jha"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1"><a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/rajan-jha-i-18675260-f2ac-11e6-afb4-29bf3fee6d21">Rajan Jha</a></p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Quiz</span><span class="ml3 dotted-point relative nowrap">1 min ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/post-i-a9b64f70-e4e2-11e9-ade9-541f1f92509d">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/post-i-a9b64f70-e4e2-11e9-ade9-541f1f92509d">One Word Substitutions Quiz For All Exam</a></h4>
-                     <a class="no-underline silver mt2" href="https://gradeup.co/post-i-a9b64f70-e4e2-11e9-ade9-541f1f92509d"></a><a class="center db" href="https://gradeup.co/post-i-a9b64f70-e4e2-11e9-ade9-541f1f92509d"><img id="a9b64f70-e4e2-11e9-ade9-541f1f92509d-image" style="width: 620px; height: 350px;" class="lazyload maint-media-ratio db cover max-h-40" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/10/cbe575a44a331aa7a2a2d5662cda7826d73e86bb83dc1bbb7fefb6e723003a66-high-webp.jpg" alt="One Word Substitutions Quiz For All Exam" width="620" height="350"></a>
-                     <div class="flex bg-near-white mt3">
-                        <a class="no-underline dark-gray db ml3 flex items-center pv3 flex-grow-1" href="https://gradeup.co/post-i-a9b64f70-e4e2-11e9-ade9-541f1f92509d">
-                           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px" class="mr3" viewBox="0 0 35 40">
-                              <path d="M19.2 7.4L19.2 4.1 14 4.1 14 7.4C14.8 7.3 15.7 7.2 16.6 7.2 17.5 7.2 18.3 7.3 19.2 7.4" fill="#00A69D"></path>
-                              <path d="M28.5 13.6L30.8 11.3 28.6 9.2 26.3 11.4C27.1 12 27.8 12.8 28.5 13.6" fill="#00A69D"></path>
-                              <path d="M34.4 10.6L29.3 5.5C29.1 5.3 28.8 5.3 28.5 5.5L27.1 7C26.9 7.2 26.9 7.5 27.1 7.7L28.6 9.2 32.2 12.8C32.4 13 32.8 13 33 12.8L34.4 11.3C34.6 11.1 34.6 10.8 34.4 10.6" fill="#00746E"></path>
-                              <path d="M4.1 16.7C4.1 9.9 9.7 4.4 16.6 4.4L16.6 0.3C15.7 0.3 14.8 0.4 14 0.5 6.1 1.7 0 8.5 0 16.7 0 25.8 7.4 33.2 16.6 33.2L16.6 29C9.7 29 4.1 23.5 4.1 16.7" fill="#00746E" transform="translate(0.000000, 6.432990)"></path>
-                              <path d="M27.2 10.5C24.9 8.7 22.2 7.4 19.2 6.9 18.3 6.8 17.5 6.7 16.6 6.7L16.6 10.8C23.5 10.8 29 16.4 29 23.2 29 30 23.5 35.5 16.6 35.5L16.6 39.6C25.8 39.6 33.2 32.2 33.2 23.2 33.2 19.2 31.8 15.5 29.4 12.7 28.7 11.9 28 11.2 27.2 10.5" fill="#00746E"></path>
-                              <path d="M17.4 14.4L17.4 16.3C18.2 16.4 19 16.6 19.7 16.9 20.4 17.1 21 17.4 21.5 17.7L20.2 20.3C20.2 20.2 20 20.1 19.9 20 19.7 19.9 19.4 19.8 19.2 19.7 18.9 19.5 18.6 19.4 18.2 19.3 17.9 19.2 17.5 19.1 17.2 19L17.2 21.6 17.8 21.7C18.4 21.9 19 22.1 19.5 22.3 20 22.5 20.5 22.7 20.8 23 20.9 23.1 20.9 23.1 21 23.2L30.6 23.2C30.6 15.5 24.3 9.3 16.6 9.3L16.6 14.4 17.4 14.4 17.4 14.4Z" fill="#FFFFFF"></path>
-                              <polygon fill="#FFFFFF" points="20.1 13.4 12.7 13.8 13.4 22 13.7 26.4 25.1 25.5 24.3 18.8 22.2 13.8"></polygon>
-                              <path d="M16.6 23.2L16.6 14.4 16.6 9.3C8.9 9.3 2.6 15.5 2.6 23.2 2.6 30.8 8.9 37 16.6 37 24.3 37 30.6 30.8 30.6 23.2L21 23.2 16.6 23.2Z" fill="#FFFFFF"></path>
-                              <path d="M14 28.2L21.3 23.4C21.5 23.3 21.5 23.1 21.3 23L14 18.2C13.8 18 13.6 18.2 13.6 18.4L13.6 28C13.6 28.2 13.8 28.3 14 28.2" fill="#00746E"></path>
-                              <polygon fill="#00746E" points="11.4 4.1 21.8 4.1 21.8 0 11.4 0"></polygon>
-                           </svg>
-                           <ul class="list flex mid-gray f6 ma0 pa0">
-                              <li class="mb0">5 Ques</li>
-                              <li class="ml3 divider-line relative mb0">2 Mins</li>
-                           </ul>
-                        </a>
-                        <a class="ph4 no-hover-color flex items-center no-underline white fw5 bg-green" href="https://gradeup.co/post-i-a9b64f70-e4e2-11e9-ade9-541f1f92509d">START QUIZ</a>
-                     </div>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li>5 attempts</li>
-                     <li class="relative divider-line ml3">0 upvotes</li>
-                     <li class="relative divider-line ml3">1 comment</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-9"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--user-quiz">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/vikram-i-6df936f0-b86b-11e7-925c-f4fcf9977b74"><img id="f5631ba0-e4d9-11e9-9670-5a6e7e57411a-author-6df936f0-b86b-11e7-925c-f4fcf9977b74" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-users-images.grdp.co/userImages/usrimg1525630649231-50-s.jpeg" alt="Vikram "></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1"><a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/vikram-i-6df936f0-b86b-11e7-925c-f4fcf9977b74">Vikram </a></p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Quiz</span><span class="ml3 dotted-point relative nowrap">1 hour ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/post-i-f5631ba0-e4d9-11e9-9670-5a6e7e57411a">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/post-i-f5631ba0-e4d9-11e9-9670-5a6e7e57411a">Fill in the blank -12</a></h4>
-                     <a class="no-underline silver mt2" href="https://gradeup.co/post-i-f5631ba0-e4d9-11e9-9670-5a6e7e57411a"></a><a class="center db" href="https://gradeup.co/post-i-f5631ba0-e4d9-11e9-9670-5a6e7e57411a"><img id="f5631ba0-e4d9-11e9-9670-5a6e7e57411a-image" style="width: 620px; height: 350px;" class="lazyload maint-media-ratio db cover max-h-40" src="https://gs-post-images.grdp.co/2019/6/default_2-img1560493065243-77-rs.png" data-src="https://gs-post-images.grdp.co/2019/6/default_2-img1560493065243-77-rs.png" alt="Fill in the blank -12" width="620" height="350"></a>
-                     <div class="flex bg-near-white mt3">
-                        <a class="no-underline dark-gray db ml3 flex items-center pv3 flex-grow-1" href="https://gradeup.co/post-i-f5631ba0-e4d9-11e9-9670-5a6e7e57411a">
-                           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px" class="mr3" viewBox="0 0 35 40">
-                              <path d="M19.2 7.4L19.2 4.1 14 4.1 14 7.4C14.8 7.3 15.7 7.2 16.6 7.2 17.5 7.2 18.3 7.3 19.2 7.4" fill="#00A69D"></path>
-                              <path d="M28.5 13.6L30.8 11.3 28.6 9.2 26.3 11.4C27.1 12 27.8 12.8 28.5 13.6" fill="#00A69D"></path>
-                              <path d="M34.4 10.6L29.3 5.5C29.1 5.3 28.8 5.3 28.5 5.5L27.1 7C26.9 7.2 26.9 7.5 27.1 7.7L28.6 9.2 32.2 12.8C32.4 13 32.8 13 33 12.8L34.4 11.3C34.6 11.1 34.6 10.8 34.4 10.6" fill="#00746E"></path>
-                              <path d="M4.1 16.7C4.1 9.9 9.7 4.4 16.6 4.4L16.6 0.3C15.7 0.3 14.8 0.4 14 0.5 6.1 1.7 0 8.5 0 16.7 0 25.8 7.4 33.2 16.6 33.2L16.6 29C9.7 29 4.1 23.5 4.1 16.7" fill="#00746E" transform="translate(0.000000, 6.432990)"></path>
-                              <path d="M27.2 10.5C24.9 8.7 22.2 7.4 19.2 6.9 18.3 6.8 17.5 6.7 16.6 6.7L16.6 10.8C23.5 10.8 29 16.4 29 23.2 29 30 23.5 35.5 16.6 35.5L16.6 39.6C25.8 39.6 33.2 32.2 33.2 23.2 33.2 19.2 31.8 15.5 29.4 12.7 28.7 11.9 28 11.2 27.2 10.5" fill="#00746E"></path>
-                              <path d="M17.4 14.4L17.4 16.3C18.2 16.4 19 16.6 19.7 16.9 20.4 17.1 21 17.4 21.5 17.7L20.2 20.3C20.2 20.2 20 20.1 19.9 20 19.7 19.9 19.4 19.8 19.2 19.7 18.9 19.5 18.6 19.4 18.2 19.3 17.9 19.2 17.5 19.1 17.2 19L17.2 21.6 17.8 21.7C18.4 21.9 19 22.1 19.5 22.3 20 22.5 20.5 22.7 20.8 23 20.9 23.1 20.9 23.1 21 23.2L30.6 23.2C30.6 15.5 24.3 9.3 16.6 9.3L16.6 14.4 17.4 14.4 17.4 14.4Z" fill="#FFFFFF"></path>
-                              <polygon fill="#FFFFFF" points="20.1 13.4 12.7 13.8 13.4 22 13.7 26.4 25.1 25.5 24.3 18.8 22.2 13.8"></polygon>
-                              <path d="M16.6 23.2L16.6 14.4 16.6 9.3C8.9 9.3 2.6 15.5 2.6 23.2 2.6 30.8 8.9 37 16.6 37 24.3 37 30.6 30.8 30.6 23.2L21 23.2 16.6 23.2Z" fill="#FFFFFF"></path>
-                              <path d="M14 28.2L21.3 23.4C21.5 23.3 21.5 23.1 21.3 23L14 18.2C13.8 18 13.6 18.2 13.6 18.4L13.6 28C13.6 28.2 13.8 28.3 14 28.2" fill="#00746E"></path>
-                              <polygon fill="#00746E" points="11.4 4.1 21.8 4.1 21.8 0 11.4 0"></polygon>
-                           </svg>
-                           <ul class="list flex mid-gray f6 ma0 pa0">
-                              <li class="mb0">5 Ques</li>
-                              <li class="ml3 divider-line relative mb0">2 Mins</li>
-                           </ul>
-                        </a>
-                        <a class="ph4 no-hover-color flex items-center no-underline white fw5 bg-green" href="https://gradeup.co/post-i-f5631ba0-e4d9-11e9-9670-5a6e7e57411a">START QUIZ</a>
-                     </div>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li>187 attempts</li>
-                     <li class="relative divider-line ml3">11 upvotes</li>
-                     <li class="relative divider-line ml3">5 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-10"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--post">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/dazzling-rockstar-i-82bf25f0-38fc-11e9-90ad-4d4dde3be82f"><img id="e219cbf0-e4d1-11e9-9da9-abf9e60ae833-author-82bf25f0-38fc-11e9-90ad-4d4dde3be82f" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/9/f14ee46657cc68ebbd98a05174a05ccc8034b806ad3f80b2c9e6ef4cd9cd13c8-high-s.jpg" alt="Dazzling Rockstar"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1"><a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/dazzling-rockstar-i-82bf25f0-38fc-11e9-90ad-4d4dde3be82f">Dazzling Rockstar</a></p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Post</span><span class="ml3 dotted-point relative nowrap">2 hours ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/2nd-october-gandhi-jayanti-international-day-of-non-violence-i-e219cbf0-e4d1-11e9-9da9-abf9e60ae833">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <div class="mw-100 bg-near-white mb2 maint-media-ratio" style="width: 620px; height: 325px;"><a class="db"><img id="e219cbf0-e4d1-11e9-9da9-abf9e60ae833-image" style="width: 620px; height: 325px;" src="<?php echo asset('assets/user/image/default_placeholder-img1544611349445-67.png')?>" class="lazyload maint-media-ratio db cover relative overflow-hidden" data-src="https://gs-post-images.grdp.co/2019/10/contributor_article_1569992597706-img1569992597796-31.jpg-rs-high-webp.jpg" alt="2nd October Gandhi Jayanti&nbsp; (International Day of Non-Violence)" width="620" height="325"></a></div>
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/2nd-october-gandhi-jayanti-international-day-of-non-violence-i-e219cbf0-e4d1-11e9-9da9-abf9e60ae833">2nd October Gandhi Jayanti&nbsp; (International Day of Non-Violence)</a></h4>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li class="">11 upvotes</li>
-                     <li class="relative divider-line ml3">0 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-11"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--user-quiz">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/ishan-tewari-i-ad4f3430-740f-11e7-a07e-f546f832d381"><img id="2f1d42f0-e4d3-11e9-9de5-a21b5a4b1387-author-ad4f3430-740f-11e7-a07e-f546f832d381" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/9/7d51ceeed979617f1e14fa5e1ad9b89ab834469cfdb861e50132cbade65662eb-high-s.jpg" alt="Ishan Tewari"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1"><a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/ishan-tewari-i-ad4f3430-740f-11e7-a07e-f546f832d381">Ishan Tewari</a></p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Quiz</span><span class="ml3 dotted-point relative nowrap">2 hours ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/post-i-2f1d42f0-e4d3-11e9-9de5-a21b5a4b1387">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/post-i-2f1d42f0-e4d3-11e9-9de5-a21b5a4b1387">🎊✨ RRB MAINS COMPUTER QUIZ-26 🎊✨</a></h4>
-                     <a class="no-underline silver mt2" href="https://gradeup.co/post-i-2f1d42f0-e4d3-11e9-9de5-a21b5a4b1387"></a><a class="center db" href="https://gradeup.co/post-i-2f1d42f0-e4d3-11e9-9de5-a21b5a4b1387"><img id="2f1d42f0-e4d3-11e9-9de5-a21b5a4b1387-image" style="width: 620px; height: 350px;" class="lazyload maint-media-ratio db cover max-h-40" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/6/default_2-img1560493065243-77-rs.png" alt="🎊✨ RRB MAINS COMPUTER QUIZ-26 🎊✨" width="620" height="350"></a>
-                     <div class="flex bg-near-white mt3">
-                        <a class="no-underline dark-gray db ml3 flex items-center pv3 flex-grow-1" href="https://gradeup.co/post-i-2f1d42f0-e4d3-11e9-9de5-a21b5a4b1387">
-                           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px" class="mr3" viewBox="0 0 35 40">
-                              <path d="M19.2 7.4L19.2 4.1 14 4.1 14 7.4C14.8 7.3 15.7 7.2 16.6 7.2 17.5 7.2 18.3 7.3 19.2 7.4" fill="#00A69D"></path>
-                              <path d="M28.5 13.6L30.8 11.3 28.6 9.2 26.3 11.4C27.1 12 27.8 12.8 28.5 13.6" fill="#00A69D"></path>
-                              <path d="M34.4 10.6L29.3 5.5C29.1 5.3 28.8 5.3 28.5 5.5L27.1 7C26.9 7.2 26.9 7.5 27.1 7.7L28.6 9.2 32.2 12.8C32.4 13 32.8 13 33 12.8L34.4 11.3C34.6 11.1 34.6 10.8 34.4 10.6" fill="#00746E"></path>
-                              <path d="M4.1 16.7C4.1 9.9 9.7 4.4 16.6 4.4L16.6 0.3C15.7 0.3 14.8 0.4 14 0.5 6.1 1.7 0 8.5 0 16.7 0 25.8 7.4 33.2 16.6 33.2L16.6 29C9.7 29 4.1 23.5 4.1 16.7" fill="#00746E" transform="translate(0.000000, 6.432990)"></path>
-                              <path d="M27.2 10.5C24.9 8.7 22.2 7.4 19.2 6.9 18.3 6.8 17.5 6.7 16.6 6.7L16.6 10.8C23.5 10.8 29 16.4 29 23.2 29 30 23.5 35.5 16.6 35.5L16.6 39.6C25.8 39.6 33.2 32.2 33.2 23.2 33.2 19.2 31.8 15.5 29.4 12.7 28.7 11.9 28 11.2 27.2 10.5" fill="#00746E"></path>
-                              <path d="M17.4 14.4L17.4 16.3C18.2 16.4 19 16.6 19.7 16.9 20.4 17.1 21 17.4 21.5 17.7L20.2 20.3C20.2 20.2 20 20.1 19.9 20 19.7 19.9 19.4 19.8 19.2 19.7 18.9 19.5 18.6 19.4 18.2 19.3 17.9 19.2 17.5 19.1 17.2 19L17.2 21.6 17.8 21.7C18.4 21.9 19 22.1 19.5 22.3 20 22.5 20.5 22.7 20.8 23 20.9 23.1 20.9 23.1 21 23.2L30.6 23.2C30.6 15.5 24.3 9.3 16.6 9.3L16.6 14.4 17.4 14.4 17.4 14.4Z" fill="#FFFFFF"></path>
-                              <polygon fill="#FFFFFF" points="20.1 13.4 12.7 13.8 13.4 22 13.7 26.4 25.1 25.5 24.3 18.8 22.2 13.8"></polygon>
-                              <path d="M16.6 23.2L16.6 14.4 16.6 9.3C8.9 9.3 2.6 15.5 2.6 23.2 2.6 30.8 8.9 37 16.6 37 24.3 37 30.6 30.8 30.6 23.2L21 23.2 16.6 23.2Z" fill="#FFFFFF"></path>
-                              <path d="M14 28.2L21.3 23.4C21.5 23.3 21.5 23.1 21.3 23L14 18.2C13.8 18 13.6 18.2 13.6 18.4L13.6 28C13.6 28.2 13.8 28.3 14 28.2" fill="#00746E"></path>
-                              <polygon fill="#00746E" points="11.4 4.1 21.8 4.1 21.8 0 11.4 0"></polygon>
-                           </svg>
-                           <ul class="list flex mid-gray f6 ma0 pa0">
-                              <li class="mb0">5 Ques</li>
-                              <li class="ml3 divider-line relative mb0">2 Mins</li>
-                           </ul>
-                        </a>
-                        <a class="ph4 no-hover-color flex items-center no-underline white fw5 bg-green" href="https://gradeup.co/post-i-2f1d42f0-e4d3-11e9-9de5-a21b5a4b1387">START QUIZ</a>
-                     </div>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li>352 attempts</li>
-                     <li class="relative divider-line ml3">14 upvotes</li>
-                     <li class="relative divider-line ml3">10 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-12"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--user-quiz">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/jagriti-education-sound-of-the-future-i-72956410-067a-11e8-a501-af2e432bd679"><img id="f70c10b0-e4d9-11e9-91a1-16777fb0fe5d-author-72956410-067a-11e8-a501-af2e432bd679" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-users-images.grdp.co/userImages/usrimg1517398414574-49-s.jpeg" alt="Jagriti Education - 'Sound of the future'"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1"><a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/jagriti-education-sound-of-the-future-i-72956410-067a-11e8-a501-af2e432bd679">Jagriti Education - 'Sound of the future'</a></p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Quiz</span><span class="ml3 dotted-point relative nowrap">24 mins ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/post-i-f70c10b0-e4d9-11e9-91a1-16777fb0fe5d">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/post-i-f70c10b0-e4d9-11e9-91a1-16777fb0fe5d">Quiz for ssc and railway</a></h4>
-                     <a class="no-underline silver mt2" href="https://gradeup.co/post-i-f70c10b0-e4d9-11e9-91a1-16777fb0fe5d"></a><a class="center db" href="https://gradeup.co/post-i-f70c10b0-e4d9-11e9-91a1-16777fb0fe5d"><img id="f70c10b0-e4d9-11e9-91a1-16777fb0fe5d-image" style="width: 620px; height: 350px;" class="lazyload maint-media-ratio db cover max-h-40" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/6/default_2-img1560493065243-77-rs.png" alt="Quiz for ssc and railway" width="620" height="350"></a>
-                     <div class="flex bg-near-white mt3">
-                        <a class="no-underline dark-gray db ml3 flex items-center pv3 flex-grow-1" href="https://gradeup.co/post-i-f70c10b0-e4d9-11e9-91a1-16777fb0fe5d">
-                           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px" class="mr3" viewBox="0 0 35 40">
-                              <path d="M19.2 7.4L19.2 4.1 14 4.1 14 7.4C14.8 7.3 15.7 7.2 16.6 7.2 17.5 7.2 18.3 7.3 19.2 7.4" fill="#00A69D"></path>
-                              <path d="M28.5 13.6L30.8 11.3 28.6 9.2 26.3 11.4C27.1 12 27.8 12.8 28.5 13.6" fill="#00A69D"></path>
-                              <path d="M34.4 10.6L29.3 5.5C29.1 5.3 28.8 5.3 28.5 5.5L27.1 7C26.9 7.2 26.9 7.5 27.1 7.7L28.6 9.2 32.2 12.8C32.4 13 32.8 13 33 12.8L34.4 11.3C34.6 11.1 34.6 10.8 34.4 10.6" fill="#00746E"></path>
-                              <path d="M4.1 16.7C4.1 9.9 9.7 4.4 16.6 4.4L16.6 0.3C15.7 0.3 14.8 0.4 14 0.5 6.1 1.7 0 8.5 0 16.7 0 25.8 7.4 33.2 16.6 33.2L16.6 29C9.7 29 4.1 23.5 4.1 16.7" fill="#00746E" transform="translate(0.000000, 6.432990)"></path>
-                              <path d="M27.2 10.5C24.9 8.7 22.2 7.4 19.2 6.9 18.3 6.8 17.5 6.7 16.6 6.7L16.6 10.8C23.5 10.8 29 16.4 29 23.2 29 30 23.5 35.5 16.6 35.5L16.6 39.6C25.8 39.6 33.2 32.2 33.2 23.2 33.2 19.2 31.8 15.5 29.4 12.7 28.7 11.9 28 11.2 27.2 10.5" fill="#00746E"></path>
-                              <path d="M17.4 14.4L17.4 16.3C18.2 16.4 19 16.6 19.7 16.9 20.4 17.1 21 17.4 21.5 17.7L20.2 20.3C20.2 20.2 20 20.1 19.9 20 19.7 19.9 19.4 19.8 19.2 19.7 18.9 19.5 18.6 19.4 18.2 19.3 17.9 19.2 17.5 19.1 17.2 19L17.2 21.6 17.8 21.7C18.4 21.9 19 22.1 19.5 22.3 20 22.5 20.5 22.7 20.8 23 20.9 23.1 20.9 23.1 21 23.2L30.6 23.2C30.6 15.5 24.3 9.3 16.6 9.3L16.6 14.4 17.4 14.4 17.4 14.4Z" fill="#FFFFFF"></path>
-                              <polygon fill="#FFFFFF" points="20.1 13.4 12.7 13.8 13.4 22 13.7 26.4 25.1 25.5 24.3 18.8 22.2 13.8"></polygon>
-                              <path d="M16.6 23.2L16.6 14.4 16.6 9.3C8.9 9.3 2.6 15.5 2.6 23.2 2.6 30.8 8.9 37 16.6 37 24.3 37 30.6 30.8 30.6 23.2L21 23.2 16.6 23.2Z" fill="#FFFFFF"></path>
-                              <path d="M14 28.2L21.3 23.4C21.5 23.3 21.5 23.1 21.3 23L14 18.2C13.8 18 13.6 18.2 13.6 18.4L13.6 28C13.6 28.2 13.8 28.3 14 28.2" fill="#00746E"></path>
-                              <polygon fill="#00746E" points="11.4 4.1 21.8 4.1 21.8 0 11.4 0"></polygon>
-                           </svg>
-                           <ul class="list flex mid-gray f6 ma0 pa0">
-                              <li class="mb0">5 Ques</li>
-                              <li class="ml3 divider-line relative mb0">2 Mins</li>
-                           </ul>
-                        </a>
-                        <a class="ph4 no-hover-color flex items-center no-underline white fw5 bg-green" href="https://gradeup.co/post-i-f70c10b0-e4d9-11e9-91a1-16777fb0fe5d">START QUIZ</a>
-                     </div>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li>97 attempts</li>
-                     <li class="relative divider-line ml3">3 upvotes</li>
-                     <li class="relative divider-line ml3">3 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-13"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--test">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/neha-panwar-i-5421a200-210a-11e8-b87f-a810406f1c1e"><img id="a24b6ed0-e42b-11e9-865a-45d37d45b734-author-5421a200-210a-11e8-b87f-a810406f1c1e" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-users-images.grdp.co/userImages/usrimg1569561601256-69-s.jpeg" alt="Neha Panwar"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1">
-                           <a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/neha-panwar-i-5421a200-210a-11e8-b87f-a810406f1c1e">Neha Panwar</a>
-                           <span class="bg-green br-100 pa1 db">
-                              <svg class="db svg-fn svg-s-white" viewBox="0 0 32 24" style="stroke-width: 5px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="8px">
-                                 <polyline points="2.6 13.4 11.3 21.4 29.7 2.9"></polyline>
-                              </svg>
-                           </span>
-                        </p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Quiz</span><span class="ml3 dotted-point relative nowrap">2 hours ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/history-quiz-02-10-2019-i-a24b6ed0-e42b-11e9-865a-45d37d45b734">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <div class="bg-near-white pa3 flex flex-column items-center">
-                        <p class="mb0">
-                           <svg class="dib svg-f-dg clock-icon" viewBox="0 0 47 46" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="60px">
-                              <g fill="none" transform="translate(4.95 3.585)">
-                                 <path stroke="#0A6F6A" stroke-width="1.89" d="M5.978 30.431l1.735 1.564 1.897 1.651-4.879 4.847a1.83 1.83 0 0 1-2.49.083l-.73-.635a1.83 1.83 0 0 1-.13-2.637l4.597-4.873zM31.12 30.335l-1.452 1.66-1.897 1.651 4.879 4.847a1.83 1.83 0 0 0 2.49.083l.707-.616a1.83 1.83 0 0 0 .11-2.657l-4.837-4.968zM23.48 5.083c1.641-3.37 4.037-4.868 7.188-4.496.037.111 6.56.36 6.56 7.527.005.009-.04 3.45-3.891 6.005M13.878 5.083C12.238 1.713 9.841.215 6.69.587 6.653.698.13.947.13 8.114c-.005.009.04 3.45 3.891 6.005"></path>
-                                 <path fill="#50B167" d="M17.374 23.881l5.464-3.536a.457.457 0 0 0 .013-.76l-5.464-3.806a.457.457 0 0 0-.72.375v7.343a.457.457 0 0 0 .707.384z"></path>
-                                 <circle cx="18.639" cy="19.808" r="16.136" stroke="#0A6F6A" stroke-width="1.89"></circle>
-                              </g>
-                           </svg>
-                        </p>
-                        <p class="ma0">General Awareness</p>
-                        <ul class="list flex mid-gray f6 ma0 pa0 mt1">
-                           <li>10 Questions</li>
-                           <li class="ml3 divider-line relative">5 Minutes</li>
-                        </ul>
-                        <a class="no-underline bg-green white pv2 ph4 no-hover-color br2 mt2" href="https://gradeup.co/history-quiz-02-10-2019-i-a24b6ed0-e42b-11e9-865a-45d37d45b734">START QUIZ</a>
-                     </div>
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/history-quiz-02-10-2019-i-a24b6ed0-e42b-11e9-865a-45d37d45b734">History Quiz || 02.10.2019</a></h4>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li>982 attempts</li>
-                     <li class="relative divider-line ml3">11 upvotes</li>
-                     <li class="relative divider-line ml3">9 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-14"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--user-quiz">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/kamini-nahak-i-d79de7a0-d3a3-11e8-bdc0-796f4a3d812d"><img id="a4478e50-df88-11e9-a9d5-55042cbbbd21-author-d79de7a0-d3a3-11e8-bdc0-796f4a3d812d" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/10/d62c785257559c47f8d7a8a14e41e2e0091bfa5169d2944d80203961fd4935c0-high-s.jpg" alt="Kamini Nahak"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1"><a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/kamini-nahak-i-d79de7a0-d3a3-11e8-bdc0-796f4a3d812d">Kamini Nahak</a></p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Quiz</span><span class="ml3 dotted-point relative nowrap">2 hours ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/post-i-a4478e50-df88-11e9-a9d5-55042cbbbd21">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/post-i-a4478e50-df88-11e9-a9d5-55042cbbbd21">Analogy Quizz-5</a></h4>
-                     <a class="no-underline silver mt2" href="https://gradeup.co/post-i-a4478e50-df88-11e9-a9d5-55042cbbbd21"></a><a class="center db" href="https://gradeup.co/post-i-a4478e50-df88-11e9-a9d5-55042cbbbd21"><img id="a4478e50-df88-11e9-a9d5-55042cbbbd21-image" style="width: 620px; height: 350px;" class="lazyload maint-media-ratio db cover max-h-40" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/6/default_2-img1560493065243-77-rs.png" alt="Analogy Quizz-5" width="620" height="350"></a>
-                     <div class="flex bg-near-white mt3">
-                        <a class="no-underline dark-gray db ml3 flex items-center pv3 flex-grow-1" href="https://gradeup.co/post-i-a4478e50-df88-11e9-a9d5-55042cbbbd21">
-                           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px" class="mr3" viewBox="0 0 35 40">
-                              <path d="M19.2 7.4L19.2 4.1 14 4.1 14 7.4C14.8 7.3 15.7 7.2 16.6 7.2 17.5 7.2 18.3 7.3 19.2 7.4" fill="#00A69D"></path>
-                              <path d="M28.5 13.6L30.8 11.3 28.6 9.2 26.3 11.4C27.1 12 27.8 12.8 28.5 13.6" fill="#00A69D"></path>
-                              <path d="M34.4 10.6L29.3 5.5C29.1 5.3 28.8 5.3 28.5 5.5L27.1 7C26.9 7.2 26.9 7.5 27.1 7.7L28.6 9.2 32.2 12.8C32.4 13 32.8 13 33 12.8L34.4 11.3C34.6 11.1 34.6 10.8 34.4 10.6" fill="#00746E"></path>
-                              <path d="M4.1 16.7C4.1 9.9 9.7 4.4 16.6 4.4L16.6 0.3C15.7 0.3 14.8 0.4 14 0.5 6.1 1.7 0 8.5 0 16.7 0 25.8 7.4 33.2 16.6 33.2L16.6 29C9.7 29 4.1 23.5 4.1 16.7" fill="#00746E" transform="translate(0.000000, 6.432990)"></path>
-                              <path d="M27.2 10.5C24.9 8.7 22.2 7.4 19.2 6.9 18.3 6.8 17.5 6.7 16.6 6.7L16.6 10.8C23.5 10.8 29 16.4 29 23.2 29 30 23.5 35.5 16.6 35.5L16.6 39.6C25.8 39.6 33.2 32.2 33.2 23.2 33.2 19.2 31.8 15.5 29.4 12.7 28.7 11.9 28 11.2 27.2 10.5" fill="#00746E"></path>
-                              <path d="M17.4 14.4L17.4 16.3C18.2 16.4 19 16.6 19.7 16.9 20.4 17.1 21 17.4 21.5 17.7L20.2 20.3C20.2 20.2 20 20.1 19.9 20 19.7 19.9 19.4 19.8 19.2 19.7 18.9 19.5 18.6 19.4 18.2 19.3 17.9 19.2 17.5 19.1 17.2 19L17.2 21.6 17.8 21.7C18.4 21.9 19 22.1 19.5 22.3 20 22.5 20.5 22.7 20.8 23 20.9 23.1 20.9 23.1 21 23.2L30.6 23.2C30.6 15.5 24.3 9.3 16.6 9.3L16.6 14.4 17.4 14.4 17.4 14.4Z" fill="#FFFFFF"></path>
-                              <polygon fill="#FFFFFF" points="20.1 13.4 12.7 13.8 13.4 22 13.7 26.4 25.1 25.5 24.3 18.8 22.2 13.8"></polygon>
-                              <path d="M16.6 23.2L16.6 14.4 16.6 9.3C8.9 9.3 2.6 15.5 2.6 23.2 2.6 30.8 8.9 37 16.6 37 24.3 37 30.6 30.8 30.6 23.2L21 23.2 16.6 23.2Z" fill="#FFFFFF"></path>
-                              <path d="M14 28.2L21.3 23.4C21.5 23.3 21.5 23.1 21.3 23L14 18.2C13.8 18 13.6 18.2 13.6 18.4L13.6 28C13.6 28.2 13.8 28.3 14 28.2" fill="#00746E"></path>
-                              <polygon fill="#00746E" points="11.4 4.1 21.8 4.1 21.8 0 11.4 0"></polygon>
-                           </svg>
-                           <ul class="list flex mid-gray f6 ma0 pa0">
-                              <li class="mb0">5 Ques</li>
-                              <li class="ml3 divider-line relative mb0">1 Mins</li>
-                           </ul>
-                        </a>
-                        <a class="ph4 no-hover-color flex items-center no-underline white fw5 bg-green" href="https://gradeup.co/post-i-a4478e50-df88-11e9-a9d5-55042cbbbd21">START QUIZ</a>
-                     </div>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li>189 attempts</li>
-                     <li class="relative divider-line ml3">18 upvotes</li>
-                     <li class="relative divider-line ml3">3 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-15"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--user-quiz">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/rajan-jha-i-18675260-f2ac-11e6-afb4-29bf3fee6d21"><img id="25f616d0-e4e1-11e9-9b0a-ec83462e611d-author-18675260-f2ac-11e6-afb4-29bf3fee6d21" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/6/feb1e180df5490da75499ad18d86cc33a98b2e01c4ccdd1539e53c2f6def6760-high-s.jpg" alt="Rajan Jha"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1"><a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/rajan-jha-i-18675260-f2ac-11e6-afb4-29bf3fee6d21">Rajan Jha</a></p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Quiz</span><span class="ml3 dotted-point relative nowrap">9 mins ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/post-i-25f616d0-e4e1-11e9-9b0a-ec83462e611d">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/post-i-25f616d0-e4e1-11e9-9b0a-ec83462e611d">Country &amp; Their Official Language Quiz</a></h4>
-                     <a class="no-underline silver mt2" href="https://gradeup.co/post-i-25f616d0-e4e1-11e9-9b0a-ec83462e611d"></a><a class="center db" href="https://gradeup.co/post-i-25f616d0-e4e1-11e9-9b0a-ec83462e611d"><img id="25f616d0-e4e1-11e9-9b0a-ec83462e611d-image" style="width: 620px; height: 350px;" class="lazyload maint-media-ratio db cover max-h-40" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/10/61f53a7808575d4c2144463edcf097a661e98e38e0fcf5bdbc86418e9831827c-high-webp.jpg" alt="Country &amp; Their Official Language Quiz" width="620" height="350"></a>
-                     <div class="flex bg-near-white mt3">
-                        <a class="no-underline dark-gray db ml3 flex items-center pv3 flex-grow-1" href="https://gradeup.co/post-i-25f616d0-e4e1-11e9-9b0a-ec83462e611d">
-                           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px" class="mr3" viewBox="0 0 35 40">
-                              <path d="M19.2 7.4L19.2 4.1 14 4.1 14 7.4C14.8 7.3 15.7 7.2 16.6 7.2 17.5 7.2 18.3 7.3 19.2 7.4" fill="#00A69D"></path>
-                              <path d="M28.5 13.6L30.8 11.3 28.6 9.2 26.3 11.4C27.1 12 27.8 12.8 28.5 13.6" fill="#00A69D"></path>
-                              <path d="M34.4 10.6L29.3 5.5C29.1 5.3 28.8 5.3 28.5 5.5L27.1 7C26.9 7.2 26.9 7.5 27.1 7.7L28.6 9.2 32.2 12.8C32.4 13 32.8 13 33 12.8L34.4 11.3C34.6 11.1 34.6 10.8 34.4 10.6" fill="#00746E"></path>
-                              <path d="M4.1 16.7C4.1 9.9 9.7 4.4 16.6 4.4L16.6 0.3C15.7 0.3 14.8 0.4 14 0.5 6.1 1.7 0 8.5 0 16.7 0 25.8 7.4 33.2 16.6 33.2L16.6 29C9.7 29 4.1 23.5 4.1 16.7" fill="#00746E" transform="translate(0.000000, 6.432990)"></path>
-                              <path d="M27.2 10.5C24.9 8.7 22.2 7.4 19.2 6.9 18.3 6.8 17.5 6.7 16.6 6.7L16.6 10.8C23.5 10.8 29 16.4 29 23.2 29 30 23.5 35.5 16.6 35.5L16.6 39.6C25.8 39.6 33.2 32.2 33.2 23.2 33.2 19.2 31.8 15.5 29.4 12.7 28.7 11.9 28 11.2 27.2 10.5" fill="#00746E"></path>
-                              <path d="M17.4 14.4L17.4 16.3C18.2 16.4 19 16.6 19.7 16.9 20.4 17.1 21 17.4 21.5 17.7L20.2 20.3C20.2 20.2 20 20.1 19.9 20 19.7 19.9 19.4 19.8 19.2 19.7 18.9 19.5 18.6 19.4 18.2 19.3 17.9 19.2 17.5 19.1 17.2 19L17.2 21.6 17.8 21.7C18.4 21.9 19 22.1 19.5 22.3 20 22.5 20.5 22.7 20.8 23 20.9 23.1 20.9 23.1 21 23.2L30.6 23.2C30.6 15.5 24.3 9.3 16.6 9.3L16.6 14.4 17.4 14.4 17.4 14.4Z" fill="#FFFFFF"></path>
-                              <polygon fill="#FFFFFF" points="20.1 13.4 12.7 13.8 13.4 22 13.7 26.4 25.1 25.5 24.3 18.8 22.2 13.8"></polygon>
-                              <path d="M16.6 23.2L16.6 14.4 16.6 9.3C8.9 9.3 2.6 15.5 2.6 23.2 2.6 30.8 8.9 37 16.6 37 24.3 37 30.6 30.8 30.6 23.2L21 23.2 16.6 23.2Z" fill="#FFFFFF"></path>
-                              <path d="M14 28.2L21.3 23.4C21.5 23.3 21.5 23.1 21.3 23L14 18.2C13.8 18 13.6 18.2 13.6 18.4L13.6 28C13.6 28.2 13.8 28.3 14 28.2" fill="#00746E"></path>
-                              <polygon fill="#00746E" points="11.4 4.1 21.8 4.1 21.8 0 11.4 0"></polygon>
-                           </svg>
-                           <ul class="list flex mid-gray f6 ma0 pa0">
-                              <li class="mb0">5 Ques</li>
-                              <li class="ml3 divider-line relative mb0">2 Mins</li>
-                           </ul>
-                        </a>
-                        <a class="ph4 no-hover-color flex items-center no-underline white fw5 bg-green" href="https://gradeup.co/post-i-25f616d0-e4e1-11e9-9b0a-ec83462e611d">START QUIZ</a>
-                     </div>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li>23 attempts</li>
-                     <li class="relative divider-line ml3">0 upvotes</li>
-                     <li class="relative divider-line ml3">0 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-16"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--user-quiz">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/ishan-tewari-i-ad4f3430-740f-11e7-a07e-f546f832d381"><img id="99a970a0-e4db-11e9-9f3f-60255862b9d9-author-ad4f3430-740f-11e7-a07e-f546f832d381" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/9/7d51ceeed979617f1e14fa5e1ad9b89ab834469cfdb861e50132cbade65662eb-high-s.jpg" alt="Ishan Tewari"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1"><a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/ishan-tewari-i-ad4f3430-740f-11e7-a07e-f546f832d381">Ishan Tewari</a></p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Quiz</span><span class="ml3 dotted-point relative nowrap">1 hour ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/post-i-99a970a0-e4db-11e9-9f3f-60255862b9d9">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/post-i-99a970a0-e4db-11e9-9f3f-60255862b9d9">🎊✨ RRB PO MAINS QUANTS QUIZ-16 🎊✨</a></h4>
-                     <a class="no-underline silver mt2" href="https://gradeup.co/post-i-99a970a0-e4db-11e9-9f3f-60255862b9d9"></a><a class="center db" href="https://gradeup.co/post-i-99a970a0-e4db-11e9-9f3f-60255862b9d9"><img id="99a970a0-e4db-11e9-9f3f-60255862b9d9-image" style="width: 620px; height: 350px;" class="lazyload maint-media-ratio db cover max-h-40" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/6/default_2-img1560493065243-77-rs.png" alt="🎊✨ RRB PO MAINS QUANTS QUIZ-16 🎊✨" width="620" height="350"></a>
-                     <div class="flex bg-near-white mt3">
-                        <a class="no-underline dark-gray db ml3 flex items-center pv3 flex-grow-1" href="https://gradeup.co/post-i-99a970a0-e4db-11e9-9f3f-60255862b9d9">
-                           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px" class="mr3" viewBox="0 0 35 40">
-                              <path d="M19.2 7.4L19.2 4.1 14 4.1 14 7.4C14.8 7.3 15.7 7.2 16.6 7.2 17.5 7.2 18.3 7.3 19.2 7.4" fill="#00A69D"></path>
-                              <path d="M28.5 13.6L30.8 11.3 28.6 9.2 26.3 11.4C27.1 12 27.8 12.8 28.5 13.6" fill="#00A69D"></path>
-                              <path d="M34.4 10.6L29.3 5.5C29.1 5.3 28.8 5.3 28.5 5.5L27.1 7C26.9 7.2 26.9 7.5 27.1 7.7L28.6 9.2 32.2 12.8C32.4 13 32.8 13 33 12.8L34.4 11.3C34.6 11.1 34.6 10.8 34.4 10.6" fill="#00746E"></path>
-                              <path d="M4.1 16.7C4.1 9.9 9.7 4.4 16.6 4.4L16.6 0.3C15.7 0.3 14.8 0.4 14 0.5 6.1 1.7 0 8.5 0 16.7 0 25.8 7.4 33.2 16.6 33.2L16.6 29C9.7 29 4.1 23.5 4.1 16.7" fill="#00746E" transform="translate(0.000000, 6.432990)"></path>
-                              <path d="M27.2 10.5C24.9 8.7 22.2 7.4 19.2 6.9 18.3 6.8 17.5 6.7 16.6 6.7L16.6 10.8C23.5 10.8 29 16.4 29 23.2 29 30 23.5 35.5 16.6 35.5L16.6 39.6C25.8 39.6 33.2 32.2 33.2 23.2 33.2 19.2 31.8 15.5 29.4 12.7 28.7 11.9 28 11.2 27.2 10.5" fill="#00746E"></path>
-                              <path d="M17.4 14.4L17.4 16.3C18.2 16.4 19 16.6 19.7 16.9 20.4 17.1 21 17.4 21.5 17.7L20.2 20.3C20.2 20.2 20 20.1 19.9 20 19.7 19.9 19.4 19.8 19.2 19.7 18.9 19.5 18.6 19.4 18.2 19.3 17.9 19.2 17.5 19.1 17.2 19L17.2 21.6 17.8 21.7C18.4 21.9 19 22.1 19.5 22.3 20 22.5 20.5 22.7 20.8 23 20.9 23.1 20.9 23.1 21 23.2L30.6 23.2C30.6 15.5 24.3 9.3 16.6 9.3L16.6 14.4 17.4 14.4 17.4 14.4Z" fill="#FFFFFF"></path>
-                              <polygon fill="#FFFFFF" points="20.1 13.4 12.7 13.8 13.4 22 13.7 26.4 25.1 25.5 24.3 18.8 22.2 13.8"></polygon>
-                              <path d="M16.6 23.2L16.6 14.4 16.6 9.3C8.9 9.3 2.6 15.5 2.6 23.2 2.6 30.8 8.9 37 16.6 37 24.3 37 30.6 30.8 30.6 23.2L21 23.2 16.6 23.2Z" fill="#FFFFFF"></path>
-                              <path d="M14 28.2L21.3 23.4C21.5 23.3 21.5 23.1 21.3 23L14 18.2C13.8 18 13.6 18.2 13.6 18.4L13.6 28C13.6 28.2 13.8 28.3 14 28.2" fill="#00746E"></path>
-                              <polygon fill="#00746E" points="11.4 4.1 21.8 4.1 21.8 0 11.4 0"></polygon>
-                           </svg>
-                           <ul class="list flex mid-gray f6 ma0 pa0">
-                              <li class="mb0">5 Ques</li>
-                              <li class="ml3 divider-line relative mb0">8 Mins</li>
-                           </ul>
-                        </a>
-                        <a class="ph4 no-hover-color flex items-center no-underline white fw5 bg-green" href="https://gradeup.co/post-i-99a970a0-e4db-11e9-9f3f-60255862b9d9">START QUIZ</a>
-                     </div>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li>34 attempts</li>
-                     <li class="relative divider-line ml3">4 upvotes</li>
-                     <li class="relative divider-line ml3">4 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-17"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--post">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/dazzling-rockstar-i-82bf25f0-38fc-11e9-90ad-4d4dde3be82f"><img id="e6692c10-e4d5-11e9-afbc-41a9eeda4c18-author-82bf25f0-38fc-11e9-90ad-4d4dde3be82f" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/9/f14ee46657cc68ebbd98a05174a05ccc8034b806ad3f80b2c9e6ef4cd9cd13c8-high-s.jpg" alt="Dazzling Rockstar"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1"><a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/dazzling-rockstar-i-82bf25f0-38fc-11e9-90ad-4d4dde3be82f">Dazzling Rockstar</a></p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Post</span><span class="ml3 dotted-point relative nowrap">2 hours ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/how-to-study-more-in-less-time-how-to-increase-your-productivity-i-e6692c10-e4d5-11e9-afbc-41a9eeda4c18">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <div class="mw-100 bg-near-white mb2 maint-media-ratio" style="width: 620px; height: 325px;"><a class="db"><img id="e6692c10-e4d5-11e9-afbc-41a9eeda4c18-image" style="width: 620px; height: 325px;" src="<?php echo asset('assets/user/image/default_placeholder-img1544611349445-67.png')?>" class="lazyload maint-media-ratio db cover relative overflow-hidden" data-src="https://gs-post-images.grdp.co/2019/10/contributor_article_1569994381581-img1569994381679-50.jpg-rs-high-webp.jpg" alt="How to Study MORE in LESS Time | How to Increase Your Productivity | |!" width="620" height="325"></a></div>
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/how-to-study-more-in-less-time-how-to-increase-your-productivity-i-e6692c10-e4d5-11e9-afbc-41a9eeda4c18">How to Study MORE in LESS Time | How to Increase Your Productivity | |!</a></h4>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li class="">7 upvotes</li>
-                     <li class="relative divider-line ml3">1 comment</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-18"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--post">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/pandey-ji-i-b760f350-150a-11e7-b6f9-1da30670ed9f"><img id="bc9a5900-e4bb-11e9-9120-9c21748f7f13-author-b760f350-150a-11e7-b6f9-1da30670ed9f" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/5/4fb3501b6b60cac3d3815d63c95a56af3cb3deb4d1203fd910793777fdece00e-high-s.jpg" alt="Pandey Ji"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1"><a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/pandey-ji-i-b760f350-150a-11e7-b6f9-1da30670ed9f">Pandey Ji</a></p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Post</span><span class="ml3 dotted-point relative nowrap">4 hours ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/all-about-masala-bonds-i-bc9a5900-e4bb-11e9-9120-9c21748f7f13">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <div class="mw-100 bg-near-white mb2 maint-media-ratio" style="width: 620px; height: 350px;"><a class="db"><img id="bc9a5900-e4bb-11e9-9120-9c21748f7f13-image" style="width: 620px; height: 350px;" src="<?php echo asset('assets/user/image/default_placeholder-img1544611349445-67.png')?>" class="lazyload maint-media-ratio db cover relative overflow-hidden" data-src="https://gs-post-images.grdp.co/2019/10/941d4c6a1676bc913beb784e63bec1475f6b9f274ac8185e277e12c380923c07-high-webp.jpg" alt="All About Masala Bonds" width="620" height="350"></a></div>
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/all-about-masala-bonds-i-bc9a5900-e4bb-11e9-9120-9c21748f7f13">All About Masala Bonds</a></h4>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li class="">39 upvotes</li>
-                     <li class="relative divider-line ml3">4 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-19"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--user-quiz">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/ankit-yadav-i-20d07d80-5c7e-11e9-94c1-0016196651bc"><img id="d4139330-e475-11e9-8eaa-0593d95e137c-author-20d07d80-5c7e-11e9-94c1-0016196651bc" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="https://lh5.googleusercontent.com/-_ueET8KUN5E/AAAAAAAAAAI/AAAAAAAAAhk/xHey3VgIkmc/s96-c/photo.jpg" data-src="https://lh5.googleusercontent.com/-_ueET8KUN5E/AAAAAAAAAAI/AAAAAAAAAhk/xHey3VgIkmc/s96-c/photo.jpg" alt="Ankit Yadav"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1"><a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/ankit-yadav-i-20d07d80-5c7e-11e9-94c1-0016196651bc">Ankit Yadav</a></p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Quiz</span><span class="ml3 dotted-point relative nowrap">1 hour ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/post-i-d4139330-e475-11e9-8eaa-0593d95e137c">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/post-i-d4139330-e475-11e9-8eaa-0593d95e137c">General Awareness Quiz!!</a></h4>
-                     <a class="no-underline silver mt2" href="https://gradeup.co/post-i-d4139330-e475-11e9-8eaa-0593d95e137c"></a><a class="center db" href="https://gradeup.co/post-i-d4139330-e475-11e9-8eaa-0593d95e137c"><img id="d4139330-e475-11e9-8eaa-0593d95e137c-image" style="width: 620px; height: 350px;" class="lazyload maint-media-ratio db cover max-h-40" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/10/b658a79543557a16591ca80e043afb5b4c725e1c0cf4cc3a5b1f0e7a848e8ba7-high-webp.jpg" alt="General Awareness Quiz!!" width="620" height="350"></a>
-                     <div class="flex bg-near-white mt3">
-                        <a class="no-underline dark-gray db ml3 flex items-center pv3 flex-grow-1" href="https://gradeup.co/post-i-d4139330-e475-11e9-8eaa-0593d95e137c">
-                           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px" class="mr3" viewBox="0 0 35 40">
-                              <path d="M19.2 7.4L19.2 4.1 14 4.1 14 7.4C14.8 7.3 15.7 7.2 16.6 7.2 17.5 7.2 18.3 7.3 19.2 7.4" fill="#00A69D"></path>
-                              <path d="M28.5 13.6L30.8 11.3 28.6 9.2 26.3 11.4C27.1 12 27.8 12.8 28.5 13.6" fill="#00A69D"></path>
-                              <path d="M34.4 10.6L29.3 5.5C29.1 5.3 28.8 5.3 28.5 5.5L27.1 7C26.9 7.2 26.9 7.5 27.1 7.7L28.6 9.2 32.2 12.8C32.4 13 32.8 13 33 12.8L34.4 11.3C34.6 11.1 34.6 10.8 34.4 10.6" fill="#00746E"></path>
-                              <path d="M4.1 16.7C4.1 9.9 9.7 4.4 16.6 4.4L16.6 0.3C15.7 0.3 14.8 0.4 14 0.5 6.1 1.7 0 8.5 0 16.7 0 25.8 7.4 33.2 16.6 33.2L16.6 29C9.7 29 4.1 23.5 4.1 16.7" fill="#00746E" transform="translate(0.000000, 6.432990)"></path>
-                              <path d="M27.2 10.5C24.9 8.7 22.2 7.4 19.2 6.9 18.3 6.8 17.5 6.7 16.6 6.7L16.6 10.8C23.5 10.8 29 16.4 29 23.2 29 30 23.5 35.5 16.6 35.5L16.6 39.6C25.8 39.6 33.2 32.2 33.2 23.2 33.2 19.2 31.8 15.5 29.4 12.7 28.7 11.9 28 11.2 27.2 10.5" fill="#00746E"></path>
-                              <path d="M17.4 14.4L17.4 16.3C18.2 16.4 19 16.6 19.7 16.9 20.4 17.1 21 17.4 21.5 17.7L20.2 20.3C20.2 20.2 20 20.1 19.9 20 19.7 19.9 19.4 19.8 19.2 19.7 18.9 19.5 18.6 19.4 18.2 19.3 17.9 19.2 17.5 19.1 17.2 19L17.2 21.6 17.8 21.7C18.4 21.9 19 22.1 19.5 22.3 20 22.5 20.5 22.7 20.8 23 20.9 23.1 20.9 23.1 21 23.2L30.6 23.2C30.6 15.5 24.3 9.3 16.6 9.3L16.6 14.4 17.4 14.4 17.4 14.4Z" fill="#FFFFFF"></path>
-                              <polygon fill="#FFFFFF" points="20.1 13.4 12.7 13.8 13.4 22 13.7 26.4 25.1 25.5 24.3 18.8 22.2 13.8"></polygon>
-                              <path d="M16.6 23.2L16.6 14.4 16.6 9.3C8.9 9.3 2.6 15.5 2.6 23.2 2.6 30.8 8.9 37 16.6 37 24.3 37 30.6 30.8 30.6 23.2L21 23.2 16.6 23.2Z" fill="#FFFFFF"></path>
-                              <path d="M14 28.2L21.3 23.4C21.5 23.3 21.5 23.1 21.3 23L14 18.2C13.8 18 13.6 18.2 13.6 18.4L13.6 28C13.6 28.2 13.8 28.3 14 28.2" fill="#00746E"></path>
-                              <polygon fill="#00746E" points="11.4 4.1 21.8 4.1 21.8 0 11.4 0"></polygon>
-                           </svg>
-                           <ul class="list flex mid-gray f6 ma0 pa0">
-                              <li class="mb0">5 Ques</li>
-                              <li class="ml3 divider-line relative mb0">2 Mins</li>
-                           </ul>
-                        </a>
-                        <a class="ph4 no-hover-color flex items-center no-underline white fw5 bg-green" href="https://gradeup.co/post-i-d4139330-e475-11e9-8eaa-0593d95e137c">START QUIZ</a>
-                     </div>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li>212 attempts</li>
-                     <li class="relative divider-line ml3">18 upvotes</li>
-                     <li class="relative divider-line ml3">9 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-20"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--test">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/vivek-chaurasiya-i-d84bd340-92b3-11e9-89cd-38aaa0696efe"><img id="1ad3d280-e435-11e9-b39d-3248e91cca95-author-d84bd340-92b3-11e9-89cd-38aaa0696efe" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/8/eca5c548640a1c46932757271bd323dea4b36b725394b416c472845a2154ce32-high-s.jpg" alt="Vivek Chaurasiya"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1">
-                           <a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/vivek-chaurasiya-i-d84bd340-92b3-11e9-89cd-38aaa0696efe">Vivek Chaurasiya</a>
-                           <span class="bg-green br-100 pa1 db">
-                              <svg class="db svg-fn svg-s-white" viewBox="0 0 32 24" style="stroke-width: 5px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="8px">
-                                 <polyline points="2.6 13.4 11.3 21.4 29.7 2.9"></polyline>
-                              </svg>
-                           </span>
-                        </p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Quiz</span><span class="ml3 dotted-point relative nowrap">2 hours ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/wrong-no-series-arithmetic-ibps-rrb-main-2019-02-10-2019-i-1ad3d280-e435-11e9-b39d-3248e91cca95">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <div class="bg-near-white pa3 flex flex-column items-center">
-                        <p class="mb0">
-                           <svg class="dib svg-f-dg clock-icon" viewBox="0 0 47 46" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="60px">
-                              <g fill="none" transform="translate(4.95 3.585)">
-                                 <path stroke="#0A6F6A" stroke-width="1.89" d="M5.978 30.431l1.735 1.564 1.897 1.651-4.879 4.847a1.83 1.83 0 0 1-2.49.083l-.73-.635a1.83 1.83 0 0 1-.13-2.637l4.597-4.873zM31.12 30.335l-1.452 1.66-1.897 1.651 4.879 4.847a1.83 1.83 0 0 0 2.49.083l.707-.616a1.83 1.83 0 0 0 .11-2.657l-4.837-4.968zM23.48 5.083c1.641-3.37 4.037-4.868 7.188-4.496.037.111 6.56.36 6.56 7.527.005.009-.04 3.45-3.891 6.005M13.878 5.083C12.238 1.713 9.841.215 6.69.587 6.653.698.13.947.13 8.114c-.005.009.04 3.45 3.891 6.005"></path>
-                                 <path fill="#50B167" d="M17.374 23.881l5.464-3.536a.457.457 0 0 0 .013-.76l-5.464-3.806a.457.457 0 0 0-.72.375v7.343a.457.457 0 0 0 .707.384z"></path>
-                                 <circle cx="18.639" cy="19.808" r="16.136" stroke="#0A6F6A" stroke-width="1.89"></circle>
-                              </g>
-                           </svg>
-                        </p>
-                        <p class="ma0">Quantitative Aptitude</p>
-                        <ul class="list flex mid-gray f6 ma0 pa0 mt1">
-                           <li>10 Questions</li>
-                           <li class="ml3 divider-line relative">10 Minutes</li>
-                        </ul>
-                        <a class="no-underline bg-green white pv2 ph4 no-hover-color br2 mt2" href="https://gradeup.co/wrong-no-series-arithmetic-ibps-rrb-main-2019-02-10-2019-i-1ad3d280-e435-11e9-b39d-3248e91cca95">START QUIZ</a>
-                     </div>
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/wrong-no-series-arithmetic-ibps-rrb-main-2019-02-10-2019-i-1ad3d280-e435-11e9-b39d-3248e91cca95">  (Wrong No. Series &amp; Arithmetic)  IBPS RRB Main 2019::02.10.2019</a></h4>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li>654 attempts</li>
-                     <li class="relative divider-line ml3">22 upvotes</li>
-                     <li class="relative divider-line ml3">11 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-21"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--test">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/md-mansur-alam-i-29f3cd00-b80d-11e9-8141-6921a49bfdf5"><img id="f75ba5a0-e43c-11e9-8982-eb6e37205163-author-29f3cd00-b80d-11e9-8141-6921a49bfdf5" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-users-images.grdp.co/userImages/usrimg1565181729924-39-s.jpg" alt="Md Mansur Alam"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1">
-                           <a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/md-mansur-alam-i-29f3cd00-b80d-11e9-8141-6921a49bfdf5">Md Mansur Alam</a>
-                           <span class="bg-green br-100 pa1 db">
-                              <svg class="db svg-fn svg-s-white" viewBox="0 0 32 24" style="stroke-width: 5px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="8px">
-                                 <polyline points="2.6 13.4 11.3 21.4 29.7 2.9"></polyline>
-                              </svg>
-                           </span>
-                        </p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Quiz</span><span class="ml3 dotted-point relative nowrap">3 hours ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/banking-gk-for-ibps-rrb-exams-part-33-i-f75ba5a0-e43c-11e9-8982-eb6e37205163">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <div class="bg-near-white pa3 flex flex-column items-center">
-                        <p class="mb0">
-                           <svg class="dib svg-f-dg clock-icon" viewBox="0 0 47 46" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="60px">
-                              <g fill="none" transform="translate(4.95 3.585)">
-                                 <path stroke="#0A6F6A" stroke-width="1.89" d="M5.978 30.431l1.735 1.564 1.897 1.651-4.879 4.847a1.83 1.83 0 0 1-2.49.083l-.73-.635a1.83 1.83 0 0 1-.13-2.637l4.597-4.873zM31.12 30.335l-1.452 1.66-1.897 1.651 4.879 4.847a1.83 1.83 0 0 0 2.49.083l.707-.616a1.83 1.83 0 0 0 .11-2.657l-4.837-4.968zM23.48 5.083c1.641-3.37 4.037-4.868 7.188-4.496.037.111 6.56.36 6.56 7.527.005.009-.04 3.45-3.891 6.005M13.878 5.083C12.238 1.713 9.841.215 6.69.587 6.653.698.13.947.13 8.114c-.005.009.04 3.45 3.891 6.005"></path>
-                                 <path fill="#50B167" d="M17.374 23.881l5.464-3.536a.457.457 0 0 0 .013-.76l-5.464-3.806a.457.457 0 0 0-.72.375v7.343a.457.457 0 0 0 .707.384z"></path>
-                                 <circle cx="18.639" cy="19.808" r="16.136" stroke="#0A6F6A" stroke-width="1.89"></circle>
-                              </g>
-                           </svg>
-                        </p>
-                        <p class="ma0">General Awareness</p>
-                        <ul class="list flex mid-gray f6 ma0 pa0 mt1">
-                           <li>20 Questions</li>
-                           <li class="ml3 divider-line relative">8 Minutes</li>
-                        </ul>
-                        <a class="no-underline bg-green white pv2 ph4 no-hover-color br2 mt2" href="https://gradeup.co/banking-gk-for-ibps-rrb-exams-part-33-i-f75ba5a0-e43c-11e9-8982-eb6e37205163">START QUIZ</a>
-                     </div>
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/banking-gk-for-ibps-rrb-exams-part-33-i-f75ba5a0-e43c-11e9-8982-eb6e37205163">Banking GK for IBPS RRB Exams: Part 33</a></h4>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li>800 attempts</li>
-                     <li class="relative divider-line ml3">17 upvotes</li>
-                     <li class="relative divider-line ml3">9 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-22"></div>
-               <article class="post flex flex-column mb3 bt bl br b--black-10 post--post">
-                  <div class="flex pa3">
-                     <a class="w2 h2 br-100 overflow-hidden mr2 relative" href="https://gradeup.co/user/dazzling-rockstar-i-82bf25f0-38fc-11e9-90ad-4d4dde3be82f"><img id="f48bc810-e4d1-11e9-9c5b-be534d41e420-author-82bf25f0-38fc-11e9-90ad-4d4dde3be82f" class="lazyload absolute z-0 top-0 left-0 w-100 h-100 cover" src="<?php echo asset('assets/user/image/screenshot-2018-12-21-at-3-img1545387500435-75.webp')?>" data-src="https://gs-post-images.grdp.co/2019/9/f14ee46657cc68ebbd98a05174a05ccc8034b806ad3f80b2c9e6ef4cd9cd13c8-high-s.jpg" alt="Dazzling Rockstar"></a>
-                     <div class="flex flex-column flex-grow-1 mr2">
-                        <p class="flex ma0 mb1"><a class="author mr2 link lh-solid dark-gray" href="https://gradeup.co/user/dazzling-rockstar-i-82bf25f0-38fc-11e9-90ad-4d4dde3be82f">Dazzling Rockstar</a></p>
-                        <p class="flex silver mv0 f6"><span class="nowrap">Post</span><span class="ml3 dotted-point relative nowrap">2 hours ago</span></p>
-                     </div>
-                     <svg class="dib svg-fn pointer mr2 svg-s-dark-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" style="stroke-width: 2px;">
-                        <polygon points="24.7 14.1 22.5 17.5 18.5 18.4 21.3 21.5 21 25.5 24.7 23.7 28.4 25.5 28.1 21.5 30.5 18.4 26.8 17.5 "></polygon>
-                        <path d="M40 44L24.3 33.6 9 44V8c0-1.7 1.3-3 3-3h24.9C38.6 5 40 6.3 40 8V44z"></path>
-                     </svg>
-                     <div class="post__head-actions flex fr">
-                        <div class="relative pointer post__other-action--head">
-                           <div class="post__other-action--menu post__other-action--menu-head">
-                              <div class="dd-menu self-center relative dd-menu-right  ">
-                                 <a class="">
-                                    <svg class="db svg-f-gray svg-sn rotate-90" viewBox="0 0 48 48" style="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                       <circle cx="9.5" cy="23.9" r="4"></circle>
-                                       <circle cx="24.2" cy="23.9" r="4"></circle>
-                                       <circle cx="39" cy="23.9" r="4"></circle>
-                                    </svg>
-                                 </a>
-                                 <div class="dd-menu-items mt0">
-                                    <ul class="dd-items-center  dd-items--inactive" style="max-height: 0px; border-width: 0px;">
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center" data-url="/2nd-october-gandhi-jayanti-international-day-of-non-violence-2-i-f48bc810-e4d1-11e9-9c5b-be534d41e420">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <line x1="31.1" y1="16.9" x2="16.9" y2="31.1"></line>
-                                                <path d="M41 15.5c1.6-1.6 1.6-4.1 0-5.7L38.1 7c-1.6-1.6-4.1-1.6-5.7 0l-7.1 7.1c-1.6 1.6-1.6 4.1 0 5.7l2.8 2.8c1.6 1.6 4.1 1.6 5.7 0L41 15.5z"></path>
-                                                <path d="M22.6 33.9c1.6-1.6 1.6-4.1 0-5.7l-2.8-2.8c-1.6-1.6-4.1-1.6-5.7 0L7 32.5c-1.6 1.6-1.6 4.1 0 5.7L9.9 41c1.6 1.6 4.1 1.6 5.7 0L22.6 33.9z"></path>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Copy Link</span>
-                                          </a>
-                                       </li>
-                                       <li class="flex">
-                                          <a class="ma0 flex items-center">
-                                             <svg class="dib svg-fn svg-s-gray ma0 mr3" viewBox="0 0 48 48" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="100%">
-                                                <circle cx="24.2" cy="24" r="15"></circle>
-                                                <line x1="34.7" y1="13.3" x2="13.5" y2="34.5"></line>
-                                             </svg>
-                                             <span class="f5 flex-grow-1 ma0 tl gray">Report</span>
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="word-wrap ph3 flex flex-column">
-                     <div class="mw-100 bg-near-white mb2 maint-media-ratio" style="width: 620px; height: 325px;"><a class="db"><img id="f48bc810-e4d1-11e9-9c5b-be534d41e420-image" style="width: 620px; height: 325px;" src="<?php echo asset('assets/user/image/default_placeholder-img1544611349445-67.png')?>" class="lazyload maint-media-ratio db cover relative overflow-hidden" data-src="https://gs-post-images.grdp.co/2019/10/contributor_article_1569992753960-img1569992754003-81.jpg-rs-high-webp.jpg" alt="2nd October Gandhi Jayanti&nbsp; (International Day of Non-Violence)  2" width="620" height="325"></a></div>
-                     <h4 class="ma0 pt3"><a class="no-underline dark-gray f4" href="https://gradeup.co/2nd-october-gandhi-jayanti-international-day-of-non-violence-2-i-f48bc810-e4d1-11e9-9c5b-be534d41e420">2nd October Gandhi Jayanti&nbsp; (International Day of Non-Violence)  2</a></h4>
-                  </div>
-                  <ul class="flex list pa0 ma0 f6 silver ph3 mv2">
-                     <li class="">9 upvotes</li>
-                     <li class="relative divider-line ml3">0 comments</li>
-                  </ul>
-                  <div class="flex justify-between ph3 bt bb b--black-10">
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center flex-shrink-0 bn pa3 bg-white no-hover-color overflow-hidden gray hover-dark-gray hover-ssdg">
-                        <svg class="db mr2 svg-fn w1-5 h1-5 svg-s-gray" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M18.8 38.7c0 1.5-1.2 2.7-2.7 2.7H7c-1.5 0-2.7-1.2-2.7-2.7V20.8c0-1.5 1.2-2.7 2.7-2.7h9.1c1.5 0 2.7 1.2 2.7 2.7V38.7zM18.8 36.6c0 0 0.7 2.7 4.4 2.7h14.3c0 0 3.4-0.4 3.3-4.3 0 0 2.5-1.8 1.9-5.2 0 0 2.1-2.3 0.7-4.7 0 0 3.7-4.6-3.5-6.8h-8.5c0 0 3-10.7-4-11.8 0 0-2.3-0.5-1.8 2.6l0.2 2.3c0 0-1.5 8.6-6.6 10.7"></path>
-                        </svg>
-                        <span class="flex-l dn">UPVOTE</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-center flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <path d="M38 10.2H2.6c-0.5 0-1 0.4-1 1v25c0 0.5 0.4 1 1 1h6.5v9.4l10-9.4H38c0.5 0 1-0.4 1-1v-25C38.9 10.7 38.5 10.2 38 10.2zM39.5 30.4H45c0.5 0 1-0.4 1-1v-25c0-0.5-0.4-1-1-1H9.7c-0.5 0-1 0.4-1 1V10"></path>
-                        </svg>
-                        <span class="flex-l dn">COMMENT</span>
-                     </a>
-                     <a class="ma0 tc pointer tracked-sm outline-0 b--solid no-user-select flex items-center justify-end flex-shrink-0 bn pa3 overflow-hidden bg-white gray hover-dark-gray no-hover-color hover-ssdg">
-                        <svg class="db mr2 svg-fn svg-s-gray w1-5 h1-5" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" style="stroke-width: 2px;">
-                           <circle cx="9.5" cy="23.8" r="5.2"></circle>
-                           <circle cx="39" cy="11" r="5.2"></circle>
-                           <circle cx="39" cy="36.8" r="5.2"></circle>
-                           <line x1="14.7" y1="21.2" x2="34.3" y2="13.2"></line>
-                           <line x1="14.7" y1="26.8" x2="34.3" y2="34.6"></line>
-                        </svg>
-                        <span class="flex-l dn">SHARE</span>
-                     </a>
-                  </div>
-               </article>
-               <div id="gtm-feed-widget-23"></div>
-               <div id="feed-intersection-elem" class="bg-white w-100 mb1" style="height: 1px;"></div>
+               
             </main>
             <aside>
                <div class="static-widget-container">
@@ -3253,13 +1029,29 @@
             <nav class="flex mh4-l mh0 justify-between flex-wrap">
                <section class="flex items-center flex-wrap justify-center justify-start-l mv1 self-center"><a target="_blank" class="no-underline white f6 mh3 no-hover-color fw4" rel="nofollow" href="https://gradeup.co/about-us">About Us</a><a target="_blank" class="no-underline white f6 mh3 no-hover-color fw4" rel="nofollow" href="https://gradeup.co/contact-us">Contact Us</a><a target="_blank" class="no-underline white f6 mh3 no-hover-color fw4" rel="nofollow" href="https://gradeup.co/faqs">FAQs</a><a class="no-underline white f6 mh3 no-hover-color fw4" rel="nofollow" href="https://gradeup.co/terms-and-condition">Terms and Conditions</a><a target="_blank" class="no-underline white f6 mh3 no-hover-color fw4" rel="nofollow" href="https://gradeup.co/privacy-policy">Privacy Policy</a><a target="_blank" rel="noopener noreferrer" class="no-underline white f6 mh3 no-hover-color fw4" href="https://gradeup.co/sitemap_index.xml">Sitemap</a></section>
                <section class="flex flex-row items-center w-100 w-auto-l flex-grow-1 justify-center justify-end-l self-center mv1 ml3-l ml0">
-                  <p class="ma0 white f5">gradeup © 2019</p>
+                  <p class="ma0 white f5">Education © 2019</p>
                </section>
             </nav>
          </footer>
       </div>
       <script src="<?php echo asset('assets/user/js/lazysizes.js')?>"></script>
-      <script id="__NEXT_DATA__" type="application/json" crossorigin="anonymous">{"dataManager":"[]","props":{"pageProps":{"query":{}},"isGradeupDomain":true,"apolloState":{"User:351b7ef0-e33f-11e9-a5c3-ca01bd5ad223":{"id":"351b7ef0-e33f-11e9-a5c3-ca01bd5ad223","name":"Jignesh Desai","phone":"","emails":{"type":"json","json":["archirayan46@gmail.com"]},"exams":[{"type":"id","generated":false,"id":"Exam:72975611-4a5e-11e5-a83f-8b51c790d8b8","typename":"Exam"},{"type":"id","generated":false,"id":"Exam:e9c196a1-4ae6-11e5-bc68-8620ffdeb79c","typename":"Exam"}],"groups":[{"type":"id","generated":false,"id":"Group:72975611-4a5e-11e5-a83f-8b51c790d8b8","typename":"Group"},{"type":"id","generated":false,"id":"Group:e9c196a1-4ae6-11e5-bc68-8620ffdeb79c","typename":"Group"}],"isActive":true,"isMentor":false,"picture":"https://lh3.googleusercontent.com/-AEYLoBKHPHY/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcsBUz2vCUGg-i3ZxUXNrLN4eA5NQ/s96-c/photo.jpg","loginType":"login","needsVerification":false,"verificationInfo":{"type":"id","generated":true,"id":"$User:351b7ef0-e33f-11e9-a5c3-ca01bd5ad223.verificationInfo","typename":"UserVerificationInfo"},"__typename":"User"},"Exam:72975611-4a5e-11e5-a83f-8b51c790d8b8":{"id":"72975611-4a5e-11e5-a83f-8b51c790d8b8","__typename":"Exam"},"Exam:e9c196a1-4ae6-11e5-bc68-8620ffdeb79c":{"id":"e9c196a1-4ae6-11e5-bc68-8620ffdeb79c","__typename":"Exam"},"Group:72975611-4a5e-11e5-a83f-8b51c790d8b8":{"id":"72975611-4a5e-11e5-a83f-8b51c790d8b8","__typename":"Group"},"Group:e9c196a1-4ae6-11e5-bc68-8620ffdeb79c":{"id":"e9c196a1-4ae6-11e5-bc68-8620ffdeb79c","__typename":"Group"},"$User:351b7ef0-e33f-11e9-a5c3-ca01bd5ad223.verificationInfo":{"isVerified":false,"__typename":"UserVerificationInfo"},"ROOT_QUERY":{"me":{"type":"id","generated":false,"id":"User:351b7ef0-e33f-11e9-a5c3-ca01bd5ad223","typename":"User"},"css":{"type":"json","json":["https://gradeup-assets.grdp.co/website/_next/static/chunks/styles.e14b78c1.chunk.css"]}}}},"page":"/home","query":{},"buildId":"zca439eqSaATEc8nFdpFe","dynamicBuildId":false,"assetPrefix":"https://gradeup-assets.grdp.co/website","dynamicIds":["+SFK","/W8u","+SFK","LJkV","+SFK","+07V"]}</script><script async="" id="__NEXT_PAGE__/home" src="<?php echo asset('assets/user/js/home.js')?>" crossorigin="anonymous"></script><script async="" id="__NEXT_PAGE__/_app" src="<?php echo asset('assets/user/js/_app.js')?>" crossorigin="anonymous"></script><script async="" src="<?php echo asset('assets/user/js/commons.js')?>" crossorigin="anonymous"></script><script async="" src="<?php echo asset('assets/user/js/chunk-auth.js')?>" crossorigin="anonymous"></script><script async="" src="<?php echo asset('assets/user/js/commons.js')?>" crossorigin="anonymous"></script><script async="" src="<?php echo asset('assets/user/js/chunk-mobile-bottom-drawer.js')?>" crossorigin="anonymous"></script><script async="" src="<?php echo asset('assets/user/js/commons.js')?>" crossorigin="anonymous"></script><script async="" src="<?php echo asset('assets/user/js/chunk-header-entity.js')?>" crossorigin="anonymous"></script><script src="Gradeup%20%20India's%20Largest%20Exam%20Prep%20Site%20for%20BANK,%20SSC,%20GATE,%20JEE,%20NEET_files/webpack-68cb825bc42890b3f68a.js" async="" crossorigin="anonymous"></script><script src="<?php echo asset('assets/user/js/commons.js')?>" async="" crossorigin="anonymous"></script><script src="<?php echo asset('assets/user/js/styles.js')?>" async="" crossorigin="anonymous"></script><script src="<?php echo asset('assets/user/js/main-82fc5e36d5ad3edb86b0.js')?>" async="" crossorigin="anonymous"></script><script src="Gradeup%20%20India's%20Largest%20Exam%20Prep%20Site%20for%20BANK,%20SSC,%20GATE,%20JEE,%20NEET_files/sdk_002.js" defer="defer"></script>
+      <script id="__NEXT_DATA__" type="application/json" crossorigin="anonymous">{"dataManager":"[]","props":{"pageProps":{"query":{}},"isGradeupDomain":true,"apolloState":{"User:351b7ef0-e33f-11e9-a5c3-ca01bd5ad223":{"id":"351b7ef0-e33f-11e9-a5c3-ca01bd5ad223","name":"Jignesh Desai","phone":"","emails":{"type":"json","json":["archirayan46@gmail.com"]},"exams":[{"type":"id","generated":false,"id":"Exam:72975611-4a5e-11e5-a83f-8b51c790d8b8","typename":"Exam"},{"type":"id","generated":false,"id":"Exam:e9c196a1-4ae6-11e5-bc68-8620ffdeb79c","typename":"Exam"}],"groups":[{"type":"id","generated":false,"id":"Group:72975611-4a5e-11e5-a83f-8b51c790d8b8","typename":"Group"},{"type":"id","generated":false,"id":"Group:e9c196a1-4ae6-11e5-bc68-8620ffdeb79c","typename":"Group"}],"isActive":true,"isMentor":false,"picture":"https://lh3.googleusercontent.com/-AEYLoBKHPHY/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcsBUz2vCUGg-i3ZxUXNrLN4eA5NQ/s96-c/photo.jpg","loginType":"login","needsVerification":false,"verificationInfo":{"type":"id","generated":true,"id":"$User:351b7ef0-e33f-11e9-a5c3-ca01bd5ad223.verificationInfo","typename":"UserVerificationInfo"},"__typename":"User"},"Exam:72975611-4a5e-11e5-a83f-8b51c790d8b8":{"id":"72975611-4a5e-11e5-a83f-8b51c790d8b8","__typename":"Exam"},"Exam:e9c196a1-4ae6-11e5-bc68-8620ffdeb79c":{"id":"e9c196a1-4ae6-11e5-bc68-8620ffdeb79c","__typename":"Exam"},"Group:72975611-4a5e-11e5-a83f-8b51c790d8b8":{"id":"72975611-4a5e-11e5-a83f-8b51c790d8b8","__typename":"Group"},"Group:e9c196a1-4ae6-11e5-bc68-8620ffdeb79c":{"id":"e9c196a1-4ae6-11e5-bc68-8620ffdeb79c","__typename":"Group"},"$User:351b7ef0-e33f-11e9-a5c3-ca01bd5ad223.verificationInfo":{"isVerified":false,"__typename":"UserVerificationInfo"},
+      "ROOT_QUERY":{"me":{"type":"id","generated":false,"id":"User:351b7ef0-e33f-11e9-a5c3-ca01bd5ad223","typename":"User"},
+      "css":{"type":"json","json":["https://gradeup-assets.grdp.co/website/_next/static/chunks/styles.e14b78c1.chunk.css"]}}}}
+      ,"page":"/home","query":{},"buildId":"zca439eqSaATEc8nFdpFe","dynamicBuildId":false,"assetPrefix":"https://gradeup-assets.grdp.co/website",
+      "dynamicIds":["+SFK","/W8u","+SFK","LJkV","+SFK","+07V"]}</script>
+      <script async="" id="__NEXT_PAGE__/home" src="<?php echo asset('assets/user/js/home.js')?>" crossorigin="anonymous"></script>
+      <script async="" id="__NEXT_PAGE__/_app" src="<?php echo asset('assets/user/js/_app.js')?>" crossorigin="anonymous"></script>
+      <script async="" src="<?php echo asset('assets/user/js/commons.js')?>" crossorigin="anonymous"></script>
+      <script async="" src="<?php echo asset('assets/user/js/chunk-auth.js')?>" crossorigin="anonymous"></script>
+      <script async="" src="<?php echo asset('assets/user/js/commons.js')?>" crossorigin="anonymous"></script>
+      <script async="" src="<?php echo asset('assets/user/js/chunk-mobile-bottom-drawer.js')?>" crossorigin="anonymous"></script>
+      <script async="" src="<?php echo asset('assets/user/js/commons.js')?>" crossorigin="anonymous"></script>
+      <script async="" src="<?php echo asset('assets/user/js/chunk-header-entity.js')?>" crossorigin="anonymous"></script>
+      <script src="<?php echo asset('assets/user/js/commons.js')?>" async="" crossorigin="anonymous"></script>
+      <script src="<?php echo asset('assets/user/js/styles.js')?>" async="" crossorigin="anonymous"></script>
+      <script src="<?php echo asset('assets/user/js/main-82fc5e36d5ad3edb86b0.js')?>" async="" crossorigin="anonymous"></script>
+      <script src="<?php echo asset('assets/user/js/sdk_002.js')?>" defer="defer"></script>
       <link rel="stylesheet" href="<?php echo asset('assets/user/css/styles_002.css')?>">
       <div id="toast-container"></div>
       <div class="ReactModalPortal"></div>
@@ -3268,34 +1060,226 @@
       </noscript>
       <script type="text/javascript" id="">(function(){function d(b){console.log("loadError",b)}function e(b,c){if(!document.querySelector('[src\x3d"'+b+'"]')){var a=document.createElement("script");a.async=!0;a.type="text/javascript";a.onerror=d;c&&(a.onload=c);a.src=b;document.body.appendChild(a)}}window.ga&&(ga("create","UA-80480423-1"),ga("require","ec"));e("https://gradeup-assets.grdp.co/gtm-scripts/dist/desktop-widgets-6efe67a591189579b4e2.js?v\x3d6efe67a591189579b4e2",function(){dataLayer.push({event:"DLChanged",widgetsLoaded:!0})})})();</script><script async="" type="text/javascript" src="<?php echo asset('assets/user/js/desktop-widgets-6efe67a591189579b4e2.js')?>"></script><script type="text/javascript" id="">(function(){function d(b){console.log("loadError",b)}function e(b,c){if(!document.querySelector('[src\x3d"'+b+'"]')){var a=document.createElement("script");a.onerror=d;a.type="text/javascript";c&&(a.onload=c);a.src=b;document.body.appendChild(a)}}window.ga&&(ga("create","UA-80480423-1"),ga("require","ec"));window.clevertap={event:[],profile:[],account:[],onUserLogin:[],notifications:[]};window.clevertap.account.push({id:"RZZ-649-9W5Z"});e("https://d2r1yp2w7bby2u.cloudfront.net/js/a.js?v\x3dd2r1yp2w7bby2u",
          function(){dataLayer.push({event:"DLChanged",clevertapLoaded:!0});dataLayer.push({event:"ClevertapLoaded"})})})();
-      </script><script type="<?php echo asset('assets/user/js/a_008.js')?>"></script><script type="text/javascript" id="">(function(){for(var b=document.querySelectorAll(".header-menu-item__link"),a=0;a<b.length;a++){var c=b.item(a);c.addEventListener("click",function(a){a.currentTarget&&ga&&a.currentTarget.querySelector(".anchor-label")&&ga("send","event","header_menu","click",a.currentTarget.querySelector(".anchor-label").innerText)})}})();</script>
+      </script>
+      <script type="<?php echo asset('assets/user/js/a_008.js')?>"></script>
+      <script type="text/javascript" id="">(function(){for(var b=document.querySelectorAll(".header-menu-item__link"),a=0;a<b.length;a++){var c=b.item(a);c.addEventListener("click",function(a){a.currentTarget&&ga&&a.currentTarget.querySelector(".anchor-label")&&ga("send","event","header_menu","click",a.currentTarget.querySelector(".anchor-label").innerText)})}})();</script>
       <script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","990336904319800");fbq("track","PageView");</script>
-      <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=990336904319800&amp;ev=PageView&amp;noscript=1"></noscript>
-      <script type="text/javascript" id="">(function(){var a=google_tag_manager["GTM-NMTPMSD"].dataLayer,g=a.get("packageShortId");a.get("loggedIn");var b=a.get("loggedOut"),e=a.get("pageName"),f=a.get("pageSlug")||"",h=a.get("isSubscribedNow")||"",k=a.get("userPaidStatus")||"",l=a.get("category")||"";a=a.get("packagePrice");var m=document.title,c=1;b&&(c=0);if(window.fbq){b=fbq;var n=c;var d=new RegExp("(?:(?:^|.*;)\\s*"+encodeURIComponent("lastSourceCookie").replace(/[\-\.\+\*]/g,"\\$\x26")+"\\s*\\\x3d\\s*([^;]*).*$)|^.*$");d=document.cookie.replace(d,
-         "$1");b("trackCustom","categoryInterested",{pageSlug:f,registered:n,packageShortId:g,pageName:e,userPaidStatus:k,lastSourceCookie:d,isSubscribedNow:h,packagePrice:a,pageTitle:m,category:l});"exam"===e&&fbq("track","Lead",{pageSlug:f,registered:c})}})();
-      </script>
-      <script type="text/javascript" id="">(function(){function c(){var a={};window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(f,b,d){a[b]=d});return a}function g(a,f,b,d){var e=new Date,c=e.getTime();b=c+1E3*b;e.setTime(b);document.cookie=encodeURIComponent(a)+"\x3d"+encodeURIComponent(f)+";expires\x3d"+e.toGMTString()+";path\x3d"+d}var a=c();if(a.utm_campaign||a.utm_medium||a.utm_source)g("utm-gradeup-stats",JSON.stringify({campaign:a.utm_campaign||"",medium:a.utm_medium||"",source:a.utm_source||""}),86400,"/"),fetch("https://api.gradeup.co/user/updateUtmParams",
-         {method:"POST",credentials:"include",headers:{"Content-Type":"application/json"},body:JSON.stringify({utm_campaign:a.utm_campaign||"",utm_medium:a.utm_medium||"",utm_source:a.utm_source||"",url:window.location.href})}),clevertap.event.push("UTM Visited Self",{url:window.location.href,campaign:a.utm_campaign||"",medium:a.utm_medium||"",source:a.utm_source||""})})();
-      </script><script type="text/javascript" id="">(function(){var c=google_tag_manager["GTM-NMTPMSD"].dataLayer;c.get("pageSlug");var a=c.get("userSubscribedCats")||"";c=c.get("loggedIn");a.split(",");var b=window.widgets||{};b.appendAsideContainers();c&&b.showCreatePostWidget({text:"Having any Doubts or Queries?",btnText:"ASK NOW"});-1!==a.indexOf("72975611-4a5e-11e5-a83f-8b51c790d8b8")&&(b.showGifWidget({imgSrc:"https://gs-post-images.grdp.co/2019/9/ensure_lic_side_widget-img1569418297034-11.png-rs-high-webp.png",link:"https://courses.gradeup.co/batch/0c00130c-db04-11e9-a21b-0a99e0cf8f3a?utm_campaign\x3dwidget\x26utm_medium\x3densure_lic\x26utm_source\x3dgradeup",
-         id:"Ensure_LIC_SFT",sticky:!0,noTextFlag:!0,creative:"Ensure_LIC_SFT"}),b.showGifWidget({imgSrc:"https://gs-post-images.grdp.co/2019/9/widget-img1568876307658-57.png-rs-high-webp.png",link:"https://courses.gradeup.co/batch/a2a863f2-d8a9-11e9-a21b-0a99e0cf8f3a?utm_medium\x3dAce_IBPS_Clerk\x26utm_campaign\x3dwidget",id:"Ace_IBPS Clerk_SFT",sticky:!1,noTextFlag:!0,creative:"Ace_IBPS_Clerk_SFT"}),b.showGifWidget({imgSrc:"https://gs-post-images.grdp.co/2019/7/side_widget_ts3-2-img1564203306400-98.png-rs-high-webp.png",
-         link:"https://gradeup.co/online-test-series/banking-insurance/ibps-2019-plus-pack-zjxk6evwn",id:"Bank_IBPS_Plus_teaser",sticky:!0,noTextFlag:!0,creative:"Bank_IBPS_Plus"}));-1!==a.indexOf("e9c196a1-4ae6-11e5-bc68-8620ffdeb79c")&&b.showGifWidget({imgSrc:"https://gs-post-images.grdp.co/2019/2/wb1-img1551073880816-49.jpg-rs-high-webp.jpg",link:"https://gradeup.co/online-test-series/ssc-railways/rrb-ntpc-2019-test-series-zjsbhi4x3",id:"RRBNTPC_Home_Widget1",sticky:!1,noTextFlag:!0,creative:"RRBNTPC_Home_Widget1"});
-         -1!==a.indexOf("aa14e1ec-5ad4-11e5-a9f6-d133ce302c8b")&&(b.showGifWidget({imgSrc:"https://gs-post-images.grdp.co/2019/7/wid-3-img1563951803818-36.png-rs-high-webp.png",link:"https://gradeup.co/online-test-series/tet/uptet-paper-i-2019-test-series-zjt5te6nn",id:"UPTET_TS_Home_Widget1",sticky:!1,noTextFlag:!0,creative:"UPTET_TS_Home_Widget1"}),b.showGifWidget({imgSrc:"https://gs-post-images.grdp.co/2019/9/widget-4-img1568705671951-47.png-rs-high-webp.png",link:"https://gradeup.co/ctet-online-coaching",
-         id:"CTET_course_b2_Home_Widget2",sticky:!1,noTextFlag:!0,creative:"CTET_course_b2_Home_Widget2"}));a.indexOf("45731551-d7aa-11e5-9ee9-b3a0ca6334c1");a.indexOf("b127f550-7d66-11e5-92f9-06c62b029f94");a.indexOf("9ee27bc3-7ca8-11e5-8e90-6d1752ad4c7c");a.indexOf("b695e1a4-7d66-11e5-aecf-2db16c0d7a4b");a.indexOf("8223ff18-d538-11e5-80ff-b0086ec8f4cd")})();
-      </script>
-      <script type="text/javascript" id="">(function(){function x(){var a=new RegExp("(?:(?:^|.*;)\\s*"+encodeURIComponent("utm-gradeup-stats").replace(/[\-\.\+\*]/g,"\\$\x26")+"\\s*\\\x3d\\s*([^;]*).*$)|^.*$");a=document.cookie.replace(a,"$1");a=decodeURIComponent(a);try{a=JSON.parse(a)}catch(O){a=null}a&&fetch("https://api.gradeup.co/user/updateUtmParams",{method:"POST",credentials:"include",headers:{"Content-Type":"application/json"},body:JSON.stringify({utm_campaign:a.campaign||"",utm_medium:a.medium||"",utm_source:a.source||"",url:window.location.href})})}
-         function J(){function a(){if("undefined"!==typeof q&&"granted"===q.permission)h=window.localStorage?window.localStorage.getItem("web_push_exam_cat")||"":"",h=h.split(",").filter(Boolean),d&&-1===h.indexOf(d)&&(h.push(d),window.localStorage&&window.localStorage.setItem("web_push_exam_cat",h)),b.onUserLogin.push({Site:{web_push_exam_cat:h}}),p.cookie.get("webpush_allowed")||(p.cookie.set("webpush_allowed",1,{expires:u,path:"/"}),b.event.push("Webpush_Y",{examCategoryId:d,isMobile:!1})),clearInterval(e);
-         else if("undefined"!==typeof q&&"denied"===q.permission||5<c)"undefined"===typeof q||"denied"!==q.permission||p.cookie.get("webpush_denied")||(p.cookie.set("webpush_denied",1,{expires:u,path:"/"}),b.event.push("Webpush_N",{examCategoryId:d,isMobile:!1})),clearInterval(e);c+=1}if(b&&d){b.notifications.push({skipDialog:!0,askAgainTimeInSeconds:1,serviceWorkerPath:"/clevertap_sw.js"});var c=0,e=setInterval(a,3E3)}}function K(a){a=a||{};var b=a.visit||3;a=a.seconds||15;var c=1;p.cookie.get("visitNumber")&&
-         (c=Number(p.cookie.get("visitNumber"))+1);p.cookie.set("visitNumber",c,{expires:u,path:"/"});c>=b&&setTimeout(J,1E3*a)}var c=google_tag_manager["GTM-NMTPMSD"].dataLayer,p=window.widgets||{},b=window.clevertap||{},f=c.get("pageName"),v=c.get("pageSlug"),e=c.get("event"),g=c.get("userId"),a=c.get("loggedIn"),r=c.get("userName"),l=c.get("email"),w=c.get("loginType"),n=c.get("userSubscribedCats"),d=c.get("examCategoryId"),t="en",y=c.get("postTitle"),z=c.get("postId"),A=c.get("attempts"),B=c.get("questions"),
-         m=c.get("examCategoryName"),C=c.get("groupName"),D=c.get("groupId"),E=c.get("subjectName"),F=c.get("firstTimeofDay"),q=window.Notification||{},k=c.get("cleverTapVariable");c.get("source");t={Name:r,Username:r,Identity:g,Email:l,Emailid:l,LanguageWeb:t,LogintypeWeb:w,exam_categories_web:n};var G=c.get("optInExamId"),H=c.get("optInExamName"),L=c.get("optInGroupId"),M=c.get("optInGroupName"),I=c.get("optInSubscribed");c=c.get("examYear");var u=new Date;u.setHours(24,0,0,0);if("gtm.historyChange"===e&&
-         "undefined"!==typeof window.Notification){var N={visit:1,seconds:5};K(N)}if("gtm.historyChange"===e||"DLChanged"===e)a?b.profile.push({Site:{exam_categories_web:n}}):p.isLocalStorageAvailable()&&(n=window.localStorage.getItem("web_loggedout_category")||"",n=n.split(",").filter(Boolean),d&&-1===n.indexOf(d)&&(n.push(d),window.localStorage&&window.localStorage.setItem("web_loggedout_category",n)),b.profile.push({Site:{web_loggedout_category:n}}));a&&b.onUserLogin.push({Site:t});"user-login"===e&&(b.event.push("Login Web",
-         {userid:g,username:r,email:l,logintype:w,pageName:f,isMobile:!1}),b.onUserLogin.push({Site:t}),x());"user-signup"===e&&(b.event.push("Signup Web",{userid:g,username:r,email:l,logintype:w,pageName:f,isMobile:!1}),b.onUserLogin.push({Site:t}),x());"user-logout"===e&&b.logout();"exam-cat-subscribed"===e&&b.event.push("Exam category subscribed Web",{examid:d,examname:m,isMobile:!1});"quiz-start-web"===e&&b.event.push("Quiz Start Web",{postTitle:y,postId:z,pageUrl:window.location.pathname,userId:g,attempts:A,
-         questions:B,examCategoryId:d,examCategoryName:m,groupName:C,groupId:D,subjectName:E,firstTimeofDay:F,isMobile:!1});"quiz-completed-web"===e&&b.event.push("Quiz Submitted Web",{postTitle:y,postId:z,pageUrl:window.location.pathname,userId:g,attempts:A,questions:B,examCategoryId:d,examCategoryName:m,groupName:C,groupId:D,subjectName:E,firstTimeofDay:F,isMobile:!1});"group-subscribed"===e&&b.event.push("Group_subscribed",{userId:g,username:r,email:l,examCategoryId:G,examCategoryName:H,groupName:M,groupId:L,
-         examYear:c,subscribed:I,isMobile:!1,pageName:f,deviceType:"web"});"exam-subscribed-settings-page"===e&&b.event.push("Exam category subscribed Web",{examid:G,examname:H,subscribed:I,isMobile:!1,pageName:f,deviceType:"web"});if("web-push-cat-clevertap"===e&&b&&d){var h=window.localStorage?window.localStorage.getItem("web_push_exam_cat")||"":"";h=h.split(",").filter(Boolean);-1===h.indexOf(d)&&(b.event.push("Webpush_Y",{examCategoryId:d,isMobile:!1}),h.push(d),window.localStorage&&window.localStorage.setItem("web_push_exam_cat",
-         h));b.onUserLogin.push({Site:{web_push_exam_cat:h}})}"ts-buy-now"===e&&(a={},Object.assign(a,k),a.DeviceType="web",a.categoryId=d,a.ScreenName=f,a.userId=g,a.userEmail=l,a.category=m,a.pageSlug=v,a.pageName=f,a.isWeb=!0,b.event.push("Buy_Now_Clicked",a),window.fbq&&fbq("track","AddToCart",{content_ids:a.packageShortId,content_type:"product"}));"liveCourse"===e&&(a={},Object.assign(a,k),a.userId=g,a.userEmail=l,a.DeviceType="web",a.categoryId=d,a.ScreenName=f,a.category=m,a.pageName=f,a.isWeb=!0,b.event.push("Course Marketing Page Visited",
-         a));"start_free_trial"===e&&(a={},Object.assign(a,k),a.userId=g,a.userEmail=l,a.DeviceType="web",a.categoryId=d,a.ScreenName=f,a.category=m,a.pageName=f,a.isWeb=!0,b.event.push("start_free_trial",a));"request_callback"===e&&(a={},Object.assign(a,k),a.DeviceType="web",a.categoryId=d,a.ScreenName=f,a.category=m,a.pageSlug=v,a.pageName=f,a.isWeb=!0,b.event.push("request_callback",a));"free-mock-attempt"===e&&(a={},Object.assign(a,k),a.DeviceType="web",a.categoryId=d,a.ScreenName=f,a.userId=g,a.userEmail=
-         l,a.category=m,a.pageSlug=v,a.pageName=f,a.isWeb=!0,b.event.push("Mock_Test_Started",a));"ts-package-landing"===e&&(a={},Object.assign(a,k),a.DeviceType="web",a.categoryId=d,a.ScreenName=f,a.userId=g,a.userEmail=l,a.category=m,a.pageSlug=v,a.pageName=f,a.isWeb=!0,b.event.push("Package Detail Viewed",a));"live_mock_register"===e&&(a={},Object.assign(a,k),a.DeviceType="web",a.categoryId=d,a.ScreenName=f,a.userId=g,a.userEmail=l,a.category=m,a.isWeb=!0,b.event.push("live_mock_register",a));"web-push-denied"===
-         e&&b.event.push("Webpush_N",{examCategoryId:d,isMobile:!1});"pysp_submit_ct"===e&&(a={},Object.assign(a,k),a.DeviceType="web",a.userId=g,a.examCategoryId=d,a.isMobile=!1,b.event.push("Pysp Submitted Web",a));"pysp_start_ct"===e&&(a={},Object.assign(a,k),a.DeviceType="web",a.userId=g,a.examCategoryId=d,a.isMobile=!1,b.event.push("Pysp Start Web",a));"pysp_visited_ct"===e&&(a={DeviceType:"web"},a.userId=g,a.userName=r,a.isMobile=!1,b.event.push("Pysp Page Visited",a));"upcoming_lmt_webpush"===e&&(a=
-         {},f=k&&"Y"===k.webPush?"Webpush_Y":"Webpush_N",Object.assign(a,k),a.examCategoryId=d,a.isMobile=!1,b.event.push(f,a));"Webpush_Quiz_Y"===e&&(a={},a.examCategoryId=d,a.isMobile=!1,b.event.push("Webpush_Y",a));"Webpush_Quiz_N"===e&&(a={},a.examCategoryId=d,a.isMobile=!1,b.event.push("Webpush_N",a))})();
-      </script>
    </body>
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  
+  <!-- Trigger the modal with a button -->
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="flex flex-column pl3">
+          <div class="row">
+          <span alt="Jignesh Desai" class="flex br-100 w3 h3 flex-shrink-0 overflow-hidden relative" style="background-color: indigo;
+    color: white !important;
+    padding-left: 13px;
+    font-size: 34px;
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    padding-top: 5px;">{{ substr($name,0,1) }}</span>
+          <h3 class="gray mv0">Create Post</h3>		
+          	<p class="f4 gray mv0">Select what you would like to post</p></div>
+        </div>
+        <div class="modal-body">
+          <div class="flex-column bg-white ma-auto w-90-l w-100 h-auto-l h-100 pa4  flex">
+          	
+          		<div class="flex flex-row-l flex-column justify-between items-center">
+          		<a class="flex justify-center-l justify-start items-center ba b--black-10 w-30-l w-100 pa2 mv0-l mv1 b--animate text-animate " id="createPost_query">
+          		<div class="br-100 bg-light-silver flex items-center justify-center mr3 pa2 ">
+          		<svg class="db svg-s-white svg-fn ml-auto" viewBox="0 0 32 32" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="25px">
+          		<path d="M4 8c0-2.2 2-3 4.2-3h17C27.4 5 29 5.8 29 8v12c0 2.2-1.6 5-3.8 5H9.1h0.1H9.1L4 28V8zM14.5 12.2c0 0 0.4-2.7 2.6-2.4 0.5 0.1 1.4 0.7 1.7 1.3 0 0 0.9 2.1-1.8 3.2 0 0-1.4 0.6-0.7 1.8"></path>
+          		<circle cx="16.4" cy="18.8" r="1.1"></circle>
+          		</svg>
+          		</div>
+          		<span class="f4 gray ">Ask A Query</span></a>
+          		<a class="flex justify-center-l justify-start items-center ba b--black-10 w-30-l w-100 pa2 mv0-l mv1 b--animate text-animate " id="createPost_mcq">
+          		<div class="br-100 bg-light-silver flex items-center justify-center mr3 pa2 ">
+          		<svg class="db svg-s-white ml-auto svg-fn" viewBox="0 0 42.3 36" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="25px">
+          		<rect x="1.8" y="2.3" width="27" height="8"></rect>
+          		<rect x="1.8" y="14.3" width="39" height="8"></rect>
+          		<rect x="1.8" y="26.3" width="19" height="8"></rect>
+          		</svg>
+          		</div>
+          		<span class="f4 gray " data-toggle="collapse" data-target="#demo">Post Job</span>
+          		<div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+          		</a>
+          		<a class="flex justify-center-l justify-start items-center ba b--black-10 w-30-l w-100 pa2 mv0-l mv1 b--animate text-animate " id="createPost_shareInfo">
+          		<div class="br-100 bg-light-silver flex items-center justify-center mr3 pa2 ">
+          		<svg class="db svg-s-white ml-auto svg-fn" viewBox="0 0 32 32" style="stroke-width: 3px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="25px">
+          		<g>
+          		<path class="st3" d="M13.5 26.2"></path>
+          		<rect x="14" y="10" class="st3" width="8" height="8"></rect>
+          		<line class="st3" x1="6" y1="22" x2="22" y2="22"></line>
+          		<line class="st3" x1="6" y1="18" x2="10" y2="18"></line>
+          		<line class="st3" x1="6" y1="14" x2="10" y2="14"></line>
+          		<line class="st3" x1="6" y1="10" x2="10" y2="10"></line>
+          		<path class="st3" d="M26 24.9c0 1.1-0.6 1.1-1.7 1.1h-20C3.2 26 2 24.9 2 23.8v-16C2 6.7 3.2 6 4.3 6h20C25.4 6 26 6.7 26 7.8V24.9z"></path>
+          		</g>
+          		<path id="XMLID_1_" class="st3" d="M27 9L27 9h1.3c1.1 0 1.7 0.3 1.7 1.4v13.5c0 1.1-0.6 2.1-1.7 2.1h-2H25"></path>
+          		</svg>
+          		</div>
+          		<span class="f4 gray ">Share Info</span>
+          		</a>
+          		</div>
+          		</div>		
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
+
+
+
+<script>
+$(document).ready(function(){
+	$(".createpost").click(function(){
+		alert('test');
+		$('#myModal').modal('show');
+	});		
+	
+   $(".main-header__all-exam-link").mouseenter(function(){
+   		$(".main-header__all-exams__menu").addClass('js-sub-me');
+   		$(".main-header__all-exams__menu").removeClass('js-sub-menu');
+   		$(".main-header__all-exams__menu").addClass('o-100');
+   		$(".main-header__all-exams__menu").removeClass('o-0');
+   		$(".main-header__all-exams__menu").css({"height": "0px", "visibility": "visible"});
+   });	
+   
+   $(".main-header__all-exam-link").mouseleave(function(){
+   		$(".main-header__all-exams__menu").removeClass('js-sub-me');
+   		$(".main-header__all-exams__menu").addClass('js-sub-menu');
+   		$(".main-header__all-exams__menu").removeClass('o-100');
+   		$(".main-header__all-exams__menu").addClass('o-0');
+   		$(".main-header__all-exams__menu").css({"height": "none", "visibility": "hidden"});
+   });	
+   
+   $(".all-exams-options .bank").mouseenter(function(){
+   		$('.bank_next').addClass('flex');
+   		$('.bank_next').addClass('active');
+   		$('.bank_next').removeClass('dn');
+   		$('.bank_next .w-third').show();
+   });	
+   $(".all-exams-options .bank").mouseleave(function(){
+		$('.bank_next').removeClass('flex');
+   		$('.bank_next').removeClass('active');   	
+   		$('.bank_next').addClass('dn');
+   		$('.bank_next .w-third').hide();
+   });	
+   
+   $(".all-exams-options .ssc").mouseenter(function(){
+   		$('.ssc_next').addClass('flex');
+   		$('.ssc_next').addClass('active');
+   		$('.ssc_next').removeClass('dn');
+   		$('.ssc_next .w-third').show();
+   });	
+   $(".all-exams-options .ssc").mouseleave(function(){
+   		$('.ssc_next').removeClass('flex');
+   		$('.ssc_next').removeClass('active');   	
+   		$('.bank_next').addClass('dn');
+   		$('.ssc_next .w-third').hide();
+   });	
+   
+   
+    $(".test-series").mouseenter(function(){
+    	$('.ts-ul').show();
+    	$('.ts-ul li').show();
+		$(".ts-ul li").css({"background-color": "white", "cursor": "pointer","box-shadow":"0 5px 4px 0 rgba(0, 0, 0, .1)"});
+    });
+    $(".test-series").mouseleave(function(){
+   		$('.ts-ul').hide();
+   		$('.ts-ul li').hide();
+   		
+   	});	
+    $(".classroom").mouseenter(function(){
+    	$('.cr-ul').show();
+    	$('.cr-ul li').show();
+    	$('.cr-ul li').css('background-color','white');
+    	$(".cr-ul li").css({"background-color": "white", "cursor": "pointer","box-shadow":"0 5px 4px 0 rgba(0, 0, 0, .1)"});
+    });	
+    $(".classroom").mouseleave(function(){
+   		$('.cr-ul').hide();
+   		$('.cr-ul li').hide();
+   });	
+   $(".free-videos").mouseenter(function(){
+    	$('.fv-ul').show();
+    	$('.fv-ul li').show();
+    	
+    	$(".fv-ul li").css({"background-color": "white", "cursor": "pointer","box-shadow":"0 5px 4px 0 rgba(0, 0, 0, .1)"});
+    	
+    	
+    });
+    
+    $(".free-videos").mouseleave(function(){
+   		$('.fv-ul').hide();
+   		$('.fv-ul li').hide();
+   	});
+    
+    $(".quizzes").mouseenter(function(){
+    	$('.qz-ul').show();
+    	$('.qz-ul li').show();
+
+    	$(".qz-ul li").css({"background-color": "white", "cursor": "pointer","box-shadow":"0 5px 4px 0 rgba(0, 0, 0, .1)"});
+    });	
+    
+    $(".quizzes").mouseleave(function(){
+   		$('.qz-ul').hide();
+   		$('.qz-ul li').hide();
+   	});
+    
+    $(".prev-papers").mouseenter(function(){
+    	$('.pp-ul').show();
+    	$('.pp-ul li').show();
+    	
+    	$(".pp-ul li").css({"background-color": "white", "cursor": "pointer","box-shadow":"0 5px 4px 0 rgba(0, 0, 0, .1)"});
+    });	
+    $(".prev-papers").mouseleave(function(){
+   		$('.pp-ul').hide();
+   		$('.pp-ul li').hide();
+   	});
+});
+</script>
+
+  
+  
+<?php }else{ ?>
+	<p>Please Login First</p>
+<?php } ?>

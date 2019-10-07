@@ -27,51 +27,56 @@ use Response;
 class LoginController extends BaseController
 {
     function login(){
-		return view('login');
-	}
+	return view('login');
+    }
 	
-	function user(){
-		return view('user');
-	}
+    public function logout(Request $request) {
+	Auth::logout();
+	return redirect('/login');
+    }
 	
-	function loginresult(){
-		$email =  $_POST['email'];
-		$password = $_POST['password'];
-		$userdata = array(
-			'email'     => $email,
-			'password'  => $password
-		);
-		// attempt to do the login
-		if (Auth::attempt($userdata)) {
-			return redirect('user');		
-		} else {        
-			echo "Error";
-		}
-	}
+    function user(){
+	return view('myuser');
+    }
 	
-	function register(){
-		return view('register');
+    function loginresult(){
+	$email =  $_POST['email'];
+	$password = $_POST['password'];
+	$userdata = array(
+		'email'     => $email,
+		'password'  => $password
+	);
+	// attempt to do the login
+	if (Auth::attempt($userdata)) {
+		return redirect('user');		
+	} else {        
+		echo "Error";
 	}
+    }
 	
-	function registerresult(){
-		extract($_POST);
-		if(isset($_POST['status']) && $_POST['status'] == 'exam'){
-			$status = DB::select('SELECT * FROM `users` order by id DESC LIMIT 1');
-			$id = $status[0]->id;
-			$data=array('exam'=>$exam);
-			$password = $_POST['new_password'];
-			DB::update('update users set exam = ? where id = ?',[$exam,$id]);
-			echo "You are Register Successfully. Please login now";
-		}
-		else{
-			$password = Hash::make($password);
-			$data=array('name'=>$name,'password'=>$password,"email"=>$email,"phone"=>0,"exam"=>0,"photo"=>0,"token"=>$_token);
-			DB::table('users')->insert($data);	
-		}
-		
-	}
+    function register(){
+	return view('register');
+    }
 	
-	function home(){
-		return view('home');
+    function registerresult(){
+	extract($_POST);
+	if(isset($_POST['status']) && $_POST['status'] == 'exam'){
+		$status = DB::select('SELECT * FROM `users` order by id DESC LIMIT 1');
+		$id = $status[0]->id;
+		$data=array('exam'=>$exam);
+		$password = $_POST['new_password'];
+		DB::update('update users set exam = ? where id = ?',[$exam,$id]);
+		echo "You are Register Successfully. Please login now";
 	}
+	else{
+		$password = Hash::make($password);
+		$data=array('name'=>$name,'password'=>$password,"email"=>$email,"phone"=>0,"exam"=>0,"photo"=>0,"token"=>$_token);
+		DB::table('users')->insert($data);	
+	}
+	    
+    }
+    
+    function home(){
+	return view('myhome');
+    }
 }

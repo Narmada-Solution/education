@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+Route::get('/', 'LoginController@home');
+
 
 Route::get('/admin', function () {
     //return view('admin.content');
@@ -31,6 +33,8 @@ Route::post('admin/jobsresult', 'AdminController@jobsresult');
 
 Route::get('admin/blog', 'AdminController@blog');
 
+
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::get('/login', 'LoginController@login');
 Route::post('/loginresult', 'LoginController@loginresult');

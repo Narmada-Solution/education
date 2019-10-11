@@ -239,7 +239,7 @@ $login_url = 'https://accounts.google.com/o/oauth2/v2/auth?scope=' . urlencode('
 				  <div class="item active">
 					  <center>
 						  <blockquote>"To achive any goal in life,you need motivateion. The <br>Bigger your dream the bigger is success"</blockquote>
-						  <b>Pravin Kant, SSC CHSL Prelims 2017</b><br><b>Bharatpur, Rajesthan</b><br><br>
+						  <b>Pravin Kant, SSC CHSL Prelims 2017</b><br><b>Jaipur, Rajesthan</b><br><br>
 						  <small>Read More ></small><br>
 					  </center>
 				  </div>
